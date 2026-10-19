@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "git.commit",
+  "seq": 5,
+  "step": 4,
+  "value": {
+    "message": "Commit message cannot be empty",
+    "name": "Error"
+  }
+}

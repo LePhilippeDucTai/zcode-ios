@@ -1,0 +1,14 @@
+{
+  "kind": "result",
+  "name": "git.getDiff",
+  "seq": 5,
+  "step": 4,
+  "value": {
+    "afterContent": "func salut() {\n    print(\"bonjour, monde\")\n}\n",
+    "availability": "patch",
+    "beforeContent": "func salut() {\n    print(\"bonjour\")\n}\n",
+    "patch": "diff --git a/src/app.swift b/src/app.swift\nindex 743c86d..bbf0490 100644\n--- a/src/app.swift\n+++ b/src/app.swift\n@@ -1,3 +1,3 @@\n func salut() {\n-    print(\"bonjour\")\n+    print(\"bonjour, monde\")\n }\n",
+    "path": "/private/tmp/zcode-fixture-repo/src/app.swift",
+    "summary": null
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "kind" : "state",
+  "name" : "stop",
+  "seq" : 28,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f0-b9b5-77d5-a73c-c4a008125e53",
+    "revisionAtDecision" : 8,
+    "status" : "accepted"
+  }
+}

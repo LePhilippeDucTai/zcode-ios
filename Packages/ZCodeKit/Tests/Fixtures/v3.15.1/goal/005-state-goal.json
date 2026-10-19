@@ -1,0 +1,21 @@
+{
+  "kind" : "state",
+  "name" : "goal",
+  "seq" : 5,
+  "step" : 0,
+  "value" : {
+    "activeRunStartedAtMs" : null,
+    "iteration" : 1,
+    "iterations" : [
+
+    ],
+    "objective" : "Réponds uniquement par le mot OK. Le Goal est atteint dès que tu as répondu OK.",
+    "status" : "verifying",
+    "summaryTitle" : "Demande de réponse OK",
+    "targetId" : "target_mvc543he_a64b482f-d6ac-49f8-9ba9-d93d9bbd04ac",
+    "timeUsedSeconds" : 6,
+    "verifications" : [
+
+    ]
+  }
+}

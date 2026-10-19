@@ -1,0 +1,201 @@
+{
+  "kind" : "state",
+  "name" : "rows.agent.final",
+  "seq" : 23,
+  "step" : 0,
+  "value" : [
+    {
+      "createdAt" : 1792376179769,
+      "createdAtSeq" : 4,
+      "endedAt" : 1792376179770,
+      "entityId" : "msg_mvemhzjp_12823403-3b61-4923-8d7a-8f8fed055e1c",
+      "executionKind" : "controlOnly",
+      "kind" : "turnHeader",
+      "origin" : "workflowLaunch",
+      "productTurnId" : "msg_mvemhzjp_12823403-3b61-4923-8d7a-8f8fed055e1c",
+      "rowId" : 1,
+      "sourceCommandId" : "01a151f2-0c0b-7fab-8ef1-3716fb17cedf",
+      "startedAt" : 1792376179769,
+      "state" : "completedSuccess",
+      "turnId" : "msg_mvemhzjp_12823403-3b61-4923-8d7a-8f8fed055e1c",
+      "visibility" : "visible",
+      "workflowLaunch" : {
+        "description" : "Sonde iOS avec un agent qui écrit un fichier",
+        "display" : {
+          "causalityGraph" : {
+            "exits" : [
+              "phase#1"
+            ],
+            "handoffs" : [
+
+            ],
+            "lanes" : [
+              {
+                "column" : 17,
+                "id" : "actor#1",
+                "line" : 2,
+                "name" : "Rédacteur"
+              }
+            ],
+            "participants" : [
+              {
+                "id" : "phase#1:actor#1",
+                "lane" : "actor#1",
+                "phase" : "phase#1",
+                "steps" : [
+                  "ask#1"
+                ]
+              }
+            ],
+            "phaseEdges" : [
+
+            ],
+            "phases" : [
+              {
+                "column" : 1,
+                "id" : "phase#1",
+                "line" : 1,
+                "name" : "Écriture"
+              }
+            ],
+            "sink" : [
+              "ask#1"
+            ],
+            "steps" : [
+              {
+                "column" : 36,
+                "id" : "ask#1",
+                "kind" : "ask",
+                "label" : "Rédacteur",
+                "lane" : "actor#1",
+                "line" : 2,
+                "phase" : "phase#1"
+              }
+            ]
+          },
+          "diagnostics" : [
+
+          ],
+          "errorCount" : 0,
+          "kind" : "create_workflow",
+          "ok" : true
+        },
+        "name" : "ios-probe-agent",
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe-agent.dwf.ts",
+        "runId" : "dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b",
+        "scope" : "project",
+        "script" : "phase(\"Écriture\");\nconst r = await agent(\"Rédacteur\").ask(\"Crée le fichier ios-probe-agent.txt contenant OK avec l'outil Write, puis réponds FAIT.\");\nreturn r;\n",
+        "toolCallId" : "launch-6bd2e46b-060e-4255-9c23-5b15c1b5ebfc"
+      }
+    },
+    {
+      "createdAt" : 1792376179769,
+      "createdAtSeq" : 4,
+      "entityId" : "msg_mvemhzjp_12823403-3b61-4923-8d7a-8f8fed055e1c",
+      "kind" : "userInput",
+      "origin" : "workflowLaunch",
+      "productTurnId" : "msg_mvemhzjp_12823403-3b61-4923-8d7a-8f8fed055e1c",
+      "rootSourceCommandId" : "01a151f2-0c0b-7fab-8ef1-3716fb17cedf",
+      "rowId" : 2,
+      "sourceCommandId" : "01a151f2-0c0b-7fab-8ef1-3716fb17cedf",
+      "text" : "Started the saved workflow \"ios-probe-agent\" (project) from the workflows hub as run dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b.\n\nProgress and results arrive as background notifications; do not start it again.",
+      "turnId" : "msg_mvemhzjp_12823403-3b61-4923-8d7a-8f8fed055e1c",
+      "visibility" : "visible",
+      "workflowLaunch" : {
+        "description" : "Sonde iOS avec un agent qui écrit un fichier",
+        "display" : {
+          "causalityGraph" : {
+            "exits" : [
+              "phase#1"
+            ],
+            "handoffs" : [
+
+            ],
+            "lanes" : [
+              {
+                "column" : 17,
+                "id" : "actor#1",
+                "line" : 2,
+                "name" : "Rédacteur"
+              }
+            ],
+            "participants" : [
+              {
+                "id" : "phase#1:actor#1",
+                "lane" : "actor#1",
+                "phase" : "phase#1",
+                "steps" : [
+                  "ask#1"
+                ]
+              }
+            ],
+            "phaseEdges" : [
+
+            ],
+            "phases" : [
+              {
+                "column" : 1,
+                "id" : "phase#1",
+                "line" : 1,
+                "name" : "Écriture"
+              }
+            ],
+            "sink" : [
+              "ask#1"
+            ],
+            "steps" : [
+              {
+                "column" : 36,
+                "id" : "ask#1",
+                "kind" : "ask",
+                "label" : "Rédacteur",
+                "lane" : "actor#1",
+                "line" : 2,
+                "phase" : "phase#1"
+              }
+            ]
+          },
+          "diagnostics" : [
+
+          ],
+          "errorCount" : 0,
+          "kind" : "create_workflow",
+          "ok" : true
+        },
+        "name" : "ios-probe-agent",
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe-agent.dwf.ts",
+        "runId" : "dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b",
+        "scope" : "project",
+        "script" : "phase(\"Écriture\");\nconst r = await agent(\"Rédacteur\").ask(\"Crée le fichier ios-probe-agent.txt contenant OK avec l'outil Write, puis réponds FAIT.\");\nreturn r;\n",
+        "toolCallId" : "launch-6bd2e46b-060e-4255-9c23-5b15c1b5ebfc"
+      }
+    },
+    {
+      "createdAt" : 1792376191370,
+      "createdAtSeq" : 20,
+      "entityId" : "msg_mvemi8hc_66d80e9c-7a56-433b-bf53-fa995ee75135",
+      "executionKind" : "agent",
+      "kind" : "turnHeader",
+      "origin" : "backgroundResult",
+      "originMeta" : {
+        "backgroundSource" : "workflow",
+        "title" : "ios-probe-agent",
+        "workId" : "dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b",
+        "workflowNotification" : {
+          "durationMs" : 11579,
+          "kind" : "terminal",
+          "status" : "stopped",
+          "stopReason" : "user",
+          "summary" : "ios-probe-agent"
+        }
+      },
+      "productTurnId" : "msg_mvemi8hc_66d80e9c-7a56-433b-bf53-fa995ee75135",
+      "rowId" : 3,
+      "sourceCommandId" : "01a151f2-3976-7112-a85b-a1a5442b57ff",
+      "startedAt" : 1792376191370,
+      "state" : "running",
+      "turnId" : "msg_mvemi8hc_66d80e9c-7a56-433b-bf53-fa995ee75135",
+      "visibility" : "visible"
+    }
+  ]
+}

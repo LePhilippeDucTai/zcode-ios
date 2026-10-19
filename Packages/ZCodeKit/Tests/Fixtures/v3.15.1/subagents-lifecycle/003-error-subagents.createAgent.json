@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "subagents.createAgent",
+  "seq": 3,
+  "step": 2,
+  "value": {
+    "message": "Name must be between 3 and 50 characters",
+    "name": "Error"
+  }
+}

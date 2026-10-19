@@ -1,0 +1,15 @@
+{
+  "steps": [
+    { "call": "zcode-agent", "method": "helloConversationV4" },
+    { "call": "zcode-agent", "method": "initializeConversationV4",
+      "args": [{ "kind": "clientHello", "protocolVersion": 3, "clientId": "client-zcode-probe",
+                 "clientKind": "mobileApp", "appVersion": "zcode-probe" }] },
+    { "listen": "zcode-agent", "event": "onDynamicConversationFrame",
+      "arg": { "workspacePath": "${ZCODE_PROBE_WORKSPACE}" } },
+    { "call": "zcode-agent", "method": "subscribeConversationV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}", "sessionId": "${SESSION_ID}" }] },
+    { "wait": 2 },
+    { "call": "zcode-agent", "method": "conversationRowsRangeV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}", "sessionId": "${SESSION_ID}", "limit": 200 }] }
+  ]
+}

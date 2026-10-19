@@ -1,0 +1,11 @@
+{
+  "kind" : "state",
+  "name" : "cancel.running.ack",
+  "seq" : 21,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f2-3958-7157-9b93-b60e0d24dbe7",
+    "revisionAtDecision" : 5,
+    "status" : "accepted"
+  }
+}

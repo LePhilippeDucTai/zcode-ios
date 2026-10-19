@@ -1,0 +1,9 @@
+{
+  "steps": [
+    { "call": "subagents", "method": "deleteAgent", "args": [{"agentId": "user:workspace:zcode-ios-probe-agent", "filePath": "${ZCODE_PROBE_WORKSPACE}/.zcode/agents/zcode-ios-probe-agent.md" }] },
+    { "call": "subagents", "method": "deleteAgent", "args": [{"agentId": "user:workspace:zcode-ios-probe-agent-v2", "filePath": "${ZCODE_PROBE_WORKSPACE}/.zcode/agents/zcode-ios-probe-agent-v2.md" }] },
+    { "call": "subagents", "method": "deleteAgent", "args": [{"agentId": "user:user:zcode-ios-probe-user", "filePath": "${ZCODE_PROBE_USER_AGENTS}/zcode-ios-probe-user.md" }] },
+    { "call": "plugin-management", "method": "uninstallPlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market" }] },
+    { "call": "plugin-management", "method": "removePluginMarketplace", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market" }] }
+  ]
+}

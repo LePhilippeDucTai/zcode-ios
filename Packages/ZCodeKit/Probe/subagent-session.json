@@ -1,0 +1,14 @@
+{
+  "steps": [
+    { "call": "zcode-agent", "method": "helloConversationV4" },
+    { "call": "zcode-agent", "method": "initializeConversationV4",
+      "args": [{ "kind": "clientHello", "protocolVersion": 3, "clientId": "client-zcode-probe",
+                 "clientKind": "mobileApp", "appVersion": "zcode-probe" }] },
+    { "call": "zcode-agent", "method": "sendConversationCommandV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}",
+                 "envelope": { "commandId": "${COMMAND_ID}", "clientId": "client-zcode-probe", "sessionId": null,
+                               "type": "createSession",
+                               "payload": { "workspaceId": "${ZCODE_PROBE_WORKSPACE}" },
+                               "issuedAt": ${NOW} } }] }
+  ]
+}

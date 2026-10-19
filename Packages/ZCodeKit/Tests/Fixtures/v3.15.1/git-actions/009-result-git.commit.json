@@ -1,0 +1,28 @@
+{
+  "kind": "result",
+  "name": "git.commit",
+  "seq": 9,
+  "step": 8,
+  "value": {
+    "commitHash": "9c48005347bdfcbd4846f04e9d32e5ede7c688bf",
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-actions-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-actions-repo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-actions-repo"
+    }
+  }
+}

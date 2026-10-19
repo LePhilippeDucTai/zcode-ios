@@ -1,0 +1,21 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.addPluginMarketplace",
+  "seq" : 1,
+  "step" : 0,
+  "value" : {
+    "diagnostics" : [
+
+    ],
+    "marketplace" : {
+      "id" : "dry-run",
+      "isOfficial" : false,
+      "name" : "dry-run",
+      "pluginCount" : 0,
+      "source" : {
+        "path" : "/Users/me/claude/.zcode-check/marketplace",
+        "source" : "directory"
+      }
+    }
+  }
+}

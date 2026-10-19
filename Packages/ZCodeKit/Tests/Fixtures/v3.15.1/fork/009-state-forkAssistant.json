@@ -1,0 +1,15 @@
+{
+  "kind" : "state",
+  "name" : "forkAssistant",
+  "seq" : 9,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a14e78-6e27-75b9-adb1-26c90c71f2aa",
+    "result" : {
+      "sessionId" : "sess_1cde664d-eaa9-47aa-9ad7-efdfa37ccbb2",
+      "type" : "forkAssistant"
+    },
+    "revisionAtDecision" : 8,
+    "status" : "accepted"
+  }
+}

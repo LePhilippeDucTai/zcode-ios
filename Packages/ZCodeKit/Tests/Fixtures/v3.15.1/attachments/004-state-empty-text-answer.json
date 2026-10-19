@@ -1,0 +1,7 @@
+{
+  "kind" : "state",
+  "name" : "empty-text-answer",
+  "seq" : 4,
+  "step" : 2,
+  "value" : "L'image que vous avez envoyée est un rectangle rouge uni, sans aucun contenu discernable : pas de texte, pas d'élément d'interface, pas de code ni de message d'erreur — juste une couleur rouge uniforme qui remplit tout le cadre.\n\nIl s'agit probablement d'un placeholder, d'une image mal exportée ou d'une capture ratée. Que souhaitez-vous faire ? Par exemple :\n\n- renvoyer la capture d'écran ou l'image concernée,\n- me décrire ce que l'image était censée montrer pour que je vous aide,\n- ou, si vous travailliez sur le projet ZCode iOS, me préciser l'écran ou le bug concerné."
+}

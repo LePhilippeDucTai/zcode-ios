@@ -1,0 +1,11 @@
+{
+  "kind" : "state",
+  "name" : "resolve.extraDeny.ack",
+  "seq" : 23,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f0-57e8-7fe7-a653-b39f9ca52a56",
+    "revisionAtDecision" : 6,
+    "status" : "accepted"
+  }
+}

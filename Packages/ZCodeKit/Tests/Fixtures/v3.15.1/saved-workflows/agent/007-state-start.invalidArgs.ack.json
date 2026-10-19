@@ -1,0 +1,13 @@
+{
+  "kind" : "state",
+  "name" : "start.invalidArgs.ack",
+  "seq" : 7,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f0-35e5-7c01-bc9e-e263c0ed2f4d",
+    "message" : "The arguments for saved workflow 'ios-probe' are not valid:\n- argument 'count': expected a finite number, got a string (value)",
+    "reasonCode" : "fault.command.savedWorkflowStartRejected.invalid_args",
+    "revisionAtDecision" : 0,
+    "status" : "failed"
+  }
+}

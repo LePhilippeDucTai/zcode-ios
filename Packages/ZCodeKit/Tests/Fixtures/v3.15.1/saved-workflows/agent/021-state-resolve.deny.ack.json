@@ -1,0 +1,11 @@
+{
+  "kind" : "state",
+  "name" : "resolve.deny.ack",
+  "seq" : 21,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f0-57d8-72ac-a988-8c8a686348f4",
+    "revisionAtDecision" : 5,
+    "status" : "accepted"
+  }
+}

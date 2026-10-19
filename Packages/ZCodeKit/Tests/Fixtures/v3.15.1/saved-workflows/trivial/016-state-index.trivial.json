@@ -1,0 +1,32 @@
+{
+  "kind" : "state",
+  "name" : "index.trivial",
+  "seq" : 16,
+  "step" : 0,
+  "value" : {
+    "createdAt" : 1792376011760,
+    "hasBackgroundWork" : false,
+    "lastActivityAt" : 1792376012639,
+    "phase" : "completedInterrupted",
+    "sessionEnded" : true,
+    "sessionId" : "sess_54ad0edd-d6db-420a-9aab-f708e44a7cdc",
+    "title" : "ios-probe",
+    "titleSource" : "generated",
+    "workflowActivity" : {
+      "runs" : [
+        {
+          "agentsWorking" : 0,
+          "name" : "ios-probe",
+          "phases" : [
+
+          ],
+          "runId" : "dwfrun-6798aab8-9da7-46ee-ae57-cc9e3f1a57de",
+          "startedAt" : 1792376011949,
+          "status" : "completed",
+          "toolCallId" : "launch-954d4f37-242d-44db-8ff8-aad77e966cb6"
+        }
+      ]
+    },
+    "workspaceId" : "/Users/me/claude/.zcode-check/workflows"
+  }
+}

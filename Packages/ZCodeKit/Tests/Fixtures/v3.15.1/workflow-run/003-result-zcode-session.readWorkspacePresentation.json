@@ -1,0 +1,51 @@
+{
+  "kind" : "result",
+  "name" : "zcode-session.readWorkspacePresentation",
+  "seq" : 3,
+  "step" : 0,
+  "value" : {
+    "mode" : "build",
+    "slashCommands" : [
+      {
+        "description" : "Show or set the current session goal.",
+        "inputHint" : "/goal [pause|resume|clear|replace <objective>|<objective>]",
+        "name" : "goal",
+        "source" : "builtin"
+      },
+      {
+        "description" : "Design and launch a dynamic workflow for a task.",
+        "inputHint" : "/workflow [what the workflow should accomplish]",
+        "name" : "workflow",
+        "source" : "builtin"
+      },
+      {
+        "description" : "Compact the current conversation with optional instructions.",
+        "inputHint" : "/compact [instructions]",
+        "name" : "compact",
+        "source" : "builtin"
+      },
+      {
+        "description" : "Create or update workspace AGENTS.md instructions.",
+        "inputHint" : "/init [notes]",
+        "name" : "init",
+        "source" : "builtin"
+      },
+      {
+        "description" : "Switch to Plan mode and optionally send a task.",
+        "inputHint" : "/plan [task]",
+        "name" : "plan",
+        "source" : "builtin"
+      },
+      {
+        "description" : "Start the iOS simulator development loop.",
+        "inputHint" : "/ios-dev [goal or issue description]",
+        "name" : "ios-dev",
+        "source" : "custom"
+      }
+    ],
+    "workspace" : {
+      "workspaceKey" : "/Users/me/claude/.zcode-check/composer",
+      "workspacePath" : "/Users/me/claude/.zcode-check/composer"
+    }
+  }
+}

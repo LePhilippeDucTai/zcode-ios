@@ -1,0 +1,17 @@
+{
+  "steps": [
+    { "call": "usage-stats", "method": "getEntitlementSnapshot", "args": [{
+        "includeSubscription": true,
+        "preferredProviderId": "account:zai-individual-coding-plan",
+        "accountAccess": { "type": "zhipu-account", "accountType": "zai", "mode": "individual-coding-plan", "entitled": true },
+        "requirePreferredProvider": true,
+        "allowEnvApiKey": false
+    }] },
+    { "call": "usage-stats", "method": "getEntitlementSnapshot", "args": [{
+        "includeSubscription": true,
+        "preferredProviderId": "account:zai-individual-coding-plan",
+        "requirePreferredProvider": true,
+        "allowEnvApiKey": false
+    }] }
+  ]
+}

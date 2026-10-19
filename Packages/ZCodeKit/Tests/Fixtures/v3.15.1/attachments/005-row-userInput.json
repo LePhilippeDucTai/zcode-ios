@@ -1,0 +1,34 @@
+{
+  "kind" : "row",
+  "name" : "userInput",
+  "seq" : 5,
+  "step" : 3,
+  "value" : {
+    "actions" : {
+      "canEdit" : true,
+      "editDisposition" : "rewind"
+    },
+    "attachments" : [
+      {
+        "bytes" : 137,
+        "fileName" : "carre-rouge.png",
+        "mime" : "image/png",
+        "ref" : "zcode-artifact://sess_b32d58b4-04a7-49d2-9dac-10e04738890a/tool-result-1f83eb91-3f92-4bd9-beef-ec20425b673c"
+      }
+    ],
+    "clientId" : "client-zcode-probe-attach",
+    "createdAt" : 1792244638698,
+    "createdAtSeq" : 959,
+    "entityId" : "msg_mvcg6lt6_2d91b939-42db-45f5-bd27-308f367ca43d",
+    "inputOrigin" : "mobile",
+    "kind" : "userInput",
+    "origin" : "realUser",
+    "productTurnId" : "msg_mvcg6lt6_2d91b939-42db-45f5-bd27-308f367ca43d",
+    "rootSourceCommandId" : "01a14a1a-e3e5-7a9c-99f8-d5f7d5c7e175",
+    "rowId" : 10,
+    "sourceCommandId" : "01a14a1a-e3e5-7a9c-99f8-d5f7d5c7e175",
+    "text" : "De quelle couleur est l'image jointe ? Réponds en un seul mot, en français.",
+    "turnId" : "msg_mvcg6lt6_2d91b939-42db-45f5-bd27-308f367ca43d",
+    "visibility" : "visible"
+  }
+}

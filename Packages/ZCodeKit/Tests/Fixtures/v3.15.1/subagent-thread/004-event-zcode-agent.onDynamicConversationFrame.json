@@ -1,0 +1,312 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 4,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "initial",
+    "frame" : {
+      "fromSeq" : 0,
+      "payload" : {
+        "kind" : "snapshot",
+        "snapshot" : {
+          "availability" : {
+            "compact" : {
+              "allowed" : true
+            },
+            "fork" : {
+              "allowed" : true
+            },
+            "pauseGoal" : {
+              "allowed" : false,
+              "reasonCode" : "noGoalToPause"
+            },
+            "queueEdit" : {
+              "allowed" : true
+            },
+            "resumeGoal" : {
+              "allowed" : false,
+              "reasonCode" : "noGoalToResume"
+            },
+            "sendQueuedNow" : {
+              "allowed" : false,
+              "reasonCode" : "sendQueuedNowRequiresRunning"
+            },
+            "setFollowupMode" : {
+              "allowed" : true
+            },
+            "switchModelConfig" : {
+              "allowed" : true
+            }
+          },
+          "backgroundWorks" : [
+
+          ],
+          "config" : {
+            "followupMode" : "queue",
+            "mode" : "build",
+            "model" : "GLM-5.3",
+            "modelSelection" : {
+              "modelId" : "GLM-5.3",
+              "options" : {
+                "reasoningLevel" : "max"
+              },
+              "providerId" : "account:zai-individual-coding-plan"
+            },
+            "planEnabled" : false,
+            "provider" : "account:zai-individual-coding-plan",
+            "thought" : "max",
+            "thoughtLevels" : [
+              "low",
+              "high",
+              "max"
+            ]
+          },
+          "control" : {
+            "activeWorks" : [
+
+            ],
+            "apiRetry" : null,
+            "canStop" : false,
+            "lastError" : null,
+            "phase" : "completedSuccess",
+            "sessionEnded" : true,
+            "stopState" : "idle",
+            "stopTargetKind" : "unknown"
+          },
+          "goal" : null,
+          "inputRouting" : {
+            "mode" : "startNow"
+          },
+          "logEpoch" : "mveafwar-s5l32jfw",
+          "meta" : {
+            "title" : "Lister fichiers zcode_ios/host via sous-agent Explore",
+            "titleSource" : "generated"
+          },
+          "modelTransition" : null,
+          "pendingCommands" : [
+
+          ],
+          "pendingInteractions" : [
+
+          ],
+          "plan" : null,
+          "protocolVersion" : 1,
+          "queue" : {
+            "autoDrain" : true,
+            "items" : [
+
+            ]
+          },
+          "revision" : 19,
+          "rows" : {
+            "firstRowId" : 1,
+            "totalCount" : 7,
+            "window" : [
+              {
+                "activeMs" : 28971,
+                "createdAt" : 1792355928076,
+                "createdAtSeq" : 2,
+                "endedAt" : 1792355956968,
+                "entityId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "executionKind" : "agent",
+                "historyRoundCount" : 2,
+                "kind" : "turnHeader",
+                "modelDurationMs" : 0,
+                "origin" : "userInput",
+                "otherDurationMs" : 13559,
+                "outputTokens" : 194,
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rowId" : 1,
+                "sourceCommandId" : "01a150bc-fec3-7ffa-8d29-06b43a8dee56",
+                "startedAt" : 1792355928076,
+                "state" : "completedSuccess",
+                "toolDurationMs" : 15412,
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canEdit" : true,
+                  "editDisposition" : "rewind"
+                },
+                "clientId" : "client-zcode-probe",
+                "createdAt" : 1792355928076,
+                "createdAtSeq" : 2,
+                "entityId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "inputOrigin" : "mobile",
+                "kind" : "userInput",
+                "origin" : "realUser",
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rootSourceCommandId" : "01a150bc-fec3-7ffa-8d29-06b43a8dee56",
+                "rowId" : 2,
+                "sourceCommandId" : "01a150bc-fec3-7ffa-8d29-06b43a8dee56",
+                "text" : "Utilise le sous-agent Explore pour lister les fichiers du dossier zcode_ios/host, puis réponds seulement FINI.",
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveafx9h_5585d5db-4ef6-4ea2-83c6-d4fdd66b89ef",
+                "createdAt" : 1792355933913,
+                "createdAtSeq" : 7,
+                "entityId" : "msg_mveafx9h_5585d5db-4ef6-4ea2-83c6-d4fdd66b89ef",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rowId" : 3,
+                "state" : "complete",
+                "text" : "The user asks in French to use the Explore sub-agent to list the files in the folder zcode_ios/host, then respond only FINI (done).\n\nThe project is at ~/claude/zcode_ios according to memory, so the folder would be /Users/me/claude/zcode_ios/host.\n\nI'll launch the Explore agent to list files there, then reply \"FINI\" only. The user explicitly said \"réponds seulement FINI\" — respond only FINI.",
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveafx9h_5585d5db-4ef6-4ea2-83c6-d4fdd66b89ef",
+                "createdAt" : 1792355933956,
+                "createdAtSeq" : 112,
+                "endedAt" : 1792355950173,
+                "entityId" : "call_7f5a99b68d6e41e88607b73e",
+                "input" : {
+                  "description" : "Lister fichiers zcode_ios/host",
+                  "prompt" : "Liste les fichiers du dossier /Users/me/claude/zcode_ios/host (y compris les sous-dossiers, avec leurs chemins relatifs). Si le dossier n'existe pas, signale-le. Réponds avec la liste des fichiers uniquement.",
+                  "subagent_type" : "Explore"
+                },
+                "inputText" : "{\"description\":\"Lister fichiers zcode_ios/host\",\"prompt\":\"Liste les fichiers du dossier /Users/me/claude/zcode_ios/host (y compris les sous-dossiers, avec leurs chemins relatifs). Si le dossier n'existe pas, signale-le. Réponds avec la liste des fichiers uniquement.\",\"subagent_type\":\"Explore\"}",
+                "kind" : "toolCall",
+                "output" : {
+                  "text" : "Le dossier existe. Voici la liste des fichiers (chemins relatifs à `/Users/me/claude/zcode_ios/host`) :\n\n- `install-zcode.sh`\n- `installed-version.txt`\n- `run-zcode-web.sh`\n- `stage-zcode.mjs`\n- `update-zcode.sh`\n- `linux/README.md`\n- `linux/bootstrap-steamos.sh`\n- `linux/install-service.sh`\n- `linux/zcode-web.service`\n- `macos/local.zcode-web.plist`\n- `macos/install-service.sh`\nagentId: agent_7dbb580c-8ca8-40e3-9710-b2029666cd24 (use SendMessage with to: 'agent_7dbb580c-8ca8-40e3-9710-b2029666cd24' to continue this agent)\n<usage>subagent_tokens: 21590\ntool_uses: 2\nduration_ms: 15375</usage>"
+                },
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rowId" : 4,
+                "startedAt" : 1792355934762,
+                "status" : "success",
+                "toolCallId" : "call_7f5a99b68d6e41e88607b73e",
+                "toolName" : "Agent",
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              },
+              {
+                "childSessionId" : "sess_subagent_agent_7dbb580c-8ca8-40e3-9710-b2029666cd24",
+                "createdAt" : 1792355934802,
+                "createdAtSeq" : 124,
+                "endedAt" : 1792355950172,
+                "entityId" : "agent_7dbb580c-8ca8-40e3-9710-b2029666cd24",
+                "kind" : "subagent",
+                "parentToolCallId" : "call_7f5a99b68d6e41e88607b73e",
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rowId" : 5,
+                "startedAt" : 1792355934802,
+                "status" : "success",
+                "subagentType" : "Explore",
+                "summaryText" : "Lister fichiers zcode_ios/host",
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveageaq_1dcd33dc-ed78-404c-85f2-0457e6e788db",
+                "createdAt" : 1792355956942,
+                "createdAtSeq" : 139,
+                "entityId" : "msg_mveageaq_1dcd33dc-ed78-404c-85f2-0457e6e788db",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rowId" : 6,
+                "state" : "complete",
+                "text" : "",
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canFork" : true,
+                  "canRetry" : true
+                },
+                "assistantResponseId" : "msg_mveageaq_1dcd33dc-ed78-404c-85f2-0457e6e788db",
+                "createdAt" : 1792355956944,
+                "createdAtSeq" : 142,
+                "entityId" : "msg_mveageaq_1dcd33dc-ed78-404c-85f2-0457e6e788db",
+                "kind" : "assistantText",
+                "productTurnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "rowId" : 7,
+                "state" : "complete",
+                "text" : "FINI",
+                "turnId" : "msg_mveafx8s_0155759e-9f0e-426b-9b07-9d617d61407f",
+                "visibility" : "visible"
+              }
+            ]
+          },
+          "seq" : 154,
+          "sessionId" : "sess_67ee2ed1-3a21-49dc-9f56-e60b4b12cd8f",
+          "subagents" : {
+            "childSessionIds" : [
+              "sess_subagent_agent_7dbb580c-8ca8-40e3-9710-b2029666cd24"
+            ],
+            "endedTotal" : 1,
+            "revision" : 2,
+            "running" : [
+
+            ]
+          },
+          "usage" : {
+            "contextWindow" : {
+              "autoCompactThresholdTokens" : null,
+              "breakdown" : [
+                {
+                  "chars" : 8789,
+                  "source" : "system_prompt"
+                },
+                {
+                  "chars" : 791,
+                  "source" : "meta_user_context"
+                },
+                {
+                  "chars" : 13407,
+                  "source" : "skills"
+                },
+                {
+                  "chars" : 155239,
+                  "source" : "system_tool_schemas"
+                },
+                {
+                  "chars" : 34642,
+                  "source" : "mcp_tool_schemas"
+                },
+                {
+                  "chars" : 1822,
+                  "source" : "messages"
+                }
+              ],
+              "cache" : {
+                "cacheReadTokens" : 28864,
+                "cacheWriteTokens" : 0,
+                "hitRate" : 0.8084303024062061,
+                "hitRateRequestCount" : 2,
+                "inputTokens" : 29339,
+                "latestHitRate" : 0.9838099458059238,
+                "totalCacheReadTokens" : 47104,
+                "totalCacheWriteTokens" : 0,
+                "totalInputTokens" : 58266
+              },
+              "maxTokens" : 1000000,
+              "usedTokens" : 29343
+            },
+            "cumulative" : {
+              "cacheReadTokens" : 47104,
+              "cacheWriteTokens" : 0,
+              "inputTokens" : 58266,
+              "outputTokens" : 194
+            }
+          },
+          "workspaceHookAdmission" : null
+        }
+      },
+      "sentAt" : 1792355993377,
+      "subscriptionId" : "sub-mveafwar-s5l32jfw-3",
+      "toSeq" : 154,
+      "topic" : "conversation/sess_67ee2ed1-3a21-49dc-9f56-e60b4b12cd8f"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mveafwar-s5l32jfw-3-lf-12",
+    "logicalFrameOrdinal" : 1,
+    "subscriptionId" : "sub-mveafwar-s5l32jfw-3",
+    "topic" : "conversation/sess_67ee2ed1-3a21-49dc-9f56-e60b4b12cd8f",
+    "wireVersion" : 3
+  }
+}

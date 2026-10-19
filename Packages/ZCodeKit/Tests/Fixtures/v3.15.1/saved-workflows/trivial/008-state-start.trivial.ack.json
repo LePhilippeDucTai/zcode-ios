@@ -1,0 +1,16 @@
+{
+  "kind" : "state",
+  "name" : "start.trivial.ack",
+  "seq" : 8,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151ef-7c18-7234-934e-4e44ca7265d9",
+    "result" : {
+      "runId" : "dwfrun-6798aab8-9da7-46ee-ae57-cc9e3f1a57de",
+      "toolCallId" : "launch-954d4f37-242d-44db-8ff8-aad77e966cb6",
+      "type" : "startSavedWorkflow"
+    },
+    "revisionAtDecision" : 0,
+    "status" : "accepted"
+  }
+}

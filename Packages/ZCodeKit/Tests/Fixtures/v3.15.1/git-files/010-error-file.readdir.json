@@ -1,0 +1,11 @@
+{
+  "kind": "error",
+  "name": "file.readdir",
+  "seq": 10,
+  "step": 9,
+  "value": {
+    "code": "ENOENT",
+    "message": "ENOENT: no such file or directory, scandir '/private/tmp/zcode-fixture-repo/absent'",
+    "name": "Error"
+  }
+}

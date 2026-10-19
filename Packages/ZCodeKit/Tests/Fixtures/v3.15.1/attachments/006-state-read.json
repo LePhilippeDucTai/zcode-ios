@@ -1,0 +1,9 @@
+{
+  "kind" : "state",
+  "name" : "read",
+  "seq" : 6,
+  "step" : 4,
+  "value" : {
+    "bytes" : 137
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kind" : "state",
+  "name" : "cancel.finished.ack",
+  "seq" : 15,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151ef-7f4a-798a-862b-7ca886ca3bce",
+    "message" : "background work dwfrun-6798aab8-9da7-46ee-ae57-cc9e3f1a57de was not cancelled: background_task_not_running",
+    "reasonCode" : "fault.command.backgroundWorkCancelRejected.not_running",
+    "revisionAtDecision" : 7,
+    "status" : "failed"
+  }
+}

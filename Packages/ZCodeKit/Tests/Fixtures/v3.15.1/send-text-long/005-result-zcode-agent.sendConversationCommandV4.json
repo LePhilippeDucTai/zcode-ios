@@ -1,0 +1,17 @@
+{
+  "kind" : "result",
+  "name" : "zcode-agent.sendConversationCommandV4",
+  "seq" : 5,
+  "step" : 5,
+  "value" : {
+    "commandId" : "f9a5a507-6e4e-4e5f-9a6c-0532321fab10",
+    "memoryEnabled" : true,
+    "result" : {
+      "delivery" : "startNow",
+      "inputId" : "f9a5a507-6e4e-4e5f-9a6c-0532321fab10",
+      "type" : "inputAccepted"
+    },
+    "revisionAtDecision" : 24,
+    "status" : "accepted"
+  }
+}

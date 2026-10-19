@@ -1,0 +1,13 @@
+{
+  "kind" : "result",
+  "name" : "zcode-agent.subscribeSessionsIndexV4",
+  "seq" : 3,
+  "step" : 3,
+  "value" : {
+    "ack" : {
+      "logEpoch" : "mv6icva5-jgvj76zm",
+      "mode" : "snapshot",
+      "subscriptionId" : "six-mv6icva5-jgvj76zm-5"
+    }
+  }
+}

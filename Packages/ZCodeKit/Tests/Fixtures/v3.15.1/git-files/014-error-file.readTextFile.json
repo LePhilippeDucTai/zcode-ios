@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "file.readTextFile",
+  "seq": 14,
+  "step": 13,
+  "value": {
+    "message": "Path is not a file: /private/tmp/zcode-fixture-repo/src",
+    "name": "Error"
+  }
+}

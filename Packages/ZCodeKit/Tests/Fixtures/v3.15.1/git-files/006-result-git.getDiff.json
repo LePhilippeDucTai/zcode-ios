@@ -1,0 +1,14 @@
+{
+  "kind": "result",
+  "name": "git.getDiff",
+  "seq": 6,
+  "step": 5,
+  "value": {
+    "afterContent": null,
+    "availability": "patch",
+    "beforeContent": null,
+    "patch": "diff --git a/renamed.txt b/renamed.txt\nnew file mode 100644\nindex 0000000..de98044\n--- /dev/null\n+++ b/renamed.txt\n@@ -0,0 +1,3 @@\n+a\n+b\n+c\n",
+    "path": "/private/tmp/zcode-fixture-repo/renamed.txt",
+    "summary": null
+  }
+}

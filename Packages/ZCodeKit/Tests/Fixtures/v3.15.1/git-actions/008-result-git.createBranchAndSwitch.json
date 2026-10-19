@@ -1,0 +1,39 @@
+{
+  "kind": "result",
+  "name": "git.createBranchAndSwitch",
+  "seq": 8,
+  "step": 7,
+  "value": {
+    "action": "create-and-switch",
+    "branchName": "bad..name",
+    "created": false,
+    "didChange": false,
+    "issues": [
+      {
+        "code": "invalid-branch-name",
+        "detail": "fatal: 'bad..name' is not a valid branch name",
+        "message": "Branch name is invalid."
+      }
+    ],
+    "ok": false,
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-actions-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-actions-repo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-actions-repo"
+    }
+  }
+}

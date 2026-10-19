@@ -1,0 +1,1597 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.getPluginsOverview",
+  "seq" : 2,
+  "step" : 1,
+  "value" : {
+    "availablePlugins" : [
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "CloudBase development skills and MCP integration for building, deploying, and troubleshooting Web, WeChat Mini Program, database, cloud function, CloudRun, storage, and AI projects.",
+        "id" : "cloudbase-skills@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "TencentCloudBase",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "CloudBase development skills and MCP integration for building, deploying, and troubleshooting Web, WeChat Mini Program, database, cloud function, CloudRun, storage, and AI projects.",
+            "zh-CN" : "腾讯云 CloudBase 开发技能与 MCP 集成，覆盖 Web、微信小程序、数据库、云函数、云托管、云存储和 AI 项目的开发、部署与排障。"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/cloudbase-skills/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "cloudbase-skills",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Local-first security guardrails for ZCode with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
+        "id" : "mimosa@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Mimosa",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Local-first security guardrails for ZCode with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
+            "zh-CN" : "面向 ZCode 的本地优先代码安全防线，提供写入前 Hook、任务收尾复查、Git 门禁、命令、安全扫描 Skill，以及用于密封深扫的可选 MCP 服务。"
+          },
+          "displayName" : "Code Security Protection",
+          "displayNameI18n" : {
+            "en" : "Code Security Protection",
+            "zh-CN" : "代码安全防护"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/mimosa/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "mimosa",
+        "version" : "1.0.4"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "GitHub CLI workflows for commits, pull requests, issues, releases, Actions, repositories, Codespaces, and other GitHub resources.",
+        "id" : "github@zcode-plugins-official",
+        "installed" : true,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "GitHub CLI workflows for commits, pull requests, issues, releases, Actions, repositories, Codespaces, and other GitHub resources.",
+            "zh-CN" : "基于 GitHub CLI 的 GitHub 工作流，覆盖提交、Pull Request、Issue、Release、Actions、仓库、Codespaces 等资源。"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/github/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "github",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "自动化视频剪辑工具包: 标准云端语音转录与合成、完整视频抽帧理解、局部复看、时间线、预览渲染、QC 和 TTS。",
+        "id" : "video-agent-kit@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Automated video editing toolkit: standard cloud speech transcription and synthesis, full video frame extraction and understanding, local re-inspection, timeline, preview rendering, QC, and TTS.",
+            "zh-CN" : "自动化视频剪辑工具包: 标准云端语音转录与合成、完整视频抽帧理解、局部复看、时间线、预览渲染、QC 和 TTS。"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/video-agent/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "video-agent-kit",
+        "version" : "0.4.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "基于 ZCode 内置 Browser Use WebView 录制 WebM 并用 ffmpeg 转成 MP4/URL 复刻；无需 Playwright 或外部 Chromium",
+        "id" : "video2code@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Records WebM through ZCode's built-in Browser Use WebView and converts it to MP4 with ffmpeg for video/URL replication; no Playwright or external Chromium required.",
+            "zh-CN" : "基于 ZCode 内置 Browser Use WebView 录制 WebM 并用 ffmpeg 转成 MP4/URL 复刻；无需 Playwright 或外部 Chromium"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/video2code/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "video2code",
+        "version" : "0.6.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Accounting close and statutory reporting off the company's own ledger: month-end close checks, ledger reconciliation to transaction-level root cause, account mapping for consolidation, and statutory statements delivered as review-ready drafts",
+        "id" : "accounting-and-reporting@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Accounting close and statutory reporting off the company's own ledger: month-end close checks, ledger reconciliation to transaction-level root cause, account mapping for consolidation, and statutory statements delivered as review-ready drafts",
+            "zh-CN" : "【企业财务】核算与报告:月结关账检查与阻断项、总账与明细账勾稽及交易级差异归因、科目映射与重分类、内部管理报表编制、三表勾稽复核"
+          },
+          "displayName" : "核算与报告",
+          "displayNameI18n" : {
+            "en" : "Accounting & Reporting",
+            "zh-CN" : "核算与报告"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/accounting-reporting/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "accounting-and-reporting",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Fixed-income and credit research: bond profiles with valuation and duration/convexity/spread, issuer credit assessment, yield-curve and credit-spread analysis, and project-a watchlists for onshore bonds",
+        "id" : "assess-credit@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Fixed-income and credit research: bond profiles with valuation and duration/convexity/spread, issuer credit assessment, yield-curve and credit-spread analysis, and project-a watchlists for onshore bonds",
+            "zh-CN" : "【二级市场】固收研究:债券档案与估值、发行主体信用、收益率曲线与信用利差、信用风险跟踪"
+          },
+          "displayName" : "固收研究",
+          "displayNameI18n" : {
+            "en" : "Fixed Income & Credit",
+            "zh-CN" : "固收研究"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/fixed-income-research/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "assess-credit",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Corporate-banking client acquisition: prospect screening by region, industry chain, park and cluster, business-opportunity scanning, and full client portraits combining registry, relationships, opportunity signals and risk",
+        "id" : "find-clients@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Corporate-banking client acquisition: prospect screening by region, industry chain, park and cluster, business-opportunity scanning, and full client portraits combining registry, relationships, opportunity signals and risk",
+            "zh-CN" : "【一级市场与银行】对公营销:按区域/产业链/园区筛选目标客户、园区与集群扫描、商机线索、客户全景画像"
+          },
+          "displayName" : "对公获客",
+          "displayNameI18n" : {
+            "en" : "Corporate Client Acquisition",
+            "zh-CN" : "对公获客"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/corporate-client-acquisition/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "find-clients",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Transaction structuring and modeling: accretion/dilution analysis, sources and uses with pro-forma capital structure, precedent-transaction comps, and capital-raise dilution modeling for M&A, IPO, placements, and rights issues",
+        "id" : "model-deals@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Transaction structuring and modeling: accretion/dilution analysis, sources and uses with pro-forma capital structure, precedent-transaction comps, and capital-raise dilution modeling for M&A, IPO, placements, and rights issues",
+            "zh-CN" : "【一级市场与银行】交易测算:并购增厚/摊薄、资金来源与用途及形式资本结构、可比交易、募投与摊薄"
+          },
+          "displayName" : "交易测算",
+          "displayNameI18n" : {
+            "en" : "Deal Modeling",
+            "zh-CN" : "交易测算"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/trade-calculator/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "model-deals",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Fund and fund-manager research: multi-criteria fund screening, fund and manager profiles, holdings and style analysis, and shortlist comparisons for funds, ETFs, and LOFs",
+        "id" : "pick-funds@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Fund and fund-manager research: multi-criteria fund screening, fund and manager profiles, holdings and style analysis, and shortlist comparisons for funds, ETFs, and LOFs",
+            "zh-CN" : "【二级市场】基金选品:多条件筛选、基金与经理画像、持仓风格与重合度分析"
+          },
+          "displayName" : "基金研究",
+          "displayNameI18n" : {
+            "en" : "Fund Research",
+            "zh-CN" : "基金研究"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/fund-research/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "pick-funds",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Top-down macro and strategy work: macro dashboards across growth/inflation/liquidity/credit, index valuation percentiles and earnings attribution, cross-asset allocation views, and policy and industrial-plan tracking",
+        "id" : "read-macro@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Top-down macro and strategy work: macro dashboards across growth/inflation/liquidity/credit, index valuation percentiles and earnings attribution, cross-asset allocation views, and policy and industrial-plan tracking",
+            "zh-CN" : "【二级市场】自上而下:宏观仪表盘、指数估值分位与盈利归因、大类资产配置观点、政策与产业规划跟踪"
+          },
+          "displayName" : "宏观策略",
+          "displayNameI18n" : {
+            "en" : "Macro & Strategy",
+            "zh-CN" : "宏观策略"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/macro-strategy/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "read-macro",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Corporate finance and FP&A: management reporting off a closed ledger, rolling cash-flow forecasts, budget-versus-actual variance analysis, scenario and break-even analysis, and peer benchmarking against listed comparables",
+        "id" : "run-fpa@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Corporate finance and FP&A: management reporting off a closed ledger, rolling cash-flow forecasts, budget-versus-actual variance analysis, scenario and break-even analysis, and peer benchmarking against listed comparables",
+            "zh-CN" : "【企业财务】财务部与FP&A:管理报表、13周滚动现金流预测、预算差异分析、情景与盈亏平衡、投入决策测算、上市同业对标"
+          },
+          "displayName" : "经营分析",
+          "displayNameI18n" : {
+            "en" : "Corporate FP&A",
+            "zh-CN" : "经营分析"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/business-analysis/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "run-fpa",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Counterparty and company due diligence: structured DD reports, related-party and supply-chain mapping, and risk scans (litigation, dishonesty records, pledges, penalties) for Chinese enterprises",
+        "id" : "vet-companies@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Counterparty and company due diligence: structured DD reports, related-party and supply-chain mapping, and risk scans (litigation, dishonesty records, pledges, penalties) for Chinese enterprises",
+            "zh-CN" : "【一级市场与银行】企业排查:尽调报告、关联方与供应链图谱、失信涉诉质押风险快扫"
+          },
+          "displayName" : "企业尽调",
+          "displayNameI18n" : {
+            "en" : "Company Due Diligence",
+            "zh-CN" : "企业尽调"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/corporate-due-diligence/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "vet-companies",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Watchlist and portfolio monitoring: after-close recaps, position event alerts (announcements, pledges, lockup expiries), and intraday move attribution for A/H/US names",
+        "id" : "watch-positions@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "Watchlist and portfolio monitoring: after-close recaps, position event alerts (announcements, pledges, lockup expiries), and intraday move attribution for A/H/US names",
+            "zh-CN" : "【二级市场】持仓跟踪:自选股清单、带异动归因的盘后复盘、持仓事件分级提醒"
+          },
+          "displayName" : "持仓跟踪",
+          "displayNameI18n" : {
+            "en" : "Position Monitoring",
+            "zh-CN" : "持仓跟踪"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/portfolio-tracking/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "watch-positions",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "End-to-end investment research reports, sector analysis, earnings updates, and valuation models",
+        "id" : "write-research@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "End-to-end investment research reports, sector analysis, earnings updates, and valuation models",
+            "zh-CN" : "【二级市场】研究产出:深度研报、行业分析、财报点评、DCF/LBO/三表估值模型"
+          },
+          "displayName" : "权益研究",
+          "displayNameI18n" : {
+            "en" : "Equity Research",
+            "zh-CN" : "权益研究"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/equity-research/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "write-research",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "GitLab CLI workflows based on GitLab's official Agent Skills for merge requests, issues, CI/CD, repositories, releases, and API operations.",
+        "id" : "gitlab@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "GitLab CLI workflows based on GitLab's official Agent Skills for merge requests, issues, CI/CD, repositories, releases, and API operations.",
+            "zh-CN" : "基于官方 GitLab CLI 的 Merge Request、Issue、CI/CD、仓库、Release 与 API 工作流。"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/gitlab/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "gitlab",
+        "version" : "0.1.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Alibaba Cloud CLI workflows for credential setup, profile checks, and safe cloud resource operations.",
+        "id" : "alibaba-cloud-cli@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Alibaba Cloud CLI workflows for credential setup, profile checks, and safe cloud resource operations.",
+            "zh-CN" : "阿里云 CLI 工作流：配置凭证与 profile，并安全执行云资源查询和操作。"
+          },
+          "displayName" : "Alibaba Cloud CLI",
+          "displayNameI18n" : {
+            "en" : "Alibaba Cloud CLI",
+            "zh-CN" : "阿里云 CLI"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/alibaba-cloud-cli/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "alibaba-cloud-cli",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Lark CLI workflows for docs, sheets, Base, calendar, messaging, and other SaaS resources with guided setup and OAuth login.",
+        "id" : "lark-cli@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Lark CLI workflows for docs, sheets, Base, calendar, messaging, and other SaaS resources with guided setup and OAuth login.",
+            "zh-CN" : "Lark CLI 工作流：覆盖文档、表格、多维表格、日历、消息等 SaaS 资源，并引导应用配置与 OAuth 登录。"
+          },
+          "displayName" : "Lark CLI",
+          "displayNameI18n" : {
+            "en" : "Lark CLI",
+            "zh-CN" : "飞书 CLI"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/lark-cli/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "lark-cli",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Tencent Meeting CLI workflows with OAuth2 setup, meeting management, recordings, and attendee reports.",
+        "id" : "tencent-meeting-cli@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Tencent Meeting CLI workflows with OAuth2 setup, meeting management, recordings, and attendee reports.",
+            "zh-CN" : "腾讯会议 CLI 工作流：OAuth2 授权、会议管理、录制管理和参会报告查询。"
+          },
+          "displayName" : "Tencent Meeting CLI",
+          "displayNameI18n" : {
+            "en" : "Tencent Meeting CLI",
+            "zh-CN" : "腾讯会议 CLI"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/tencent-meeting-cli/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "tencent-meeting-cli",
+        "version" : "0.1.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "DingTalk Workspace CLI workflows with OAuth/device authorization, profile checks, and optional upstream Skills.",
+        "id" : "dingtalk-cli@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "DingTalk Workspace CLI workflows with OAuth/device authorization, profile checks, and optional upstream Skills.",
+            "zh-CN" : "钉钉 Workspace CLI 工作流：OAuth/设备授权、验证组织账号，并按需安装上游 Skills。"
+          },
+          "displayName" : "DingTalk CLI",
+          "displayNameI18n" : {
+            "en" : "DingTalk CLI",
+            "zh-CN" : "钉钉 CLI"
+          },
+          "homepage" : "https://github.com/DingTalk-Real-AI/dingtalk-workspace-cli",
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/dingtalk-cli/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "dingtalk-cli",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "WeCom CLI workflows for messages, docs, sheets, mail, calendar, meetings, contacts, and todos with QR authentication.",
+        "id" : "wecom-cli@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "WeCom CLI workflows for messages, docs, sheets, mail, calendar, meetings, contacts, and todos with QR authentication.",
+            "zh-CN" : "企业微信 CLI 工作流：覆盖消息、文档、表格、邮件、日历、会议、通讯录和待办，并支持扫码授权与状态检查。"
+          },
+          "displayName" : "WeCom CLI",
+          "displayNameI18n" : {
+            "en" : "WeCom CLI",
+            "zh-CN" : "企业微信 CLI"
+          },
+          "homepage" : "https://github.com/WecomTeam/wecom-cli",
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/wecom-cli/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "wecom-cli",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data.",
+        "id" : "hexin@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data.",
+            "zh-CN" : "同花顺股票、海外股票、指数、基金与债券数据 MCP 服务。"
+          },
+          "displayName" : "同花顺",
+          "displayNameI18n" : {
+            "en" : "RoyalFlush iFinD",
+            "zh-CN" : "同花顺"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/hexin/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "hexin",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "MCP services for Wind stock, global stock, index, fund, bond, economic, and document data.",
+        "id" : "wind@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "MCP services for Wind stock, global stock, index, fund, bond, economic, and document data.",
+            "zh-CN" : "万得股票、海外股票、指数、基金、债券、宏观经济与公告研报数据 MCP 服务。"
+          },
+          "displayName" : "Wind 万得",
+          "displayNameI18n" : {
+            "en" : "Wind",
+            "zh-CN" : "Wind 万得"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/wind/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "wind",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "MCP service for Tianyancha company information queries.",
+        "id" : "tianyancha@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "MCP service for Tianyancha company information queries.",
+            "zh-CN" : "天眼查企业信息查询 MCP 服务。"
+          },
+          "displayName" : "天眼查",
+          "displayNameI18n" : {
+            "en" : "Tianyancha",
+            "zh-CN" : "天眼查"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/tianyancha/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "tianyancha",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "MCP services for SEC EDGAR filing search and financial web and news search.",
+        "id" : "finance-search@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "finance",
+          "descriptionI18n" : {
+            "en" : "MCP services for SEC EDGAR filing search and financial web and news search.",
+            "zh-CN" : "SEC EDGAR 文件检索与财经网页、新闻搜索 MCP 服务。"
+          },
+          "displayName" : "金融聚合搜索",
+          "displayNameI18n" : {
+            "en" : "Financial Aggregated Search",
+            "zh-CN" : "金融聚合搜索"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/finance-search/icon.png",
+          "requiresPaidPlan" : true
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "finance-search",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Obsidian authoring skills from kepano/obsidian-skills: Obsidian Flavored Markdown notes, Bases database views, JSON Canvas boards, vault automation via Obsidian CLI, clean web extraction with Defuddle, and Knap template rendering — plus visualization skills from axtonliu/axton-obsidian-visual-skills: Mermaid and Excalidraw diagram generation and text-to-canvas layout. A setup skill verifies and installs the Obsidian CLI, defuddle, and knap.",
+        "id" : "obsidian@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Obsidian authoring skills from kepano/obsidian-skills: Obsidian Flavored Markdown notes, Bases database views, JSON Canvas boards, vault automation via Obsidian CLI, clean web extraction with Defuddle, and Knap template rendering — plus visualization skills from axtonliu/axton-obsidian-visual-skills: Mermaid and Excalidraw diagram generation and text-to-canvas layout. A setup skill verifies and installs the Obsidian CLI, defuddle, and knap.",
+            "zh-CN" : "来自 kepano/obsidian-skills 的 Obsidian 创作技能：Obsidian 风格 Markdown 笔记、Bases 数据库视图、JSON Canvas 白板、Obsidian CLI 库操作、Defuddle 网页正文提取、Knap 模板批量生成笔记；并集成 axtonliu/axton-obsidian-visual-skills 的可视化技能：Mermaid/Excalidraw 图表生成与文本转画布布局。附 setup 技能，检测并安装 Obsidian CLI、defuddle 与 knap。"
+          },
+          "displayName" : "Obsidian",
+          "displayNameI18n" : {
+            "en" : "Obsidian",
+            "zh-CN" : "Obsidian"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/obsidian/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "obsidian",
+        "version" : "0.1.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Generate 3D models from text or reference images with Hyper3D Rodin Gen-2.5, split completed models with BANG, and retrieve results.",
+        "id" : "hyper3d-rodin@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Deemos",
+          "authorUrl" : "https://hyper3d.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Generate 3D models from text or reference images with Hyper3D Rodin Gen-2.5, split completed models with BANG, and retrieve results.",
+            "zh-CN" : "通过文字或参考图片生成 Hyper3D Rodin Gen-2.5 三维模型，使用 BANG 拆分已完成模型，并获取生成结果。"
+          },
+          "displayName" : "Hyper3D Rodin",
+          "displayNameI18n" : {
+            "en" : "Hyper3D Rodin",
+            "zh-CN" : "Hyper3D Rodin"
+          },
+          "homepage" : "https://hyper3d.ai",
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/hyper3d-rodin/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "hyper3d-rodin",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Develop MCP Apps for ZCode with official SDKs and a small host-extension reference.",
+        "id" : "zcode-mcp-app-dev@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "ZCode",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Develop MCP Apps for ZCode with official SDKs and a small host-extension reference.",
+            "zh-CN" : "使用官方 SDK 开发 ZCode MCP App，附宿主扩展约定与独立构建指引。"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zcode-mcp-app-dev/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "zcode-mcp-app-dev",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "在 ZCode 对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。",
+        "id" : "blender@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "ZCode",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Edit Blender scenes with an interactive 3D panel and MCP tools.",
+            "zh-CN" : "在 ZCode 对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。"
+          },
+          "displayName" : "Blender",
+          "displayNameI18n" : {
+            "en" : "Blender",
+            "zh-CN" : "Blender"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/blender/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "blender",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "让 Agent 生成图形，在对话侧栏用 Excalidraw 编辑、引用选区、继续修改并导出。",
+        "id" : "excalidraw@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Create and edit diagrams with Excalidraw and MCP tools.",
+            "zh-CN" : "让 Agent 生成图形，在对话侧栏用 Excalidraw 编辑、引用选区、继续修改并导出。"
+          },
+          "displayName" : "Excalidraw",
+          "displayNameI18n" : {
+            "en" : "Excalidraw",
+            "zh-CN" : "Excalidraw"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/excalidraw/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "excalidraw",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "在对话侧栏用 OpenPencil 编辑工作区里的 Figma .fig 设计稿，Agent 通过设计工具协同修改、引用选区并生成代码。",
+        "id" : "openpencil@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Edit design files with OpenPencil and MCP tools.",
+            "zh-CN" : "在对话侧栏用 OpenPencil 编辑工作区里的 Figma .fig 设计稿，Agent 通过设计工具协同修改、引用选区并生成代码。"
+          },
+          "displayName" : "OpenPencil",
+          "displayNameI18n" : {
+            "en" : "OpenPencil",
+            "zh-CN" : "OpenPencil"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/openpencil/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "openpencil",
+        "version" : "0.3.2"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "PhotoCraft image editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "photocraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "PhotoCraft image editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 PhotoCraft 进行图片编辑，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "PhotoCraft",
+          "displayNameI18n" : {
+            "en" : "PhotoCraft",
+            "zh-CN" : "PhotoCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/photocraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "photocraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "VectorCraft vector illustration in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "vectorcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "VectorCraft vector illustration in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 VectorCraft 进行矢量绘图，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "VectorCraft",
+          "displayNameI18n" : {
+            "en" : "VectorCraft",
+            "zh-CN" : "VectorCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/vectorcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "vectorcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "PdfCraft PDF editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "pdfcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "PdfCraft PDF editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 PdfCraft 进行PDF 编辑，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "PdfCraft",
+          "displayNameI18n" : {
+            "en" : "PdfCraft",
+            "zh-CN" : "PdfCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/pdfcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "pdfcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "DesignCraft page layout in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "designcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "DesignCraft page layout in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 DesignCraft 进行页面排版，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "DesignCraft",
+          "displayNameI18n" : {
+            "en" : "DesignCraft",
+            "zh-CN" : "DesignCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/designcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "designcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "WordCraft word processing in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "wordcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "WordCraft word processing in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 WordCraft 进行文字处理，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "WordCraft",
+          "displayNameI18n" : {
+            "en" : "WordCraft",
+            "zh-CN" : "WordCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/wordcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "wordcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "GridCraft spreadsheets in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "gridcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "GridCraft spreadsheets in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 GridCraft 进行电子表格，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "GridCraft",
+          "displayNameI18n" : {
+            "en" : "GridCraft",
+            "zh-CN" : "GridCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/gridcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "gridcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "DeckCraft presentations in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "deckcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "DeckCraft presentations in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 DeckCraft 进行演示文稿，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "DeckCraft",
+          "displayNameI18n" : {
+            "en" : "DeckCraft",
+            "zh-CN" : "DeckCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/deckcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "deckcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "CADCraft CAD drafting in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "cadcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "CADCraft CAD drafting in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 CADCraft 进行CAD 绘图，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "CADCraft",
+          "displayNameI18n" : {
+            "en" : "CADCraft",
+            "zh-CN" : "CADCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/cadcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "cadcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "SoundCraft audio editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+        "id" : "soundcraft@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "zcoder",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "SoundCraft audio editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+            "zh-CN" : "在 ZCode 面板中使用 SoundCraft 进行音频编辑，支持打开工作区文件和通过宿主保存导出。"
+          },
+          "displayName" : "SoundCraft",
+          "displayNameI18n" : {
+            "en" : "SoundCraft",
+            "zh-CN" : "SoundCraft"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/soundcraft/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "soundcraft",
+        "version" : "0.2.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Generate textured, rig-ready 3D models from a text prompt or a reference image with Tripo, and export GLB/FBX/OBJ/STL/USDZ/3MF straight into your project. Connect your China-mainland Tripo account once in the browser (OAuth), no API key pasting.",
+        "id" : "tripo-3d@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "VAST",
+          "authorUrl" : "https://www.tripo3d.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Generate textured, rig-ready 3D models from a text prompt or a reference image with Tripo, and export GLB/FBX/OBJ/STL/USDZ/3MF straight into your project. Connect your China-mainland Tripo account once in the browser (OAuth), no API key pasting.",
+            "zh-CN" : "用 Tripo 从一句话或一张图生成带贴图、可绑骨的 3D 模型，支持动画、减面与 GLB/FBX/OBJ/STL/USDZ/3MF 导出，文件直接落到项目里。浏览器里授权一次国内站 Tripo 账号即可使用，无需粘贴 API Key。"
+          },
+          "displayName" : "Tripo 3D",
+          "displayNameI18n" : {
+            "en" : "Tripo 3D",
+            "zh-CN" : "Tripo 3D"
+          },
+          "examplePrompts" : [
+            "Generate a low-poly treasure chest and export it as FBX for Unity",
+            "Turn this concept image into a textured 3D model and export it as GLB",
+            "Make a 3D-printable knight figurine and export STL"
+          ],
+          "examplePromptsI18n" : {
+            "zh-CN" : [
+              "生成一个低多边形的宝箱 3D 模型，导出 FBX 给 Unity 用",
+              "把这张概念图变成带贴图的 3D 模型，导出 GLB",
+              "生成一个可 3D 打印的骑士小雕像，导出 STL 文件"
+            ]
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/tripo-3d/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "tripo-3d",
+        "version" : "0.1.3"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Read-only session usage, model input composition, request differences and compaction events. After installing, open the Context panel from the session sidebar (top-right panel switcher); also turn on full Model I/O retention in Settings → General — the default recording drops older requests and cannot recover them later.",
+        "id" : "zcode-context@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Kevinzzz6",
+          "authorUrl" : "https://github.com/Kevinzzz6",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Read-only session usage, model input composition, request differences and compaction events. After installing, open the Context panel from the session sidebar (top-right panel switcher); also turn on full Model I/O retention in Settings → General — the default recording drops older requests and cannot recover them later.",
+            "zh-CN" : "只读查看会话用量、模型输入组成、请求差异和压缩事件。装好后点右上角「切换面板」，在会话侧边栏打开「上下文」面板；建议同时在「设置 → 通用」打开「完整保留模型 I/O」——默认记录会丢弃更早的请求，且无法事后恢复。"
+          },
+          "homepage" : "https://github.com/Kevinzzz6/zcode-context#默认记录与完整保留",
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zcode-context/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "zcode-context",
+        "version" : "0.3.10"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "在对话侧栏打开 Jupyter Notebook：连接已有的 Jupyter Server 或为工作区启动一个，Agent 与用户一起编辑和运行 cell。",
+        "id" : "jupyter-notebook@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "ZCode",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Work on Jupyter notebooks in a side panel: connect to a running Jupyter Server or start one for the workspace, and edit and run cells together with the agent.",
+            "zh-CN" : "在对话侧栏打开 Jupyter Notebook：连接已有的 Jupyter Server 或为工作区启动一个，Agent 与用户一起编辑和运行 cell。"
+          },
+          "displayName" : "Jupyter Notebook",
+          "displayNameI18n" : {
+            "en" : "Jupyter Notebook",
+            "zh-CN" : "Jupyter Notebook"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/jupyter-notebook/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "jupyter-notebook",
+        "version" : "0.2.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "用你本机的 Typst 在对话侧栏实时预览文档：Agent 改完文件预览即刻更新，查看错误与渲染页面、在预览中标出位置、导出 PDF；你可以选中预览中的文字，连同对应的源码位置发给 Agent。",
+        "id" : "typst-workbench@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "ZCode",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Live-preview Typst documents in a side panel with the Typst installed on your computer: the preview updates the moment the agent saves a file, the agent checks errors, looks at rendered pages, points at places in the preview and exports PDFs, and you can send selected text to the agent together with its source location.",
+            "zh-CN" : "用你本机的 Typst 在对话侧栏实时预览文档：Agent 改完文件预览即刻更新，查看错误与渲染页面、在预览中标出位置、导出 PDF；你可以选中预览中的文字，连同对应的源码位置发给 Agent。"
+          },
+          "displayName" : "Typst Workbench",
+          "displayNameI18n" : {
+            "en" : "Typst Workbench",
+            "zh-CN" : "Typst 工作台"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/typst-workbench/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "typst-workbench",
+        "version" : "0.2.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "在对话侧栏使用你的 Zotero 文库：搜索与阅读论文和你的高亮，Agent 在 PDF 中标出依据、生成引用与 .bib 文件，并可导入论文、写笔记、整理分类。",
+        "id" : "zotero@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "ZCode",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "en" : "Work with your Zotero library in a side panel: search and read papers and your highlights, let the agent highlight evidence in PDFs, cite and keep a .bib file, and import papers, write notes and organise collections.",
+            "zh-CN" : "在对话侧栏使用你的 Zotero 文库：搜索与阅读论文和你的高亮，Agent 在 PDF 中标出依据、生成引用与 .bib 文件，并可导入论文、写笔记、整理分类。"
+          },
+          "displayName" : "Zotero",
+          "displayNameI18n" : {
+            "en" : "Zotero",
+            "zh-CN" : "Zotero"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zotero/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "zotero",
+        "version" : "0.2.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Control a separately installed Unreal Editor through Epic Unreal MCP and adapted official skills. Requires UE with ModelContextProtocol and AllToolsets enabled.",
+        "id" : "unreal-engine@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "Control a separately installed Unreal Editor through Epic Unreal MCP and adapted official skills. Requires UE with ModelContextProtocol and AllToolsets enabled.",
+            "zh-CN" : "通过 Epic 官方 MCP 和 Skills 操作独立安装的 UE 编辑器。需启用 ModelContextProtocol 和 AllToolsets。"
+          },
+          "displayName" : "Unreal Engine",
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/unreal-engine/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "unreal-engine",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Create interactive explanations, charts and design previews in ZCode conversations.",
+        "id" : "visualize@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "在对话中创建交互图表、解释和设计预览。"
+          },
+          "displayName" : "Visualize",
+          "displayNameI18n" : {
+            "zh-CN" : "交互视图"
+          }
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "visualize",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Shared node_repl runtime host for ZCode official capabilities. Not user-facing: it carries no skill and appears in no marketplace listing; Browser Use and Computer Use enable it and contribute their own skills, docs and runtime assets.",
+        "id" : "node-repl-host@zcode-plugins-official",
+        "installed" : false,
+        "marketplace" : "zcode-plugins-official",
+        "name" : "node-repl-host",
+        "version" : "0.6.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Provides Android development workflows and emulator automation for ZCode.",
+        "id" : "android-emulator@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "zh-CN" : "提供 Android 开发工作流与模拟器自动化能力。"
+          },
+          "displayName" : "Android Emulator",
+          "displayNameI18n" : {
+            "zh-CN" : "Android 模拟器"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/android-emulator/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "android-emulator",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Built-in browser automation runtime and guidance for Desktop IAB and explicitly enabled CLI-managed headless CDP: open, navigate, inspect, click, type, screenshot, record workspace WebM videos, and verify web pages and local dev targets.",
+        "id" : "browser-use@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "操作 ZCode 内置浏览器，检查网页并验证交互。"
+          },
+          "displayName" : "Browser Use",
+          "displayNameI18n" : {
+            "zh-CN" : "浏览器操作"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/browser-use/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "browser-use",
+        "version" : "0.5.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "DOCX document production skills, published as an official ZCode plugin.",
+        "id" : "documents@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "创建、编辑与审阅Word文档（DOCX）。"
+          },
+          "displayName" : "Documents",
+          "displayNameI18n" : {
+            "zh-CN" : "Word文档"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/document-skills/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "documents",
+        "version" : "0.1.8"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "PDF document production skills, published as an official ZCode plugin.",
+        "id" : "pdf@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "创建、编辑与审阅PDF（PDF）。"
+          },
+          "displayName" : "PDF",
+          "displayNameI18n" : {
+            "zh-CN" : "PDF"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/document-skills/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "pdf",
+        "version" : "0.1.8"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "PPTX presentation production skills, published as an official ZCode plugin.",
+        "id" : "presentations@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "创建、编辑与审阅演示文档（PPTX）。"
+          },
+          "displayName" : "Presentations",
+          "displayNameI18n" : {
+            "zh-CN" : "演示文档"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/document-skills/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "presentations",
+        "version" : "0.1.8"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "XLSX spreadsheet production skills, published as an official ZCode plugin.",
+        "id" : "spreadsheets@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "创建、编辑与审阅电子表格（XLSX）。"
+          },
+          "displayName" : "Spreadsheets",
+          "displayNameI18n" : {
+            "zh-CN" : "电子表格"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/document-skills/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "spreadsheets",
+        "version" : "0.1.8"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Official ZCode image search MCP server for finding illustrations and reference images.",
+        "id" : "image-search@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "查找插图与参考配图。"
+          },
+          "displayName" : "Image Search",
+          "displayNameI18n" : {
+            "zh-CN" : "搜图"
+          }
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "image-search",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Provides iOS development workflows and simulator automation for ZCode.",
+        "id" : "ios-simulator@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "zh-CN" : "提供 iOS 开发工作流与模拟器自动化能力。"
+          },
+          "displayName" : "iOS Simulator",
+          "displayNameI18n" : {
+            "zh-CN" : "iOS 模拟器"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/ios-simulator/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "ios-simulator",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Select and restore legacy ACP-era ZCode sessions into the new ZCode task and session store.",
+        "id" : "restore-legacy-sessions@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "utilities",
+          "descriptionI18n" : {
+            "zh-CN" : "将旧版会话恢复为 ZCode 任务与会话记录。"
+          },
+          "displayName" : "Restore Legacy Sessions",
+          "displayNameI18n" : {
+            "zh-CN" : "恢复旧版会话"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/restore-legacy-sessions/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "restore-legacy-sessions",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Develop and validate ZCode plugins through a local dev marketplace, installation, trials and updates.",
+        "id" : "plugin-creator@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "utilities",
+          "descriptionI18n" : {
+            "zh-CN" : "开发、校验 ZCode 插件，完成本地 dev 市场安装、试用与更新。"
+          },
+          "displayName" : "Plugin Creator",
+          "displayNameI18n" : {
+            "zh-CN" : "插件创建器"
+          }
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "plugin-creator",
+        "version" : "0.1.1"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Create, edit, and iterate local ZCode skills.",
+        "id" : "skill-creator@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "utilities",
+          "descriptionI18n" : {
+            "zh-CN" : "创建、编辑和验证可复用的 ZCode 技能。"
+          },
+          "displayName" : "Skill Creator",
+          "displayNameI18n" : {
+            "zh-CN" : "技能创建器"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/skill-creator/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "skill-creator",
+        "version" : "0.1.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "ZCode usage and self-diagnosis guide: teaches agents and users how to configure MCP servers, commands, skills, hooks, and plugins, and how to locate and fix configuration problems for each.",
+        "id" : "zcode-guide@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "utilities",
+          "descriptionI18n" : {
+            "zh-CN" : "提供 ZCode 配置指南与插件、技能、MCP、命令和钩子诊断。"
+          },
+          "displayName" : "ZCode Guide",
+          "displayNameI18n" : {
+            "zh-CN" : "ZCode 使用指南"
+          },
+          "examplePrompts" : [
+            "How do I configure MCP servers in ZCode?",
+            "Diagnose my current ZCode setup"
+          ],
+          "examplePromptsI18n" : {
+            "zh-CN" : [
+              "ZCode 里怎么配置 MCP 服务器？",
+              "帮我诊断当前的 ZCode 配置"
+            ]
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zcode-guide/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "zcode-guide",
+        "version" : "0.3.0"
+      },
+      {
+        "componentTypes" : [
+
+        ],
+        "description" : "Computer Use: automate desktop apps with mouse, keyboard, and UI element control.",
+        "id" : "computer-use@zcode-plugins-official",
+        "installed" : false,
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "productivity",
+          "descriptionI18n" : {
+            "zh-CN" : "自动化桌面应用：智能体驱动鼠标、键盘与界面元素，代你完成实际任务。"
+          },
+          "displayName" : "Computer Use",
+          "displayNameI18n" : {
+            "zh-CN" : "电脑控制"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zcode-cua/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "computer-use",
+        "version" : "0.6.4"
+      }
+    ],
+    "capability" : {
+      "supported" : true
+    },
+    "diagnostics" : [
+
+    ],
+    "installedPlugins" : [
+      {
+        "componentTypes" : [
+          "skill"
+        ],
+        "description" : "GitHub CLI workflows for commits, pull requests, issues, releases, Actions, repositories, Codespaces, and other GitHub resources.",
+        "enabled" : true,
+        "hookDetails" : [
+
+        ],
+        "id" : "github@zcode-plugins-official",
+        "installPath" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2",
+        "installedAt" : "2026-10-13T15:53:46.994Z",
+        "latestVersion" : "0.1.2",
+        "listing" : {
+          "author" : "Z.ai",
+          "authorUrl" : "https://z.ai",
+          "category" : "developer-tools",
+          "descriptionI18n" : {
+            "en" : "GitHub CLI workflows for commits, pull requests, issues, releases, Actions, repositories, Codespaces, and other GitHub resources.",
+            "zh-CN" : "基于 GitHub CLI 的 GitHub 工作流，覆盖提交、Pull Request、Issue、Release、Actions、仓库、Codespaces 等资源。"
+          },
+          "icon" : "https://cdn-zcode.z.ai/zcode/official-plugin/assets/github/icon.png"
+        },
+        "marketplace" : "zcode-plugins-official",
+        "name" : "github",
+        "scope" : "user",
+        "updateStatus" : "none",
+        "version" : "0.1.2"
+      }
+    ],
+    "marketplaces" : [
+      {
+        "description" : "Official ZCode plugins marketplace: built-in and community plugins for ZCode.",
+        "id" : "zcode-plugins-official",
+        "isOfficial" : true,
+        "lastUpdated" : "2026-10-17T05:20:36.506Z",
+        "name" : "zcode-plugins-official",
+        "pluginCount" : 60,
+        "source" : {
+          "source" : "url",
+          "url" : "https://cdn-zcode.z.ai/zcode/official-plugin/marketplace.json"
+        }
+      },
+      {
+        "description" : "Directory of popular Claude Code extensions including development tools, productivity plugins, and MCP integrations",
+        "id" : "claude-plugins-official",
+        "isOfficial" : true,
+        "name" : "claude-plugins-official",
+        "pluginCount" : 0,
+        "source" : {
+          "repo" : "anthropics/claude-plugins-official",
+          "source" : "github"
+        }
+      }
+    ],
+    "restorableBuiltins" : [
+
+    ]
+  }
+}

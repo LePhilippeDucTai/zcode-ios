@@ -1,0 +1,14 @@
+{
+  "steps": [
+    { "call": "zcode-agent", "method": "helloConversationV4" },
+    { "call": "zcode-agent", "method": "initializeConversationV4",
+      "args": [{ "kind": "clientHello", "protocolVersion": 3, "clientId": "client-zcode-probe",
+                 "clientKind": "mobileApp", "appVersion": "zcode-probe" }] },
+    { "listen": "zcode-agent", "event": "onDynamicSessionsIndexFrame",
+      "arg": { "workspacePath": "${ZCODE_PROBE_WORKSPACE}" } },
+    { "call": "zcode-agent", "method": "subscribeSessionsIndexV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "model-selection", "method": "getView" },
+    { "wait": 2 }
+  ]
+}

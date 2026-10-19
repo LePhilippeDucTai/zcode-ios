@@ -1,0 +1,26 @@
+{
+  "kind": "result",
+  "name": "git.getLocalBranches",
+  "seq": 12,
+  "step": 11,
+  "value": {
+    "branches": [
+      {
+        "commitHash": "dd842c0752b6262079790076ac93d19bf6cab40e",
+        "commitTimestampMs": 1792217978000,
+        "isCurrent": true,
+        "name": "main",
+        "upstreamName": null
+      },
+      {
+        "commitHash": "d1cd3f1575fff83350a2bfe3be49b5ae8640790c",
+        "commitTimestampMs": 1792217968000,
+        "isCurrent": false,
+        "name": "autre",
+        "upstreamName": null
+      }
+    ],
+    "currentBranchName": "main",
+    "headRefType": "branch"
+  }
+}

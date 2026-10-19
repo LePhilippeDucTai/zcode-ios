@@ -1,0 +1,12 @@
+{
+  "kind" : "state",
+  "name" : "forkAssistant.userInput",
+  "seq" : 8,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a14e78-6e24-778f-b048-0b327bcc6f3e",
+    "reasonCode" : "guard.actionUnavailable",
+    "revisionAtDecision" : 8,
+    "status" : "rejected"
+  }
+}

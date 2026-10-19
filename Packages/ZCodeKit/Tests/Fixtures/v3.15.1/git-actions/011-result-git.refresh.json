@@ -1,0 +1,45 @@
+{
+  "kind": "result",
+  "name": "git.refresh",
+  "seq": 11,
+  "step": 10,
+  "value": {
+    "branchComparison": null,
+    "identity": null,
+    "stagedChanges": [],
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-actions-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-actions-repo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-actions-repo"
+    },
+    "unstagedChanges": [
+      {
+        "added": 1,
+        "isConflicted": false,
+        "isStaged": false,
+        "isUntracked": true,
+        "kind": "added",
+        "path": "/private/tmp/zcode-actions-repo/new.txt",
+        "removed": 0,
+        "repoRelativePath": "new.txt",
+        "section": "untracked",
+        "workspaceRelativePath": "new.txt",
+        "y": "?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "result",
+  "name": "file.searchWorkspaceFiles",
+  "seq": 15,
+  "step": 14,
+  "value": [
+    {
+      "name": "app.swift",
+      "path": "/private/tmp/zcode-fixture-repo/src/app.swift",
+      "relativePath": "src/app.swift",
+      "type": "file"
+    },
+    {
+      "name": "src",
+      "path": "/private/tmp/zcode-fixture-repo/src",
+      "relativePath": "src",
+      "type": "directory"
+    },
+    {
+      "name": ".hidden",
+      "path": "/private/tmp/zcode-fixture-repo/.hidden",
+      "relativePath": ".hidden",
+      "type": "file"
+    },
+    {
+      "name": "big.txt",
+      "path": "/private/tmp/zcode-fixture-repo/big.txt",
+      "relativePath": "big.txt",
+      "type": "file"
+    },
+    {
+      "name": "new.txt",
+      "path": "/private/tmp/zcode-fixture-repo/new.txt",
+      "relativePath": "new.txt",
+      "type": "file"
+    },
+    {
+      "name": "logo.bin",
+      "path": "/private/tmp/zcode-fixture-repo/logo.bin",
+      "relativePath": "logo.bin",
+      "type": "file"
+    },
+    {
+      "name": "README.md",
+      "path": "/private/tmp/zcode-fixture-repo/README.md",
+      "relativePath": "README.md",
+      "type": "file"
+    },
+    {
+      "name": "renamed.txt",
+      "path": "/private/tmp/zcode-fixture-repo/renamed.txt",
+      "relativePath": "renamed.txt",
+      "type": "file"
+    }
+  ]
+}

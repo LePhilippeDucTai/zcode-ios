@@ -1,0 +1,83 @@
+{
+  "kind" : "result",
+  "name" : "zcode-agent.conversationRowsRangeV4",
+  "seq" : 5,
+  "step" : 5,
+  "value" : {
+    "atLogEpoch" : "mv6j6gf9-m0d4m1jc",
+    "atRevision" : 9,
+    "atSeq" : 13,
+    "hasMore" : false,
+    "rows" : [
+      {
+        "activeMs" : 2784,
+        "createdAt" : 1791885161427,
+        "createdAtSeq" : 3,
+        "endedAt" : 1791885164211,
+        "entityId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "executionKind" : "agent",
+        "historyRoundCount" : 1,
+        "kind" : "turnHeader",
+        "origin" : "userInput",
+        "outputTokens" : 0,
+        "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "rowId" : 1,
+        "sourceCommandId" : "01a134ad-b38f-7131-8c55-2c27846325ed",
+        "startedAt" : 1791885161427,
+        "state" : "completedSuccess",
+        "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "visibility" : "visible"
+      },
+      {
+        "actions" : {
+          "canEdit" : true,
+          "editDisposition" : "rewind"
+        },
+        "clientId" : "client-01a1349b-5c76-7c91-8b04-99957f739a60",
+        "createdAt" : 1791885161427,
+        "createdAtSeq" : 3,
+        "entityId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "inputOrigin" : "mobile",
+        "kind" : "userInput",
+        "origin" : "realUser",
+        "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "rootSourceCommandId" : "01a134ad-b38f-7131-8c55-2c27846325ed",
+        "rowId" : 2,
+        "sourceCommandId" : "01a134ad-b38f-7131-8c55-2c27846325ed",
+        "text" : "réponds moi PONG",
+        "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "visibility" : "visible"
+      },
+      {
+        "assistantResponseId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+        "createdAt" : 1791885161431,
+        "createdAtSeq" : 4,
+        "entityId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+        "kind" : "reasoning",
+        "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "rowId" : 3,
+        "state" : "complete",
+        "text" : "The user is asking me to respond \"PONG\" — this is just a simple ping/pong test to check if I'm responding. No tools needed, just a direct answer.",
+        "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "visibility" : "visible"
+      },
+      {
+        "actions" : {
+          "canFork" : true,
+          "canRetry" : true
+        },
+        "assistantResponseId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+        "createdAt" : 1791885161438,
+        "createdAtSeq" : 7,
+        "entityId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+        "kind" : "assistantText",
+        "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "rowId" : 4,
+        "state" : "complete",
+        "text" : "PONG",
+        "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+        "visibility" : "visible"
+      }
+    ]
+  }
+}

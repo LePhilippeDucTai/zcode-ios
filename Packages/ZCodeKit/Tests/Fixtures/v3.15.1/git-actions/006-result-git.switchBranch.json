@@ -1,0 +1,42 @@
+{
+  "kind": "result",
+  "name": "git.switchBranch",
+  "seq": 6,
+  "step": 5,
+  "value": {
+    "action": "switch",
+    "branchName": "autre",
+    "created": false,
+    "didChange": false,
+    "issues": [
+      {
+        "code": "tracked-changes-would-be-overwritten",
+        "detail": "error: Your local changes to the following files would be overwritten by checkout:\n\tREADME.md\nPlease commit your changes or stash them before you switch branches.\nAborting",
+        "message": "Tracked changes would be overwritten by switching branches.",
+        "paths": [
+          "README.md"
+        ]
+      }
+    ],
+    "ok": false,
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-actions-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-actions-repo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-actions-repo"
+    }
+  }
+}

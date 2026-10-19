@@ -1,0 +1,6 @@
+{
+  "steps": [
+    { "call": "file", "method": "readBinaryPreview",
+      "args": [{ "path": "${LARGE_FILE}", "maxBytes": 8388608 }] }
+  ]
+}

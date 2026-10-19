@@ -1,0 +1,164 @@
+{
+  "kind" : "state",
+  "name" : "state.trivial.2",
+  "seq" : 10,
+  "step" : 0,
+  "value" : {
+    "backgroundWorks" : [
+      {
+        "anchorRowId" : null,
+        "cancellable" : false,
+        "endedAt" : 1792376179027,
+        "kind" : "workflow",
+        "startedAt" : 1792376178971,
+        "status" : "resultPending",
+        "title" : "ios-probe",
+        "workId" : "dwfrun-8b0dc0f4-74af-46ca-864e-0fef5cf4b16f"
+      }
+    ],
+    "control" : {
+      "activeWorks" : [
+        {
+          "foregroundExecutionId" : "runtime_command_5",
+          "kind" : "primaryTurn",
+          "sourceCommandId" : "01a151f2-0956-79f6-abdd-028e6e447ba0",
+          "startedAt" : 1792376179036
+        }
+      ],
+      "apiRetry" : null,
+      "canStop" : true,
+      "lastError" : null,
+      "phase" : "running",
+      "sessionEnded" : false,
+      "stopState" : "stoppable",
+      "stopTargetKind" : "assistant"
+    },
+    "launchRows" : [
+      {
+        "createdAt" : 1792376178968,
+        "createdAtSeq" : 4,
+        "endedAt" : 1792376178969,
+        "entityId" : "msg_mvemhyxf_bccf0186-c19a-41dd-abc8-19386bfe5331",
+        "executionKind" : "controlOnly",
+        "kind" : "turnHeader",
+        "origin" : "workflowLaunch",
+        "productTurnId" : "msg_mvemhyxf_bccf0186-c19a-41dd-abc8-19386bfe5331",
+        "rowId" : 1,
+        "sourceCommandId" : "01a151f2-08db-7fc6-8438-afbcca34a5f5",
+        "startedAt" : 1792376178968,
+        "state" : "completedSuccess",
+        "turnId" : "msg_mvemhyxf_bccf0186-c19a-41dd-abc8-19386bfe5331",
+        "visibility" : "visible",
+        "workflowLaunch" : {
+          "args" : {
+            "count" : 2,
+            "who" : "monde"
+          },
+          "description" : "Sonde iOS triviale",
+          "display" : {
+            "causalityGraph" : {
+              "handoffs" : [
+
+              ],
+              "lanes" : [
+
+              ],
+              "participants" : [
+
+              ],
+              "steps" : [
+
+              ]
+            },
+            "diagnostics" : [
+
+            ],
+            "errorCount" : 0,
+            "kind" : "create_workflow",
+            "ok" : true
+          },
+          "name" : "ios-probe",
+          "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe.dwf.ts",
+          "runId" : "dwfrun-8b0dc0f4-74af-46ca-864e-0fef5cf4b16f",
+          "scope" : "project",
+          "script" : "return `bonjour ${String(args.who)} ×${Number(args.count)}`;\n",
+          "toolCallId" : "launch-d5fd8288-06c0-462b-ab2c-b2ba87a5beb1"
+        }
+      },
+      {
+        "createdAt" : 1792376178968,
+        "createdAtSeq" : 4,
+        "entityId" : "msg_mvemhyxf_bccf0186-c19a-41dd-abc8-19386bfe5331",
+        "kind" : "userInput",
+        "origin" : "workflowLaunch",
+        "productTurnId" : "msg_mvemhyxf_bccf0186-c19a-41dd-abc8-19386bfe5331",
+        "rootSourceCommandId" : "01a151f2-08db-7fc6-8438-afbcca34a5f5",
+        "rowId" : 2,
+        "sourceCommandId" : "01a151f2-08db-7fc6-8438-afbcca34a5f5",
+        "text" : "Started the saved workflow \"ios-probe\" (project) from the workflows hub as run dwfrun-8b0dc0f4-74af-46ca-864e-0fef5cf4b16f.\n\nArguments:\n```json\n{\n  \"who\": \"monde\",\n  \"count\": 2\n}\n```\n\nProgress and results arrive as background notifications; do not start it again.",
+        "turnId" : "msg_mvemhyxf_bccf0186-c19a-41dd-abc8-19386bfe5331",
+        "visibility" : "visible",
+        "workflowLaunch" : {
+          "args" : {
+            "count" : 2,
+            "who" : "monde"
+          },
+          "description" : "Sonde iOS triviale",
+          "display" : {
+            "causalityGraph" : {
+              "handoffs" : [
+
+              ],
+              "lanes" : [
+
+              ],
+              "participants" : [
+
+              ],
+              "steps" : [
+
+              ]
+            },
+            "diagnostics" : [
+
+            ],
+            "errorCount" : 0,
+            "kind" : "create_workflow",
+            "ok" : true
+          },
+          "name" : "ios-probe",
+          "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe.dwf.ts",
+          "runId" : "dwfrun-8b0dc0f4-74af-46ca-864e-0fef5cf4b16f",
+          "scope" : "project",
+          "script" : "return `bonjour ${String(args.who)} ×${Number(args.count)}`;\n",
+          "toolCallId" : "launch-d5fd8288-06c0-462b-ab2c-b2ba87a5beb1"
+        }
+      }
+    ],
+    "pendingInteractions" : [
+
+    ],
+    "workflowRuns" : {
+      "revision" : 3,
+      "runs" : [
+        {
+          "actors" : [
+
+          ],
+          "concurrencyCeiling" : 10,
+          "lastEventSequence" : 2,
+          "nodes" : [
+
+          ],
+          "runId" : "dwfrun-8b0dc0f4-74af-46ca-864e-0fef5cf4b16f",
+          "status" : "completed",
+          "toolCallId" : "launch-d5fd8288-06c0-462b-ab2c-b2ba87a5beb1",
+          "usage" : {
+            "nodesUsed" : 0,
+            "spentTokens" : 0
+          }
+        }
+      ]
+    }
+  }
+}

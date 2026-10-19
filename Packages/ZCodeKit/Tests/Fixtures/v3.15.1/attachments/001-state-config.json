@@ -1,0 +1,26 @@
+{
+  "kind" : "state",
+  "name" : "config",
+  "seq" : 1,
+  "step" : 0,
+  "value" : {
+    "followupMode" : "queue",
+    "mode" : "build",
+    "model" : "GLM-5.3",
+    "modelSelection" : {
+      "modelId" : "GLM-5.3",
+      "options" : {
+        "reasoningLevel" : "max"
+      },
+      "providerId" : "account:zai-individual-coding-plan"
+    },
+    "planEnabled" : false,
+    "provider" : "account:zai-individual-coding-plan",
+    "thought" : "max",
+    "thoughtLevels" : [
+      "low",
+      "high",
+      "max"
+    ]
+  }
+}

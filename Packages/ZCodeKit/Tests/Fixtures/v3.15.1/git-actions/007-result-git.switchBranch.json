@@ -1,0 +1,39 @@
+{
+  "kind": "result",
+  "name": "git.switchBranch",
+  "seq": 7,
+  "step": 6,
+  "value": {
+    "action": "switch",
+    "branchName": "absente",
+    "created": false,
+    "didChange": false,
+    "issues": [
+      {
+        "code": "target-branch-not-found",
+        "detail": "fatal: invalid reference: absente",
+        "message": "Target branch was not found."
+      }
+    ],
+    "ok": false,
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-actions-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-actions-repo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-actions-repo"
+    }
+  }
+}

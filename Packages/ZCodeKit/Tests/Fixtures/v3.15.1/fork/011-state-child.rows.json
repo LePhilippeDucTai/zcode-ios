@@ -1,0 +1,77 @@
+{
+  "kind" : "state",
+  "name" : "child.rows",
+  "seq" : 11,
+  "step" : 0,
+  "value" : [
+    {
+      "activeMs" : 3632,
+      "createdAt" : 1792317873682,
+      "createdAtSeq" : 3,
+      "endedAt" : 1792317877314,
+      "entityId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "executionKind" : "agent",
+      "historyRoundCount" : 1,
+      "kind" : "turnHeader",
+      "origin" : "userInput",
+      "outputTokens" : 0,
+      "productTurnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "rowId" : 1,
+      "sourceCommandId" : "01a14e78-5e00-76b2-b423-959bf0057513",
+      "startedAt" : 1792317873682,
+      "state" : "completedSuccess",
+      "turnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "visibility" : "visible"
+    },
+    {
+      "actions" : {
+        "canEdit" : true,
+        "editDisposition" : "rewind"
+      },
+      "clientId" : "client-zcode-probe-composer",
+      "createdAt" : 1792317873682,
+      "createdAtSeq" : 3,
+      "entityId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "inputOrigin" : "mobile",
+      "kind" : "userInput",
+      "origin" : "realUser",
+      "productTurnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "rootSourceCommandId" : "01a14e78-5e00-76b2-b423-959bf0057513",
+      "rowId" : 2,
+      "sourceCommandId" : "01a14e78-5e00-76b2-b423-959bf0057513",
+      "text" : "Réponds uniquement par le mot PONG, sans rien d'autre.",
+      "turnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "visibility" : "visible"
+    },
+    {
+      "assistantResponseId" : "msg_mvdnsdgs_4bf79c11-2248-4ef6-9c26-f4e6df458765",
+      "createdAt" : 1792317873686,
+      "createdAtSeq" : 4,
+      "entityId" : "msg_mvdnsdgs_4bf79c11-2248-4ef6-9c26-f4e6df458765",
+      "kind" : "reasoning",
+      "productTurnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "rowId" : 3,
+      "state" : "complete",
+      "text" : "The user is asking me to respond only with the word \"PONG\" and nothing else. This is a simple ping-pong test. I should just reply \"PONG\".",
+      "turnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "visibility" : "visible"
+    },
+    {
+      "actions" : {
+        "canFork" : true,
+        "canRetry" : true
+      },
+      "assistantResponseId" : "msg_mvdnsdgs_4bf79c11-2248-4ef6-9c26-f4e6df458765",
+      "createdAt" : 1792317874489,
+      "createdAtSeq" : 7,
+      "entityId" : "msg_mvdnsdgs_4bf79c11-2248-4ef6-9c26-f4e6df458765",
+      "kind" : "assistantText",
+      "productTurnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "rowId" : 4,
+      "state" : "complete",
+      "text" : "PONG",
+      "turnId" : "msg_mvdnsdgs_a2acada7-2106-45e6-aa4f-c5b890740265",
+      "visibility" : "visible"
+    }
+  ]
+}

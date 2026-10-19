@@ -1,0 +1,19 @@
+{
+  "steps": [
+    { "call": "git", "method": "refresh", "args": [{ "workspacePath": "${REPO}", "includeIdentity": false, "includeBranchComparison": false }] },
+    { "call": "git", "method": "getDiff", "args": [{ "workspacePath": "${REPO}", "path": "${REPO}/README.md", "sourceId": "unstaged" }] },
+    { "call": "git", "method": "getDiff", "args": [{ "workspacePath": "${REPO}", "path": "${REPO}/new.txt", "sourceId": "unstaged" }] },
+    { "call": "git", "method": "getDiff", "args": [{ "workspacePath": "${REPO}", "path": "${REPO}/logo.bin", "sourceId": "unstaged" }] },
+    { "call": "git", "method": "getDiff", "args": [{ "workspacePath": "${REPO}", "path": "${REPO}/src/app.swift", "sourceId": "staged" }] },
+    { "call": "git", "method": "getDiff", "args": [{ "workspacePath": "${REPO}", "path": "${REPO}/renamed.txt", "sourceId": "staged" }] },
+    { "call": "git", "method": "refresh", "args": [{ "workspacePath": "${NOREPO}", "includeIdentity": false, "includeBranchComparison": false }] },
+    { "call": "file", "method": "readdir", "args": [{ "path": "${REPO}" }] },
+    { "call": "file", "method": "readdir", "args": [{ "path": "${REPO}", "includeHidden": true }] },
+    { "call": "file", "method": "readdir", "args": [{ "path": "${REPO}/absent" }] },
+    { "call": "file", "method": "readTextFile", "args": [{ "path": "${REPO}/README.md" }] },
+    { "call": "file", "method": "readTextFile", "args": [{ "path": "${REPO}/big.txt", "length": 262144 }] },
+    { "call": "file", "method": "readTextFile", "args": [{ "path": "${REPO}/logo.bin" }] },
+    { "call": "file", "method": "readTextFile", "args": [{ "path": "${REPO}/src" }] },
+    { "call": "file", "method": "searchWorkspaceFiles", "args": [{ "rootPath": "${REPO}", "query": "app", "limit": 50 }] }
+  ]
+}

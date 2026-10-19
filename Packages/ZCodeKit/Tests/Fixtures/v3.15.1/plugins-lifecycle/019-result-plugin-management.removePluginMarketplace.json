@@ -1,0 +1,11 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.removePluginMarketplace",
+  "seq" : 19,
+  "step" : 18,
+  "value" : {
+    "diagnostics" : [
+
+    ]
+  }
+}

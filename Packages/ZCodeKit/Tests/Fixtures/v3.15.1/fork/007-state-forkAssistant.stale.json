@@ -1,0 +1,12 @@
+{
+  "kind" : "state",
+  "name" : "forkAssistant.stale",
+  "seq" : 7,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a14e78-6e1e-7b66-a132-273e8d316b1c",
+    "reasonCode" : "proto.staleRevision",
+    "revisionAtDecision" : 8,
+    "status" : "stale"
+  }
+}

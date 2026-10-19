@@ -1,0 +1,33 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 11,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "online",
+    "frame" : {
+      "fromSeq" : 671,
+      "payload" : {
+        "deltas" : [
+          {
+            "append" : " protocole gère la fragmentation des grands messages, le ping/pong pour vérifier que la connexion est vivante, et la fermeture propre avec un code de statut.\n\n### Usages et écosystème\n\nLe WebSocket est supporté nativement par tous les navigateurs modernes via l'objet JavaScript `WebSocket`, avec les URL en `ws://` (non chiffré) ou `wss://` (chiffré en TLS, l'équivalent de HTTPS). Côté serveur, de nombreuses bibliothèques existent : Socket.IO (avec",
+            "op" : "row.delta",
+            "path" : "text",
+            "rowId" : 14
+          }
+        ],
+        "kind" : "deltas"
+      },
+      "sentAt" : 1791886976192,
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+      "toSeq" : 795,
+      "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mv6j6gf9-m0d4m1jc-3-lf-13",
+    "logicalFrameOrdinal" : 7,
+    "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+    "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62",
+    "wireVersion" : 3
+  }
+}

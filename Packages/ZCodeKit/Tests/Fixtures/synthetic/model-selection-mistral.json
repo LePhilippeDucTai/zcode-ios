@@ -1,0 +1,32 @@
+{
+  "revision": 4,
+  "preferredSelection": {
+    "providerId": "account:zai-individual-coding-plan", "modelId": "GLM-5.3", "options": { "reasoningLevel": "max" }
+  },
+  "providers": [
+    {
+      "providerId": "account:zai-individual-coding-plan",
+      "providerName": "Z.AI Individual Coding Plan",
+      "config": { "group": "zai-family", "access": { "type": "zhipu-account", "accountType": "zai" } },
+      "models": [
+        { "modelId": "GLM-5.3", "config": { "enabled": true, "optionSpecs": { "reasoningLevel": { "values": ["low", "high", "max"], "map": "{}" } }, "properties": { "contextWindow": 1000000 } } },
+        { "modelId": "GLM-5.3-Flash", "config": { "enabled": true, "optionSpecs": { "reasoningLevel": { "values": ["low", "high", "max"], "map": "{}" } }, "properties": { "contextWindow": 1000000 } } }
+      ]
+    },
+    {
+      "providerId": "new-provider",
+      "providerName": "Mistral",
+      "config": {
+        "group": "custom",
+        "access": { "type": "api-key", "apiKey": "cle-factice-ne-pas-conserver" },
+        "api": { "type": "openai-chat-completions", "baseUrl": "https://api.mistral.ai/v1" }
+      },
+      "models": [
+        { "modelId": "mistral-large-4", "config": { "enabled": true, "optionSpecs": { "reasoningLevel": { "values": ["none"], "map": "{'reasoning_effort': 'none'}" } }, "properties": { "contextWindow": 256000 } } },
+        { "modelId": "mistral-medium-latest", "config": { "enabled": true, "optionSpecs": { "reasoningLevel": { "values": ["none"], "map": "{'reasoning_effort': 'none'}" } } } },
+        { "modelId": "mistral-ancien", "config": { "enabled": false, "optionSpecs": { "reasoningLevel": { "values": ["none"] } } } }
+      ]
+    },
+    { "providerName": "Sans identifiant", "models": [] }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "kind" : "state",
+  "name" : "rows.trivial.final",
+  "seq" : 12,
+  "step" : 0,
+  "value" : [
+    {
+      "createdAt" : 1792376059438,
+      "createdAtSeq" : 4,
+      "endedAt" : 1792376059438,
+      "entityId" : "msg_mvemfep8_4c13894c-e031-4827-8832-5edf9bb8a875",
+      "executionKind" : "controlOnly",
+      "kind" : "turnHeader",
+      "origin" : "workflowLaunch",
+      "productTurnId" : "msg_mvemfep8_4c13894c-e031-4827-8832-5edf9bb8a875",
+      "rowId" : 1,
+      "sourceCommandId" : "01a151f0-35ff-7861-be10-adc14a574cc1",
+      "startedAt" : 1792376059438,
+      "state" : "completedSuccess",
+      "turnId" : "msg_mvemfep8_4c13894c-e031-4827-8832-5edf9bb8a875",
+      "visibility" : "visible",
+      "workflowLaunch" : {
+        "args" : {
+          "count" : 2,
+          "who" : "monde"
+        },
+        "description" : "Sonde iOS triviale",
+        "display" : {
+          "causalityGraph" : {
+            "handoffs" : [
+
+            ],
+            "lanes" : [
+
+            ],
+            "participants" : [
+
+            ],
+            "steps" : [
+
+            ]
+          },
+          "diagnostics" : [
+
+          ],
+          "errorCount" : 0,
+          "kind" : "create_workflow",
+          "ok" : true
+        },
+        "name" : "ios-probe",
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe.dwf.ts",
+        "runId" : "dwfrun-eff0b1a9-ccae-4c98-bb11-9f54f0f93c14",
+        "scope" : "project",
+        "script" : "return `bonjour ${String(args.who)} ×${Number(args.count)}`;\n",
+        "toolCallId" : "launch-6143a1bc-9206-4ede-961a-f1ca5bc49a8a"
+      }
+    },
+    {
+      "createdAt" : 1792376059438,
+      "createdAtSeq" : 4,
+      "entityId" : "msg_mvemfep8_4c13894c-e031-4827-8832-5edf9bb8a875",
+      "kind" : "userInput",
+      "origin" : "workflowLaunch",
+      "productTurnId" : "msg_mvemfep8_4c13894c-e031-4827-8832-5edf9bb8a875",
+      "rootSourceCommandId" : "01a151f0-35ff-7861-be10-adc14a574cc1",
+      "rowId" : 2,
+      "sourceCommandId" : "01a151f0-35ff-7861-be10-adc14a574cc1",
+      "text" : "Started the saved workflow \"ios-probe\" (project) from the workflows hub as run dwfrun-eff0b1a9-ccae-4c98-bb11-9f54f0f93c14.\n\nArguments:\n```json\n{\n  \"who\": \"monde\",\n  \"count\": 2\n}\n```\n\nProgress and results arrive as background notifications; do not start it again.",
+      "turnId" : "msg_mvemfep8_4c13894c-e031-4827-8832-5edf9bb8a875",
+      "visibility" : "visible",
+      "workflowLaunch" : {
+        "args" : {
+          "count" : 2,
+          "who" : "monde"
+        },
+        "description" : "Sonde iOS triviale",
+        "display" : {
+          "causalityGraph" : {
+            "handoffs" : [
+
+            ],
+            "lanes" : [
+
+            ],
+            "participants" : [
+
+            ],
+            "steps" : [
+
+            ]
+          },
+          "diagnostics" : [
+
+          ],
+          "errorCount" : 0,
+          "kind" : "create_workflow",
+          "ok" : true
+        },
+        "name" : "ios-probe",
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe.dwf.ts",
+        "runId" : "dwfrun-eff0b1a9-ccae-4c98-bb11-9f54f0f93c14",
+        "scope" : "project",
+        "script" : "return `bonjour ${String(args.who)} ×${Number(args.count)}`;\n",
+        "toolCallId" : "launch-6143a1bc-9206-4ede-961a-f1ca5bc49a8a"
+      }
+    },
+    {
+      "createdAt" : 1792376059487,
+      "createdAtSeq" : 12,
+      "entityId" : "msg_mvemfeq7_52f8cb64-f9ad-4664-89b9-197ddfa2ad20",
+      "executionKind" : "agent",
+      "kind" : "turnHeader",
+      "origin" : "backgroundResult",
+      "originMeta" : {
+        "backgroundSource" : "workflow",
+        "title" : "ios-probe",
+        "workId" : "dwfrun-eff0b1a9-ccae-4c98-bb11-9f54f0f93c14",
+        "workflowNotification" : {
+          "durationMs" : 35,
+          "kind" : "terminal",
+          "result" : "bonjour monde ×2",
+          "resultForm" : "prose",
+          "status" : "completed",
+          "summary" : "ios-probe"
+        }
+      },
+      "productTurnId" : "msg_mvemfeq7_52f8cb64-f9ad-4664-89b9-197ddfa2ad20",
+      "rowId" : 3,
+      "sourceCommandId" : "01a151f0-3650-74a6-bbf3-7bfb512efd0b",
+      "startedAt" : 1792376059487,
+      "state" : "running",
+      "turnId" : "msg_mvemfeq7_52f8cb64-f9ad-4664-89b9-197ddfa2ad20",
+      "visibility" : "visible"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "kind" : "state",
+  "name" : "index",
+  "seq" : 9,
+  "step" : 0,
+  "value" : {
+    "goalStatus" : "verified"
+  }
+}

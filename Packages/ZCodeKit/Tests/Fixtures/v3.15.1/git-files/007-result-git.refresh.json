@@ -1,0 +1,26 @@
+{
+  "kind": "result",
+  "name": "git.refresh",
+  "seq": 7,
+  "step": 6,
+  "value": {
+    "branchComparison": null,
+    "identity": null,
+    "stagedChanges": [],
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [],
+      "behind": 0,
+      "branchName": null,
+      "headRefType": "branch",
+      "isDirty": false,
+      "isGitAvailable": true,
+      "isRepository": false,
+      "repoRoot": "/private/tmp/zcode-fixture-norepo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-fixture-norepo"
+    },
+    "unstagedChanges": []
+  }
+}

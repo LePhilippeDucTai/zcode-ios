@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "subagents.createAgent",
+  "seq": 2,
+  "step": 1,
+  "value": {
+    "message": "Agent file \"zcode-ios-probe-agent.md\" already exists",
+    "name": "Error"
+  }
+}

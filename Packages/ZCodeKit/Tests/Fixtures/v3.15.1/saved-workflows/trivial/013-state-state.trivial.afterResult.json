@@ -1,0 +1,157 @@
+{
+  "kind" : "state",
+  "name" : "state.trivial.afterResult",
+  "seq" : 13,
+  "step" : 0,
+  "value" : {
+    "availability" : {
+      "compact" : {
+        "allowed" : true
+      },
+      "fork" : {
+        "allowed" : true
+      },
+      "pauseGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToPause"
+      },
+      "queueEdit" : {
+        "allowed" : true
+      },
+      "resumeGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToResume"
+      },
+      "sendQueuedNow" : {
+        "allowed" : true
+      },
+      "setFollowupMode" : {
+        "allowed" : true
+      },
+      "switchModelConfig" : {
+        "allowed" : true
+      }
+    },
+    "backgroundWorks" : [
+      {
+        "anchorRowId" : null,
+        "cancellable" : false,
+        "endedAt" : 1792376011972,
+        "kind" : "workflow",
+        "startedAt" : 1792376011949,
+        "status" : "resultPending",
+        "title" : "ios-probe",
+        "workId" : "dwfrun-6798aab8-9da7-46ee-ae57-cc9e3f1a57de"
+      }
+    ],
+    "config" : {
+      "followupMode" : "queue",
+      "mode" : "build",
+      "model" : "GLM-5.3",
+      "modelSelection" : {
+        "modelId" : "GLM-5.3",
+        "options" : {
+          "reasoningLevel" : "max"
+        },
+        "providerId" : "account:zai-individual-coding-plan"
+      },
+      "planEnabled" : false,
+      "provider" : "account:zai-individual-coding-plan",
+      "thought" : "max",
+      "thoughtLevels" : [
+        "low",
+        "high",
+        "max"
+      ]
+    },
+    "control" : {
+      "activeWorks" : [
+        {
+          "foregroundExecutionId" : "runtime_command_1",
+          "kind" : "primaryTurn",
+          "sourceCommandId" : "01a151ef-7cc5-73e8-aada-76b0ef0b7946",
+          "startedAt" : 1792376011982
+        }
+      ],
+      "apiRetry" : null,
+      "canStop" : true,
+      "lastError" : null,
+      "phase" : "running",
+      "sessionEnded" : false,
+      "stopState" : "stoppable",
+      "stopTargetKind" : "assistant"
+    },
+    "goal" : null,
+    "inputRouting" : {
+      "mode" : "enqueue"
+    },
+    "logEpoch" : "mvemedxh-oyy29tsm",
+    "meta" : {
+      "title" : "ios-probe",
+      "titleSource" : "generated"
+    },
+    "modelTransition" : null,
+    "newRows" : [
+
+    ],
+    "pendingCommands" : [
+
+    ],
+    "pendingInteractions" : [
+
+    ],
+    "plan" : null,
+    "protocolVersion" : 1,
+    "queue" : {
+      "autoDrain" : true,
+      "items" : [
+
+      ]
+    },
+    "revision" : 6,
+    "seq" : 0,
+    "sessionId" : "sess_54ad0edd-d6db-420a-9aab-f708e44a7cdc",
+    "subagents" : {
+      "childSessionIds" : [
+
+      ],
+      "endedTotal" : 0,
+      "revision" : 0,
+      "running" : [
+
+      ]
+    },
+    "usage" : {
+      "contextWindow" : null,
+      "cumulative" : {
+        "cacheReadTokens" : 0,
+        "cacheWriteTokens" : 0,
+        "inputTokens" : 0,
+        "outputTokens" : 0
+      }
+    },
+    "workflowRuns" : {
+      "revision" : 3,
+      "runs" : [
+        {
+          "actors" : [
+
+          ],
+          "concurrencyCeiling" : 10,
+          "lastEventSequence" : 2,
+          "nodes" : [
+
+          ],
+          "runId" : "dwfrun-6798aab8-9da7-46ee-ae57-cc9e3f1a57de",
+          "status" : "completed",
+          "toolCallId" : "launch-954d4f37-242d-44db-8ff8-aad77e966cb6",
+          "usage" : {
+            "nodesUsed" : 0,
+            "spentTokens" : 0
+          }
+        }
+      ]
+    },
+    "workspaceHookAdmission" : null
+  }
+}

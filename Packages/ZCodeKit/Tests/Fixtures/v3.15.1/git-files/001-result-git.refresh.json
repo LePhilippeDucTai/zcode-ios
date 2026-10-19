@@ -1,0 +1,102 @@
+{
+  "kind": "result",
+  "name": "git.refresh",
+  "seq": 1,
+  "step": 0,
+  "value": {
+    "branchComparison": null,
+    "identity": null,
+    "stagedChanges": [
+      {
+        "added": 0,
+        "isConflicted": false,
+        "isStaged": true,
+        "isUntracked": false,
+        "kind": "renamed",
+        "path": "/private/tmp/zcode-fixture-repo/renamed.txt",
+        "removed": 0,
+        "repoRelativePath": "renamed.txt",
+        "section": "staged",
+        "workspaceRelativePath": "renamed.txt",
+        "x": "R",
+        "y": "."
+      },
+      {
+        "added": 1,
+        "isConflicted": false,
+        "isStaged": true,
+        "isUntracked": false,
+        "kind": "modified",
+        "path": "/private/tmp/zcode-fixture-repo/src/app.swift",
+        "removed": 1,
+        "repoRelativePath": "src/app.swift",
+        "section": "staged",
+        "workspaceRelativePath": "src/app.swift",
+        "x": "M",
+        "y": "."
+      }
+    ],
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-fixture-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-fixture-repo",
+      "trackingBranchName": null,
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-fixture-repo"
+    },
+    "unstagedChanges": [
+      {
+        "added": 2,
+        "isConflicted": false,
+        "isStaged": false,
+        "isUntracked": false,
+        "kind": "modified",
+        "path": "/private/tmp/zcode-fixture-repo/README.md",
+        "removed": 1,
+        "repoRelativePath": "README.md",
+        "section": "unstaged",
+        "workspaceRelativePath": "README.md",
+        "x": ".",
+        "y": "M"
+      },
+      {
+        "added": 0,
+        "isConflicted": false,
+        "isStaged": false,
+        "isUntracked": false,
+        "kind": "modified",
+        "path": "/private/tmp/zcode-fixture-repo/logo.bin",
+        "removed": 0,
+        "repoRelativePath": "logo.bin",
+        "section": "unstaged",
+        "workspaceRelativePath": "logo.bin",
+        "x": ".",
+        "y": "M"
+      },
+      {
+        "added": 2,
+        "isConflicted": false,
+        "isStaged": false,
+        "isUntracked": true,
+        "kind": "added",
+        "path": "/private/tmp/zcode-fixture-repo/new.txt",
+        "removed": 0,
+        "repoRelativePath": "new.txt",
+        "section": "untracked",
+        "workspaceRelativePath": "new.txt",
+        "y": "?"
+      }
+    ]
+  }
+}

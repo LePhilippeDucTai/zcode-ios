@@ -1,0 +1,23 @@
+{
+  "kind" : "state",
+  "name" : "assistantRow",
+  "seq" : 5,
+  "step" : 0,
+  "value" : {
+    "actions" : {
+      "canFork" : true,
+      "canRetry" : true
+    },
+    "assistantResponseId" : "msg_mvdnsawo_7888fe16-e4be-41f9-af08-1783e1a0f8df",
+    "createdAt" : 1792317877291,
+    "createdAtSeq" : 46,
+    "entityId" : "msg_mvdnsawo_7888fe16-e4be-41f9-af08-1783e1a0f8df",
+    "kind" : "assistantText",
+    "productTurnId" : "msg_mvdnsaa7_b5a928b3-9404-4ad8-8965-4a2cf1dd94a6",
+    "rowId" : 4,
+    "state" : "complete",
+    "text" : "PONG",
+    "turnId" : "msg_mvdnsaa7_b5a928b3-9404-4ad8-8965-4a2cf1dd94a6",
+    "visibility" : "visible"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "kind" : "state",
+  "name" : "pong.ack",
+  "seq" : 4,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a14e78-5e00-76b2-b423-959bf0057513",
+    "result" : {
+      "delivery" : "startNow",
+      "inputId" : "01a14e78-5e00-76b2-b423-959bf0057513",
+      "type" : "inputAccepted"
+    },
+    "revisionAtDecision" : 0,
+    "status" : "accepted"
+  }
+}

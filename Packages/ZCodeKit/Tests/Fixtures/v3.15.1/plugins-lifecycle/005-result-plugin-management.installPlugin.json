@@ -1,0 +1,26 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.installPlugin",
+  "seq" : 5,
+  "step" : 4,
+  "value" : {
+    "dependencyClosure" : [
+      "zcode-ios-probe@zcode-ios-probe-market"
+    ],
+    "diagnostics" : [
+
+    ],
+    "installedPlugins" : [
+      {
+        "enabled" : true,
+        "id" : "zcode-ios-probe@zcode-ios-probe-market",
+        "installPath" : "/Users/me/.zcode/cli/plugins/cache/zcode-ios-probe-market/zcode-ios-probe/1.0.0",
+        "installedAt" : "2026-10-17T23:59:01.759Z",
+        "marketplace" : "zcode-ios-probe-market",
+        "name" : "zcode-ios-probe",
+        "scope" : "user",
+        "version" : "1.0.0"
+      }
+    ]
+  }
+}

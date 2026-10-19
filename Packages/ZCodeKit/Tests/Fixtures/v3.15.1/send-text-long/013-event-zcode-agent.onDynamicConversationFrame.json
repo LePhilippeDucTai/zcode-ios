@@ -1,0 +1,232 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 13,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "online",
+    "frame" : {
+      "fromSeq" : 918,
+      "payload" : {
+        "deltas" : [
+          {
+            "op" : "row.upserted",
+            "row" : {
+              "assistantResponseId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "createdAt" : 1791886967693,
+              "createdAtSeq" : 244,
+              "entityId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "kind" : "assistantText",
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 14,
+              "state" : "complete",
+              "text" : "## Le protocole WebSocket\n\nLe WebSocket est un protocole de communication réseau normalisé par l'IETF en 2011 (RFC 6455) qui permet d'établir un canal de communication bidirectionnel et permanent entre un client et un serveur, sur une seule connexion TCP. Il a été conçu pour pallier les limites du protocole HTTP dans les scénarios temps réel.\n\n### Le problème qu'il résout\n\nLe HTTP est un protocole fondé sur le modèle requête/réponse : le client interroge le serveur, le serveur répond, puis la connexion est close (ou du moins, l'échange est terminé). Si un serveur veut pousser une information vers le client — une notification, un cours de bourse, un message de chat — il doit attendre que celui-ci l'interroge. La solution classique consistait à multiplier les requêtes (polling) ou à utiliser des astuces comme le long polling ou le streaming, toutes coûteuses en latence et en ressources.\n\n### Fonctionnement\n\nLe WebSocket repose sur une phase de négociation astucieuse : le client lance une requête HTTP classique contenant des en-têtes particuliers (`Upgrade: websocket`, `Connection: Upgrade`, et une clé de sécurité). Si le serveur accepte, il répond par un code 101 « Switching Protocols ». À partir de cet instant, la connexion TCP existante change de protocole : on ne parle plus HTTP, mais WebSocket. Cette approche permet de traverser les pare-feu et proxys, qui voient passer une requête HTTP ordinaire au moment de la poignée de main.\n\nUne fois établie, la connexion reste ouverte et full-duplex : les deux parties peuvent envoyer des messages à tout moment, sans devoir re-négocier. Les données sont transmises sous forme de messages encadrés (frames), pouvant transporter du texte (typiquement du JSON) ou des données binaires. Le protocole gère la fragmentation des grands messages, le ping/pong pour vérifier que la connexion est vivante, et la fermeture propre avec un code de statut.\n\n### Usages et écosystème\n\nLe WebSocket est supporté nativement par tous les navigateurs modernes via l'objet JavaScript `WebSocket`, avec les URL en `ws://` (non chiffré) ou `wss://` (chiffré en TLS, l'équivalent de HTTPS). Côté serveur, de nombreuses bibliothèques existent : Socket.IO (avec ses mécanismes supplémentaires de reconnexion et de rooms), ws en Node.js, ou le support intégré dans des frameworks comme Django Channels ou Actix (Rust).\n\nSes cas d'usage typiques sont les chats, les tableaux multijoueurs, les éditeurs collaboratifs, les flux financiers, le suivi en direct d'événements sportifs ou la télémétrie. Notons qu'il existe aujourd'hui une alternative plus légère, Server-Sent Events (SSE), adaptée quand seul le serveur émet ; le WebSocket reste toutefois la référence lorsque le client doit lui aussi envoyer des données de façon interactive et continue.",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "revision" : 29
+            }
+          },
+          {
+            "op" : "row.upserted",
+            "row" : {
+              "createdAt" : 1791886960745,
+              "createdAtSeq" : 185,
+              "entityId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "executionKind" : "agent",
+              "kind" : "turnHeader",
+              "origin" : "userInput",
+              "outputTokens" : 749,
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 11,
+              "sourceCommandId" : "f9a5a507-6e4e-4e5f-9a6c-0532321fab10",
+              "startedAt" : 1791886960745,
+              "state" : "running",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "revision" : 30,
+              "usage" : {
+                "contextWindow" : {
+                  "autoCompactThresholdTokens" : null,
+                  "breakdown" : [
+                    {
+                      "chars" : 8627,
+                      "source" : "system_prompt"
+                    },
+                    {
+                      "chars" : 41,
+                      "source" : "meta_user_context"
+                    },
+                    {
+                      "chars" : 155239,
+                      "source" : "system_tool_schemas"
+                    },
+                    {
+                      "chars" : 2458,
+                      "source" : "messages"
+                    }
+                  ],
+                  "cache" : {
+                    "cacheReadTokens" : 20352,
+                    "cacheWriteTokens" : 0,
+                    "hitRate" : 0.9660616408695545,
+                    "hitRateRequestCount" : 4,
+                    "inputTokens" : 20555,
+                    "latestHitRate" : 0.990124057406957,
+                    "totalCacheReadTokens" : 78080,
+                    "totalCacheWriteTokens" : 0,
+                    "totalInputTokens" : 80823
+                  },
+                  "maxTokens" : 1000000,
+                  "usedTokens" : 21304
+                },
+                "cumulative" : {
+                  "cacheReadTokens" : 60096,
+                  "cacheWriteTokens" : 0,
+                  "inputTokens" : 60923,
+                  "outputTokens" : 920
+                }
+              }
+            }
+          },
+          {
+            "op" : "row.upserted",
+            "row" : {
+              "activeMs" : 18179,
+              "createdAt" : 1791886960745,
+              "createdAtSeq" : 185,
+              "endedAt" : 1791886978914,
+              "entityId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "executionKind" : "agent",
+              "historyRoundCount" : 1,
+              "kind" : "turnHeader",
+              "origin" : "userInput",
+              "outputTokens" : 749,
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 11,
+              "sourceCommandId" : "f9a5a507-6e4e-4e5f-9a6c-0532321fab10",
+              "startedAt" : 1791886960745,
+              "state" : "completedSuccess",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "row.upserted",
+            "row" : {
+              "actions" : {
+                "canFork" : true
+              },
+              "assistantResponseId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "createdAt" : 1791886967693,
+              "createdAtSeq" : 244,
+              "entityId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "kind" : "assistantText",
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 14,
+              "state" : "complete",
+              "text" : "## Le protocole WebSocket\n\nLe WebSocket est un protocole de communication réseau normalisé par l'IETF en 2011 (RFC 6455) qui permet d'établir un canal de communication bidirectionnel et permanent entre un client et un serveur, sur une seule connexion TCP. Il a été conçu pour pallier les limites du protocole HTTP dans les scénarios temps réel.\n\n### Le problème qu'il résout\n\nLe HTTP est un protocole fondé sur le modèle requête/réponse : le client interroge le serveur, le serveur répond, puis la connexion est close (ou du moins, l'échange est terminé). Si un serveur veut pousser une information vers le client — une notification, un cours de bourse, un message de chat — il doit attendre que celui-ci l'interroge. La solution classique consistait à multiplier les requêtes (polling) ou à utiliser des astuces comme le long polling ou le streaming, toutes coûteuses en latence et en ressources.\n\n### Fonctionnement\n\nLe WebSocket repose sur une phase de négociation astucieuse : le client lance une requête HTTP classique contenant des en-têtes particuliers (`Upgrade: websocket`, `Connection: Upgrade`, et une clé de sécurité). Si le serveur accepte, il répond par un code 101 « Switching Protocols ». À partir de cet instant, la connexion TCP existante change de protocole : on ne parle plus HTTP, mais WebSocket. Cette approche permet de traverser les pare-feu et proxys, qui voient passer une requête HTTP ordinaire au moment de la poignée de main.\n\nUne fois établie, la connexion reste ouverte et full-duplex : les deux parties peuvent envoyer des messages à tout moment, sans devoir re-négocier. Les données sont transmises sous forme de messages encadrés (frames), pouvant transporter du texte (typiquement du JSON) ou des données binaires. Le protocole gère la fragmentation des grands messages, le ping/pong pour vérifier que la connexion est vivante, et la fermeture propre avec un code de statut.\n\n### Usages et écosystème\n\nLe WebSocket est supporté nativement par tous les navigateurs modernes via l'objet JavaScript `WebSocket`, avec les URL en `ws://` (non chiffré) ou `wss://` (chiffré en TLS, l'équivalent de HTTPS). Côté serveur, de nombreuses bibliothèques existent : Socket.IO (avec ses mécanismes supplémentaires de reconnexion et de rooms), ws en Node.js, ou le support intégré dans des frameworks comme Django Channels ou Actix (Rust).\n\nSes cas d'usage typiques sont les chats, les tableaux multijoueurs, les éditeurs collaboratifs, les flux financiers, le suivi en direct d'événements sportifs ou la télémétrie. Notons qu'il existe aujourd'hui une alternative plus légère, Server-Sent Events (SSE), adaptée quand seul le serveur émet ; le WebSocket reste toutefois la référence lorsque le client doit lui aussi envoyer des données de façon interactive et continue.",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "availability" : {
+                "compact" : {
+                  "allowed" : true
+                },
+                "fork" : {
+                  "allowed" : true
+                },
+                "pauseGoal" : {
+                  "allowed" : false,
+                  "reasonCode" : "noGoalToPause"
+                },
+                "queueEdit" : {
+                  "allowed" : true
+                },
+                "resumeGoal" : {
+                  "allowed" : false,
+                  "reasonCode" : "noGoalToResume"
+                },
+                "sendQueuedNow" : {
+                  "allowed" : false,
+                  "reasonCode" : "sendQueuedNowRequiresRunning"
+                },
+                "setFollowupMode" : {
+                  "allowed" : true
+                },
+                "switchModelConfig" : {
+                  "allowed" : true
+                }
+              },
+              "control" : {
+                "activeWorks" : [
+
+                ],
+                "apiRetry" : null,
+                "canStop" : false,
+                "lastError" : null,
+                "phase" : "completedSuccess",
+                "sessionEnded" : true,
+                "stopState" : "idle",
+                "stopTargetKind" : "unknown"
+              },
+              "inputRouting" : {
+                "mode" : "startNow"
+              }
+            }
+          },
+          {
+            "op" : "row.upserted",
+            "row" : {
+              "actions" : {
+                "canFork" : true,
+                "canRetry" : true
+              },
+              "assistantResponseId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "createdAt" : 1791886967693,
+              "createdAtSeq" : 244,
+              "entityId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "kind" : "assistantText",
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 14,
+              "state" : "complete",
+              "text" : "## Le protocole WebSocket\n\nLe WebSocket est un protocole de communication réseau normalisé par l'IETF en 2011 (RFC 6455) qui permet d'établir un canal de communication bidirectionnel et permanent entre un client et un serveur, sur une seule connexion TCP. Il a été conçu pour pallier les limites du protocole HTTP dans les scénarios temps réel.\n\n### Le problème qu'il résout\n\nLe HTTP est un protocole fondé sur le modèle requête/réponse : le client interroge le serveur, le serveur répond, puis la connexion est close (ou du moins, l'échange est terminé). Si un serveur veut pousser une information vers le client — une notification, un cours de bourse, un message de chat — il doit attendre que celui-ci l'interroge. La solution classique consistait à multiplier les requêtes (polling) ou à utiliser des astuces comme le long polling ou le streaming, toutes coûteuses en latence et en ressources.\n\n### Fonctionnement\n\nLe WebSocket repose sur une phase de négociation astucieuse : le client lance une requête HTTP classique contenant des en-têtes particuliers (`Upgrade: websocket`, `Connection: Upgrade`, et une clé de sécurité). Si le serveur accepte, il répond par un code 101 « Switching Protocols ». À partir de cet instant, la connexion TCP existante change de protocole : on ne parle plus HTTP, mais WebSocket. Cette approche permet de traverser les pare-feu et proxys, qui voient passer une requête HTTP ordinaire au moment de la poignée de main.\n\nUne fois établie, la connexion reste ouverte et full-duplex : les deux parties peuvent envoyer des messages à tout moment, sans devoir re-négocier. Les données sont transmises sous forme de messages encadrés (frames), pouvant transporter du texte (typiquement du JSON) ou des données binaires. Le protocole gère la fragmentation des grands messages, le ping/pong pour vérifier que la connexion est vivante, et la fermeture propre avec un code de statut.\n\n### Usages et écosystème\n\nLe WebSocket est supporté nativement par tous les navigateurs modernes via l'objet JavaScript `WebSocket`, avec les URL en `ws://` (non chiffré) ou `wss://` (chiffré en TLS, l'équivalent de HTTPS). Côté serveur, de nombreuses bibliothèques existent : Socket.IO (avec ses mécanismes supplémentaires de reconnexion et de rooms), ws en Node.js, ou le support intégré dans des frameworks comme Django Channels ou Actix (Rust).\n\nSes cas d'usage typiques sont les chats, les tableaux multijoueurs, les éditeurs collaboratifs, les flux financiers, le suivi en direct d'événements sportifs ou la télémétrie. Notons qu'il existe aujourd'hui une alternative plus légère, Server-Sent Events (SSE), adaptée quand seul le serveur émet ; le WebSocket reste toutefois la référence lorsque le client doit lui aussi envoyer des données de façon interactive et continue.",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "revision" : 31
+            }
+          }
+        ],
+        "kind" : "deltas"
+      },
+      "sentAt" : 1791886979025,
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+      "toSeq" : 945,
+      "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mv6j6gf9-m0d4m1jc-3-lf-15",
+    "logicalFrameOrdinal" : 9,
+    "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+    "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62",
+    "wireVersion" : 3
+  }
+}

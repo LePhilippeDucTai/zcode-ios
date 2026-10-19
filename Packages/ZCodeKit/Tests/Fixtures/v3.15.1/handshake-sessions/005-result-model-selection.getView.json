@@ -1,0 +1,121 @@
+{
+  "kind" : "result",
+  "name" : "model-selection.getView",
+  "seq" : 5,
+  "step" : 4,
+  "value" : {
+    "preferredSelection" : {
+      "modelId" : "GLM-5.3",
+      "options" : {
+        "reasoningLevel" : "max"
+      },
+      "providerId" : "account:zai-individual-coding-plan"
+    },
+    "providers" : [
+      {
+        "config" : {
+          "access" : {
+            "accountType" : "zai",
+            "entitled" : true,
+            "mode" : "individual-coding-plan",
+            "type" : "zhipu-account"
+          },
+          "api" : {
+            "baseUrl" : "https://api.z.ai/api/anthropic",
+            "type" : "anthropic-messages"
+          },
+          "builtinModelIds" : [
+            "GLM-5.3",
+            "GLM-5.3-Flash"
+          ],
+          "group" : "zai-family",
+          "logo" : {
+            "key" : "zai",
+            "type" : "builtin"
+          }
+        },
+        "models" : [
+          {
+            "config" : {
+              "enabled" : true,
+              "optionSpecs" : {
+                "maxOutputTokens" : {
+                  "map" : "{'max_tokens': maxOutputTokens}",
+                  "max" : 128000
+                },
+                "reasoningLevel" : {
+                  "map" : "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}",
+                  "values" : [
+                    "low",
+                    "high",
+                    "max"
+                  ]
+                }
+              },
+              "properties" : {
+                "contextWindow" : 1000000,
+                "inputFormat" : {
+                  "supportsAudio" : false,
+                  "supportsImage" : true,
+                  "supportsPdf" : false,
+                  "supportsText" : true,
+                  "supportsVideo" : true
+                },
+                "outputFormat" : {
+                  "supportsText" : true
+                },
+                "requiresMfjsToolSchema" : false,
+                "supportsJsonSchemaOutput" : false,
+                "supportsMidConversationSystem" : true,
+                "supportsNativeWebSearch" : true,
+                "supportsToolCall" : true
+              }
+            },
+            "modelId" : "GLM-5.3"
+          },
+          {
+            "config" : {
+              "enabled" : true,
+              "optionSpecs" : {
+                "maxOutputTokens" : {
+                  "map" : "{'max_tokens': maxOutputTokens}",
+                  "max" : 128000
+                },
+                "reasoningLevel" : {
+                  "map" : "{\n  \"thinking\": {\n    \"type\": \"enabled\"\n  },\n  \"output_config\": {\n    \"effort\": reasoningLevel\n  }\n}",
+                  "values" : [
+                    "low",
+                    "high",
+                    "max"
+                  ]
+                }
+              },
+              "properties" : {
+                "contextWindow" : 1000000,
+                "inputFormat" : {
+                  "supportsAudio" : false,
+                  "supportsImage" : true,
+                  "supportsPdf" : true,
+                  "supportsText" : true,
+                  "supportsVideo" : true
+                },
+                "outputFormat" : {
+                  "supportsText" : true
+                },
+                "requiresMfjsToolSchema" : false,
+                "supportsJsonSchemaOutput" : false,
+                "supportsMidConversationSystem" : true,
+                "supportsNativeWebSearch" : true,
+                "supportsToolCall" : true
+              }
+            },
+            "modelId" : "GLM-5.3-Flash"
+          }
+        ],
+        "providerId" : "account:zai-individual-coding-plan",
+        "providerName" : "Z.AI Individual Coding Plan"
+      }
+    ],
+    "revision" : 1
+  }
+}

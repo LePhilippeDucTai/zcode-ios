@@ -1,0 +1,15 @@
+[Unit]
+Description=ZCode web (server for the ZCode iOS app)
+After=network-online.target
+
+[Service]
+Type=simple
+Environment="ZCODE_WORKSPACE=__WORKSPACE__"
+ExecStart=/usr/bin/zsh __HOME__/.local/share/zcode-web/bin/run-zcode-web.sh
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:__HOME__/.local/state/zcode-web/zcode-web.log
+StandardError=append:__HOME__/.local/state/zcode-web/zcode-web.log
+
+[Install]
+WantedBy=default.target

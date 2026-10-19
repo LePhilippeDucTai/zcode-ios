@@ -1,0 +1,10 @@
+{
+  "kind" : "error",
+  "name" : "zcode-session.methodeInexistante",
+  "seq" : 9,
+  "step" : 8,
+  "value" : {
+    "message" : "Method not found: methodeInexistante",
+    "name" : "Error"
+  }
+}

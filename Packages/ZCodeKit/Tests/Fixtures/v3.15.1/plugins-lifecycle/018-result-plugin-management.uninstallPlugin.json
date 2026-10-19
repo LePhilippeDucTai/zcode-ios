@@ -1,0 +1,21 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.uninstallPlugin",
+  "seq" : 18,
+  "step" : 17,
+  "value" : {
+    "diagnostics" : [
+
+    ],
+    "removedPlugin" : {
+      "enabled" : false,
+      "id" : "zcode-ios-probe@zcode-ios-probe-market",
+      "installPath" : "/Users/me/.zcode/cli/plugins/cache/zcode-ios-probe-market/zcode-ios-probe/1.0.0",
+      "installedAt" : "2026-10-17T23:59:01.759Z",
+      "marketplace" : "zcode-ios-probe-market",
+      "name" : "zcode-ios-probe",
+      "scope" : "user",
+      "version" : "1.0.0"
+    }
+  }
+}

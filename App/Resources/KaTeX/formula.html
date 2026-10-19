@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Page de rendu des formules de l'app (lot 13G) : KaTeX 0.16.45 local, jamais de réseau. -->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="katex.min.css">
+<style>
+  html, body { margin: 0; padding: 0; background: transparent; }
+  /* Boîte ajustée au contenu, sans retour à la ligne : la zone mesurée est celle de la formule seule. */
+  #box { position: absolute; left: 0; top: 0; padding: 4px; white-space: nowrap; }
+  #box .katex-display { margin: 0; }
+  /* En ligne, KaTeX laisse `.katex-html` en span en ligne (boîte de la police seule) : bloc en ligne, il prend la taille
+     de ses « struts » et une formule haute n'est plus rognée (sans cette règle, une fraction double est coupée à la
+     hauteur de la police : 29 pt mesurés). */
+  #box .katex-html { display: inline-block; }
+  /* Repère de taille nulle posé après la formule : son haut est la ligne de base. */
+  .baseline-mark { display: inline-block; width: 0; height: 0; }
+</style>
+<script src="katex.min.js"></script>
+<script>
+  // Rend une formule et mesure la zone à capturer, en points (zoom 1 : un pixel CSS = un point iOS).
+  async function renderFormula(latex, display, size, color) {
+    const box = document.getElementById("box");
+    box.style.fontSize = size + "px";
+    box.style.color = color;
+    box.replaceChildren();
+    const host = document.createElement("span");
+    box.appendChild(host);
+    try {
+      katex.render(latex, host, { displayMode: display, throwOnError: true, output: "html" });
+    } catch (error) {
+      box.replaceChildren();
+      return { ok: false, message: String(error) };
+    }
+    const mark = document.createElement("span");
+    mark.className = "baseline-mark";
+    box.appendChild(mark);
+    // `.katex-html` (bloc en ligne, ou bloc en mode bloc) a la taille de ses « struts » ; `.katex`, lui, est un span en
+    // ligne dont la boîte ne suit que la police : une formule haute (fractions imbriquées, matrices) y serait rognée.
+    const formula = host.querySelector(".katex-html") || host;
+    formula.getBoundingClientRect();           // force la mise en page : les polices utilisées commencent à charger
+    await document.fonts.ready;
+    const rect = formula.getBoundingClientRect();
+    const pad = 2;                              // débords des glyphes (italique, grands opérateurs)
+    return {
+      ok: true,
+      x: rect.left - pad,
+      y: rect.top - pad,
+      width: rect.width + 2 * pad,
+      height: rect.height + 2 * pad,
+      baseline: mark.getBoundingClientRect().top,
+      fonts: [...document.fonts].filter((face) => face.status === "loaded").length,
+    };
+  }
+</script>
+</head>
+<body><div id="box"></div></body>
+</html>

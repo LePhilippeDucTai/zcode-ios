@@ -1,0 +1,26 @@
+{
+  "kind" : "result",
+  "name" : "zcode-agent.helloConversationV4",
+  "seq" : 1,
+  "step" : 0,
+  "value" : {
+    "auth" : {
+
+    },
+    "capabilities" : {
+      "binaryFrames" : false,
+      "compression" : "none",
+      "independentPlanState" : true,
+      "localTerminal" : false,
+      "nativeDialogs" : false,
+      "workflowRunDeltas" : true,
+      "workspaceHookReview" : true
+    },
+    "clientMode" : "web-remote-replayable",
+    "connectionId" : "server-ws-5fa860c1-1dbf-490b-8b1b-dd5882162d17",
+    "deliveryProfile" : "replayable",
+    "kind" : "hello",
+    "protocolVersion" : 3,
+    "serverTime" : 1792317587320
+  }
+}

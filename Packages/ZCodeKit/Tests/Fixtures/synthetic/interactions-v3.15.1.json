@@ -1,0 +1,79 @@
+{
+  "pendingInteractions": [
+    {
+      "interactionId": "perm_bash", "kind": "permission", "anchorRowId": 7, "createdAt": 1791890000000,
+      "payload": {
+        "kind": "permission", "toolCallId": "call_bash", "toolName": "Bash", "summary": "Run rm -rf dist",
+        "detail": { "command": "rm -rf dist", "description": "Nettoie le dossier de build" },
+        "freeText": true,
+        "fullAccessOption": { "optionId": "fullAccess", "label": "Full access", "kind": "custom",
+                              "response": { "decision": "deny", "reason": "Full access requires V4 approval" } },
+        "options": [
+          { "optionId": "allowOnce", "label": "Allow once", "kind": "allowOnce",
+            "response": { "decision": "allow", "reason": "Approved once" } },
+          { "optionId": "allowAlways", "label": "Always allow in this project", "kind": "allowAlways",
+            "response": { "decision": "allow", "reason": "Approved for this project",
+                          "permissionUpdates": [ { "behavior": "allow", "type": "addRules",
+                                                   "rules": [ { "toolName": "Bash", "ruleContent": "rm -rf dist" } ] } ] } },
+          { "optionId": "deny", "label": "Deny", "kind": "deny",
+            "response": { "decision": "deny", "reason": "The user doesn't want to proceed with this tool use." } }
+        ]
+      }
+    },
+    {
+      "interactionId": "ask_style", "kind": "userInput", "anchorRowId": 9, "createdAt": 1791890001000,
+      "autoResolution": { "state": "visibleCountdown", "startedAt": 1791890001000, "visibleAt": 1791890241000,
+                          "deadlineAt": 1791890301000 },
+      "payload": {
+        "kind": "userInput", "prompt": "Claude has questions for you", "freeText": true,
+        "toolCallId": "call_ask", "toolName": "AskUserQuestion", "traceId": "trace_ask",
+        "input": { "questions": [ { "question": "Quel style pour la page ?", "header": "Style" } ] },
+        "schema": { "toolName": "AskUserQuestion" },
+        "questions": [
+          { "question": "Quel style pour la page ?", "header": "Style", "multiSelect": false,
+            "options": [ { "value": "Sobre", "label": "Sobre", "description": "Peu de couleurs" },
+                         { "value": "Coloré", "label": "Coloré", "preview": "<div>aperçu</div>" } ] },
+          { "question": "Quelles sections ajouter ?", "header": "Sections", "multiSelect": true,
+            "options": [ { "value": "Tarifs", "label": "Tarifs" }, { "value": "FAQ", "label": "FAQ" },
+                         { "value": "Contact", "label": "Contact" } ] }
+        ]
+      }
+    },
+    {
+      "interactionId": "plan_1", "kind": "userInput", "anchorRowId": 12, "createdAt": 1791890002000,
+      "payload": {
+        "kind": "userInput", "prompt": "Review this implementation plan.", "freeText": true,
+        "toolCallId": "call_plan", "toolName": "ExitPlanMode", "traceId": "trace_plan",
+        "input": { "plan": "## Plan\n\n1. Ajouter le test\n2. Corriger le bug\n" },
+        "schema": { "interaction": "plan_approval", "toolName": "ExitPlanMode" },
+        "questions": [ { "question": "Review this implementation plan.", "header": "Plan",
+                         "options": [ { "value": "approve", "label": "Approve",
+                                        "description": "Exit plan mode and start implementation." } ] } ]
+      }
+    },
+    {
+      "interactionId": "input_key", "kind": "userInput", "anchorRowId": null, "createdAt": 1791890003000,
+      "payload": { "kind": "userInput", "prompt": "Clé du serveur MCP ?", "freeText": true, "sensitive": true }
+    },
+    {
+      "interactionId": "perm_sub", "kind": "permission", "anchorRowId": null, "createdAt": 1791890004000,
+      "payload": {
+        "kind": "permission", "toolCallId": "call_sub", "toolName": "CreateWorkflow", "summary": "Start workflow",
+        "detail": { "name": "analyse", "steps": 3 },
+        "origin": { "kind": "subagent", "agentId": "agent_1", "agentType": "explorer", "childSessionId": "sess_child",
+                    "parentSessionId": "sess_parent", "description": "Analyse" },
+        "options": [
+          { "optionId": "allowOnce", "label": "Allow once", "kind": "allowOnce" },
+          { "optionId": "allowSession", "label": "Always allow in this session", "kind": "allowAlways" },
+          { "optionId": "deny", "label": "Deny", "kind": "deny" },
+          { "optionId": "escalate", "label": "Escalate to admin", "kind": "escalate" },
+          { "optionId": "workflowRefine", "label": "Refine", "kind": "custom" }
+        ]
+      }
+    },
+    {
+      "interactionId": "hook_1", "kind": "workspaceHookReview", "anchorRowId": null, "createdAt": 1791890005000,
+      "payload": { "kind": "workspaceHookReview", "interactionId": "hook_1" }
+    }
+  ]
+}

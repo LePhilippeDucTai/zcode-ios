@@ -1,0 +1,10 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.cancelPluginOperation",
+  "seq" : 17,
+  "step" : 16,
+  "value" : {
+    "cancelled" : false,
+    "operationId" : "zcode-probe-inexistante"
+  }
+}

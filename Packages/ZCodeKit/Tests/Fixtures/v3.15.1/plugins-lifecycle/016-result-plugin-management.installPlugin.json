@@ -1,0 +1,22 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.installPlugin",
+  "seq" : 16,
+  "step" : 15,
+  "value" : {
+    "dependencyClosure" : [
+
+    ],
+    "diagnostics" : [
+      {
+        "code" : "plugin_dependency_missing",
+        "message" : "Dependency not found: absent@zcode-ios-probe-market required by absent@zcode-ios-probe-market",
+        "pluginId" : "absent@zcode-ios-probe-market",
+        "severity" : "error"
+      }
+    ],
+    "installedPlugins" : [
+
+    ]
+  }
+}

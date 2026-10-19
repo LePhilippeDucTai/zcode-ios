@@ -1,0 +1,22 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.describePlugin",
+  "seq" : 4,
+  "step" : 3,
+  "value" : {
+    "components" : [
+      {
+        "items" : [
+          {
+            "description" : "Skill jetable de zcode-probe",
+            "name" : "zcode-ios-probe"
+          }
+        ],
+        "kind" : "skill"
+      }
+    ],
+    "metadata" : {
+      "version" : "1.0.0"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "steps": [
+    { "call": "git", "method": "stagePaths", "args": [{"workspacePath": "${REPO}", "paths": ["${REPO}/README.md"] }] },
+    { "call": "git", "method": "unstagePaths", "args": [{"workspacePath": "${REPO}", "paths": ["${REPO}/README.md"] }] },
+    { "call": "git", "method": "discardPaths", "args": [{"workspacePath": "${REPO}", "paths": ["${REPO}/notes.txt"], "staged": false }] },
+    { "call": "git", "method": "discardPaths", "args": [{"workspacePath": "${REPO}", "paths": ["${REPO}/new.txt"], "staged": false }] },
+    { "call": "git", "method": "commit", "args": [{"workspacePath": "${REPO}", "message": "  " }] },
+    { "call": "git", "method": "switchBranch", "args": [{"workspacePath": "${REPO}", "targetBranchName": "autre" }] },
+    { "call": "git", "method": "switchBranch", "args": [{"workspacePath": "${REPO}", "targetBranchName": "absente" }] },
+    { "call": "git", "method": "createBranchAndSwitch", "args": [{"workspacePath": "${REPO}", "branchName": "bad..name" }] },
+    { "call": "git", "method": "commit", "args": [{"workspacePath": "${REPO}", "message": "feat: fixture", "paths": ["${REPO}/src/app.swift"], "stagedOnly": true }] },
+    { "call": "git", "method": "commit", "args": [{"workspacePath": "${REPO}", "message": "docs: readme", "paths": ["${REPO}/README.md"], "stagedOnly": false }] },
+    { "call": "git", "method": "refresh", "args": [{"workspacePath": "${REPO}", "includeIdentity": false, "includeBranchComparison": false }] },
+    { "call": "git", "method": "getLocalBranches", "args": [{"workspacePath": "${REPO}" }] },
+    { "call": "git", "method": "push", "args": [{"workspacePath": "${REPO}" }] },
+    { "call": "git", "method": "push", "args": [{"workspacePath": "${REPO}" }] },
+    { "call": "git", "method": "createBranchAndSwitch", "args": [{"workspacePath": "${REPO}", "branchName": "feature/fixture" }] },
+    { "call": "git", "method": "generateCommitMessage", "args": [{"workspacePath": "${REPO}", "locale": "en-US", "includeUnstaged": true }] }
+  ]
+}

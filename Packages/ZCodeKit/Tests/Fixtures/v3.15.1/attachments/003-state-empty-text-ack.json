@@ -1,0 +1,11 @@
+{
+  "kind" : "state",
+  "name" : "empty-text-ack",
+  "seq" : 3,
+  "step" : 2,
+  "value" : {
+    "message" : null,
+    "reasonCode" : null,
+    "status" : "accepted"
+  }
+}

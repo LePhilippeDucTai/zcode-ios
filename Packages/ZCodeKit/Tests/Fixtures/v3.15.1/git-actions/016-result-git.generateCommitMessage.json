@@ -1,0 +1,11 @@
+{
+  "kind": "result",
+  "name": "git.generateCommitMessage",
+  "seq": 16,
+  "step": 15,
+  "value": {
+    "message": "chore: add new.txt with sample line",
+    "model": "GLM-5.3",
+    "providerId": "account:zai-individual-coding-plan"
+  }
+}

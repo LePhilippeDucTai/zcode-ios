@@ -1,0 +1,60 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.describePlugin",
+  "seq" : 4,
+  "step" : 3,
+  "value" : {
+    "components" : [
+      {
+        "items" : [
+          {
+            "description" : "Create, list, connect to, stop, or delete GitHub Codespaces. Use when the user explicitly wants to manage a remote Codespaces development environment, not for cloning a repository locally.",
+            "name" : "codespace"
+          },
+          {
+            "description" : "Create a local Git commit from staged changes using a conventional commit message. Use when the user wants to record already prepared changes locally, not when they want to create, review, or merge a pull request.",
+            "name" : "commit"
+          },
+          {
+            "description" : "Create, view, edit, or delete GitHub gists for code and text sharing. Use when the user specifically asks to work with a gist, including public or secret gist visibility, not for files stored in a repository.",
+            "name" : "gist"
+          },
+          {
+            "description" : "Create, view, list, or close GitHub issues and manage the labels and milestones that organize issues and pull requests. Use when the user wants to track or organize repository work, not when they are referring to a pull request itself.",
+            "name" : "issue"
+          },
+          {
+            "description" : "Create, list, check out, review, or merge GitHub pull requests using GitHub CLI. Use when the user wants any pull-request workflow, not when they want to manage issues, releases, or local-only commits.",
+            "name" : "pr"
+          },
+          {
+            "description" : "Create a GitHub release and prepare changelog notes for a version tag. Use when the user wants to publish or draft a repository release, not merely create a Git commit, tag, or pull request.",
+            "name" : "release"
+          },
+          {
+            "description" : "Clone or fork a GitHub repository with optional local setup, or open repository resources such as files, branches, issues, and settings in the browser. Use when the user wants a new local checkout or the web UI, not a Codespace or an existing pull-request checkout.",
+            "name" : "repo"
+          },
+          {
+            "description" : "List, set, delete, or synchronize GitHub Actions repository secrets without exposing secret values. Use when the user explicitly wants to manage GitHub secret storage, not ordinary environment files or repository variables.",
+            "name" : "secret"
+          },
+          {
+            "description" : "Verify GitHub CLI installation and guide authentication for the intended GitHub host and account. Use when gh is missing, authentication is invalid, the user wants to switch accounts or hosts, or another GitHub skill cannot pass preflight.",
+            "name" : "setup"
+          },
+          {
+            "description" : "List, inspect, trigger, watch, or rerun GitHub Actions workflows and runs. Use when the user wants to operate or inspect CI workflows, not when they only want to merge a PR or browse the Actions page.",
+            "name" : "workflow-run"
+          }
+        ],
+        "kind" : "skill"
+      }
+    ],
+    "metadata" : {
+      "author" : "Z.ai",
+      "authorUrl" : "https://z.ai",
+      "version" : "0.1.2"
+    }
+  }
+}

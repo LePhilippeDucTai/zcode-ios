@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "subagents.methodeInexistante",
+  "seq": 3,
+  "step": 2,
+  "value": {
+    "message": "Method not found: methodeInexistante",
+    "name": "Error"
+  }
+}

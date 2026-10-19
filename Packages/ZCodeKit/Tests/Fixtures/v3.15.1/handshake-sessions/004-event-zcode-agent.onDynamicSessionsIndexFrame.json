@@ -1,0 +1,44 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicSessionsIndexFrame",
+  "seq" : 4,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "initial",
+    "frame" : {
+      "fromSeq" : 0,
+      "payload" : {
+        "kind" : "snapshot",
+        "snapshot" : {
+          "logEpoch" : "mv6icva5-jgvj76zm",
+          "protocolVersion" : 1,
+          "sessions" : [
+            {
+              "createdAt" : 1791885161375,
+              "hasBackgroundWork" : false,
+              "lastActivityAt" : 1791885165838,
+              "lastAssistantPreview" : "PONG",
+              "phase" : "completedSuccess",
+              "sessionEnded" : true,
+              "sessionId" : "sess_45199523-12a0-4928-92e6-ff082723da62",
+              "title" : "Demande de réponse PONG",
+              "titleSource" : "generated",
+              "workspaceId" : "/Users/me/claude"
+            }
+          ],
+          "workspaceId" : "/Users/me/claude"
+        }
+      },
+      "sentAt" : 1791886864069,
+      "subscriptionId" : "six-mv6icva5-jgvj76zm-5",
+      "toSeq" : 1,
+      "topic" : "sessions-index//Users/me/claude"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "six-mv6icva5-jgvj76zm-5-lf-7",
+    "logicalFrameOrdinal" : 1,
+    "subscriptionId" : "six-mv6icva5-jgvj76zm-5",
+    "topic" : "sessions-index//Users/me/claude",
+    "wireVersion" : 3
+  }
+}

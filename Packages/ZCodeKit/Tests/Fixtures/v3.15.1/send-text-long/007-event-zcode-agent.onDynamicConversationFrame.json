@@ -1,0 +1,99 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 7,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "online",
+    "frame" : {
+      "fromSeq" : 188,
+      "payload" : {
+        "deltas" : [
+          {
+            "op" : "row.appended",
+            "row" : {
+              "assistantResponseId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "createdAt" : 1791886967662,
+              "createdAtSeq" : 190,
+              "entityId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "kind" : "reasoning",
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 13,
+              "state" : "streaming",
+              "text" : "",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "revision" : 26
+            }
+          },
+          {
+            "op" : "row.upserted",
+            "row" : {
+              "assistantResponseId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "createdAt" : 1791886967662,
+              "createdAtSeq" : 190,
+              "entityId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "kind" : "reasoning",
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 13,
+              "state" : "complete",
+              "text" : "The user wants a ~400 word explanation of the WebSocket protocol, without using any tools. This is a pure knowledge question — I just write the text in French. Let me write a well-structured, readable explanation of about 400 words in French.",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "revision" : 27
+            }
+          },
+          {
+            "op" : "row.appended",
+            "row" : {
+              "assistantResponseId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "createdAt" : 1791886967693,
+              "createdAtSeq" : 244,
+              "entityId" : "msg_mv6j8bqx_fe69ede6-a98b-4261-a9d7-d93db987f176",
+              "kind" : "assistantText",
+              "productTurnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "rowId" : 14,
+              "state" : "streaming",
+              "text" : "",
+              "turnId" : "msg_mv6j8bqh_cc2c6d3c-0f56-435e-9553-75a1b148acd8",
+              "visibility" : "visible"
+            }
+          },
+          {
+            "op" : "state.updated",
+            "patch" : {
+              "revision" : 28
+            }
+          },
+          {
+            "append" : "## Le protocole WebSocket\n\nLe WebSocket est un protocole de communication réseau normalisé par l'IETF en 2011 (RFC 6455) qui permet d'établir un canal de communication bidirectionnel et permanent entre un client et un serveur, sur une",
+            "op" : "row.delta",
+            "path" : "text",
+            "rowId" : 14
+          }
+        ],
+        "kind" : "deltas"
+      },
+      "sentAt" : 1791886967813,
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+      "toSeq" : 303,
+      "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mv6j6gf9-m0d4m1jc-3-lf-9",
+    "logicalFrameOrdinal" : 3,
+    "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+    "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62",
+    "wireVersion" : 3
+  }
+}

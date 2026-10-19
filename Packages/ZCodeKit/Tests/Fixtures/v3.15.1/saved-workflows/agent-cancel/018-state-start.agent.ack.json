@@ -1,0 +1,16 @@
+{
+  "kind" : "state",
+  "name" : "start.agent.ack",
+  "seq" : 18,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f2-0bd4-7834-8924-427dad29cf68",
+    "result" : {
+      "runId" : "dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b",
+      "toolCallId" : "launch-6bd2e46b-060e-4255-9c23-5b15c1b5ebfc",
+      "type" : "startSavedWorkflow"
+    },
+    "revisionAtDecision" : 0,
+    "status" : "accepted"
+  }
+}

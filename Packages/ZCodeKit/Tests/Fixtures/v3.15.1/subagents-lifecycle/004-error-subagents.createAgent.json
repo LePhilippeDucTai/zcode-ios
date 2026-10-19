@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "subagents.createAgent",
+  "seq": 4,
+  "step": 3,
+  "value": {
+    "message": "Agent name \"Explore\" is reserved by a built-in agent",
+    "name": "Error"
+  }
+}

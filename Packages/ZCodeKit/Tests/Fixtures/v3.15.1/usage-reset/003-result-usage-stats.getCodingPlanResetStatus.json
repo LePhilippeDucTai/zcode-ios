@@ -1,0 +1,39 @@
+{
+  "kind" : "result",
+  "name" : "usage-stats.getCodingPlanResetStatus",
+  "seq" : 3,
+  "step" : 2,
+  "value" : {
+    "availableFiveHourResets" : [
+      {
+        "expireAt" : 1794475959000
+      },
+      {
+        "expireAt" : 1794475959000
+      },
+      {
+        "expireAt" : 1794475959000
+      },
+      {
+        "expireAt" : 1794475959000
+      }
+    ],
+    "availableWeekResets" : [
+      {
+        "expireAt" : 1794475959000
+      },
+      {
+        "expireAt" : 1794475959000
+      },
+      {
+        "expireAt" : 1794475959000
+      },
+      {
+        "expireAt" : 1794475959000
+      }
+    ],
+    "hasUnreadHistory" : false,
+    "latestFiveHourResetHistory" : null,
+    "latestWeekResetHistory" : null
+  }
+}

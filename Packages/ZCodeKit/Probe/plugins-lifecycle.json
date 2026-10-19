@@ -1,0 +1,25 @@
+{
+  "steps": [
+    { "call": "plugin-management", "method": "addPluginMarketplace", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "source": "${ZCODE_PROBE_MARKETPLACE}", "dryRun": true }] },
+    { "call": "plugin-management", "method": "addPluginMarketplace", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "source": "${ZCODE_PROBE_MARKETPLACE}", "operationId": "zcode-probe-add" }] },
+    { "call": "plugin-management", "method": "getPluginsOverview", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] },
+    { "call": "plugin-management", "method": "describePlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market", "pluginName": "zcode-ios-probe" }] },
+    { "call": "plugin-management", "method": "installPlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market", "pluginName": "zcode-ios-probe", "operationId": "zcode-probe-install" }] },
+    { "call": "plugin-management", "method": "listPlugins", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] },
+    { "call": "plugin-management", "method": "configurePlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market", "options": {"label": "essai", "codeFactice": "valeur-factice-ne-pas-conserver"}, "scope": "user" }] },
+    { "call": "plugin-management", "method": "listPlugins", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] },
+    { "call": "plugin-management", "method": "setPluginEnabled", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market", "enabled": false, "scope": "workspace" }] },
+    { "call": "plugin-management", "method": "getPluginsOverview", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "workspace" }] },
+    { "call": "plugin-management", "method": "getPluginsOverview", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] },
+    { "call": "plugin-management", "method": "resetPluginConfig", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market", "scope": "workspace" }] },
+    { "call": "plugin-management", "method": "resetPluginConfig", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market", "scope": "user" }] },
+    { "call": "plugin-management", "method": "updatePluginMarketplace", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market", "operationId": "zcode-probe-refresh" }] },
+    { "call": "plugin-management", "method": "updatePlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market" }] },
+    { "call": "plugin-management", "method": "installPlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market", "pluginName": "absent", "operationId": "zcode-probe-install-absent" }] },
+    { "call": "plugin-management", "method": "cancelPluginOperation", "args": [{"operationId": "zcode-probe-inexistante" }] },
+    { "call": "plugin-management", "method": "uninstallPlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "pluginId": "zcode-ios-probe@zcode-ios-probe-market" }] },
+    { "call": "plugin-management", "method": "removePluginMarketplace", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market" }] },
+    { "call": "plugin-management", "method": "updatePluginMarketplace", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-ios-probe-market", "operationId": "zcode-probe-refresh-2" }] },
+    { "call": "plugin-management", "method": "getPluginsOverview", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] }
+  ]
+}

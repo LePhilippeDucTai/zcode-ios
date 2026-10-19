@@ -1,0 +1,350 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 3,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "initial",
+    "frame" : {
+      "fromSeq" : 0,
+      "payload" : {
+        "kind" : "snapshot",
+        "snapshot" : {
+          "availability" : {
+            "compact" : {
+              "allowed" : true
+            },
+            "fork" : {
+              "allowed" : true
+            },
+            "pauseGoal" : {
+              "allowed" : false,
+              "reasonCode" : "noGoalToPause"
+            },
+            "queueEdit" : {
+              "allowed" : true
+            },
+            "resumeGoal" : {
+              "allowed" : false,
+              "reasonCode" : "noGoalToResume"
+            },
+            "sendQueuedNow" : {
+              "allowed" : false,
+              "reasonCode" : "sendQueuedNowRequiresRunning"
+            },
+            "setFollowupMode" : {
+              "allowed" : true
+            },
+            "switchModelConfig" : {
+              "allowed" : true
+            }
+          },
+          "backgroundWorks" : [
+
+          ],
+          "config" : {
+            "followupMode" : "queue",
+            "mode" : "build",
+            "model" : "GLM-5.3",
+            "modelSelection" : {
+              "modelId" : "GLM-5.3",
+              "options" : {
+                "reasoningLevel" : "max"
+              },
+              "providerId" : "account:zai-individual-coding-plan"
+            },
+            "planEnabled" : false,
+            "provider" : "account:zai-individual-coding-plan",
+            "thought" : "max",
+            "thoughtLevels" : [
+              "low",
+              "high",
+              "max"
+            ]
+          },
+          "control" : {
+            "activeWorks" : [
+
+            ],
+            "apiRetry" : null,
+            "canStop" : false,
+            "lastError" : null,
+            "phase" : "completedSuccess",
+            "sessionEnded" : true,
+            "stopState" : "idle",
+            "stopTargetKind" : "unknown"
+          },
+          "goal" : null,
+          "inputRouting" : {
+            "mode" : "startNow"
+          },
+          "logEpoch" : "mv6j6gf9-m0d4m1jc",
+          "meta" : {
+            "title" : "Demande de réponse PONG",
+            "titleSource" : "generated"
+          },
+          "modelTransition" : null,
+          "pendingCommands" : [
+
+          ],
+          "pendingInteractions" : [
+
+          ],
+          "plan" : null,
+          "protocolVersion" : 1,
+          "queue" : {
+            "autoDrain" : true,
+            "items" : [
+
+            ]
+          },
+          "revision" : 24,
+          "rows" : {
+            "firstRowId" : 1,
+            "totalCount" : 10,
+            "window" : [
+              {
+                "activeMs" : 2784,
+                "createdAt" : 1791885161427,
+                "createdAtSeq" : 3,
+                "endedAt" : 1791885164211,
+                "entityId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "executionKind" : "agent",
+                "historyRoundCount" : 1,
+                "kind" : "turnHeader",
+                "origin" : "userInput",
+                "outputTokens" : 0,
+                "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "rowId" : 1,
+                "sourceCommandId" : "01a134ad-b38f-7131-8c55-2c27846325ed",
+                "startedAt" : 1791885161427,
+                "state" : "completedSuccess",
+                "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "visibility" : "visible"
+              },
+              {
+                "clientId" : "client-01a1349b-5c76-7c91-8b04-99957f739a60",
+                "createdAt" : 1791885161427,
+                "createdAtSeq" : 3,
+                "entityId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "inputOrigin" : "mobile",
+                "kind" : "userInput",
+                "origin" : "realUser",
+                "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "rootSourceCommandId" : "01a134ad-b38f-7131-8c55-2c27846325ed",
+                "rowId" : 2,
+                "sourceCommandId" : "01a134ad-b38f-7131-8c55-2c27846325ed",
+                "text" : "réponds moi PONG",
+                "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+                "createdAt" : 1791885161431,
+                "createdAtSeq" : 4,
+                "entityId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "rowId" : 3,
+                "state" : "complete",
+                "text" : "The user is asking me to respond \"PONG\" — this is just a simple ping/pong test to check if I'm responding. No tools needed, just a direct answer.",
+                "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canFork" : true
+                },
+                "assistantResponseId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+                "createdAt" : 1791885161438,
+                "createdAtSeq" : 7,
+                "entityId" : "msg_mv6i5rdq_805f0286-2479-4853-8b83-df66bd8b2f68",
+                "kind" : "assistantText",
+                "productTurnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "rowId" : 4,
+                "state" : "complete",
+                "text" : "PONG",
+                "turnId" : "msg_mv6i5rdc_be61022c-a9d5-4a93-bc3c-7cc5ee00727d",
+                "visibility" : "visible"
+              },
+              {
+                "activeMs" : 6865,
+                "createdAt" : 1791886885514,
+                "createdAtSeq" : 14,
+                "endedAt" : 1791886892366,
+                "entityId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "executionKind" : "agent",
+                "historyRoundCount" : 2,
+                "kind" : "turnHeader",
+                "modelDurationMs" : 0,
+                "origin" : "userInput",
+                "otherDurationMs" : 6636,
+                "outputTokens" : 171,
+                "productTurnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "rowId" : 5,
+                "sourceCommandId" : "48171f70-142c-4f5f-a3c5-440b477dcc2b",
+                "startedAt" : 1791886885514,
+                "state" : "completedSuccess",
+                "toolDurationMs" : 229,
+                "turnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canEdit" : true,
+                  "editDisposition" : "rewind"
+                },
+                "clientId" : "client-zcode-probe",
+                "createdAt" : 1791886885514,
+                "createdAtSeq" : 14,
+                "entityId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "inputOrigin" : "mobile",
+                "kind" : "userInput",
+                "origin" : "realUser",
+                "productTurnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "rootSourceCommandId" : "48171f70-142c-4f5f-a3c5-440b477dcc2b",
+                "rowId" : 6,
+                "sourceCommandId" : "48171f70-142c-4f5f-a3c5-440b477dcc2b",
+                "text" : "Liste les fichiers du dossier courant puis réponds « terminé ».",
+                "turnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mv6j6pp6_2880cee4-860d-4ff6-b68c-65643560536a",
+                "createdAt" : 1791886888892,
+                "createdAtSeq" : 19,
+                "entityId" : "msg_mv6j6pp6_2880cee4-860d-4ff6-b68c-65643560536a",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "rowId" : 7,
+                "state" : "complete",
+                "text" : "The user wants me to list files in the current directory, then reply \"terminé\". Simple task — run ls.",
+                "turnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mv6j6pp6_2880cee4-860d-4ff6-b68c-65643560536a",
+                "createdAt" : 1791886888901,
+                "createdAtSeq" : 46,
+                "endedAt" : 1791886889163,
+                "entityId" : "call_99246082555c4ab99b91aa44",
+                "input" : {
+                  "command" : "ls -la /Users/me/claude",
+                  "description" : "List files in current directory"
+                },
+                "inputText" : "{\"command\":\"ls -la /Users/me/claude\",\"description\":\"List files in current directory\"}",
+                "kind" : "toolCall",
+                "output" : {
+                  "text" : "total 24\ndrwxr-xr-x   13 me  staff   416 Oct 13 11:28 .\ndrwxr-x---+ 124 me  staff  3968 Oct 13 12:21 ..\n-rw-r--r--@   1 me  staff  8196 Aug 21 15:13 .DS_Store\ndrwxr-xr-x    8 me  staff   256 Jul 24 00:24 documents\ndrwxr-xr-x@  16 me  staff   512 Jun 17 00:33 project-a\ndrwxr-xr-x@  27 me  staff   864 Jun 16 23:50 project-b\ndrwxr-xr-x   18 me  staff   576 Jul 27 13:50 project-c\ndrwxr-xr-x@  17 me  staff   544 Aug  1 00:44 project-d\ndrwxr-xr-x   33 me  staff  1056 Sep 20  2025 project-e\ndrwxr-xr-x@  19 me  staff   608 Aug 14 15:17 project-f\ndrwxr-xr-x   21 me  staff   672 Jun 24 13:14 project-g\ndrwxr-xr-x   22 me  staff   704 Oct  3 09:11 project-h\ndrwxr-xr-x@  15 me  staff   480 Oct 13 12:20 zcode_ios"
+                },
+                "productTurnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "rowId" : 8,
+                "startedAt" : 1791886888933,
+                "status" : "success",
+                "toolCallId" : "call_99246082555c4ab99b91aa44",
+                "toolName" : "Bash",
+                "turnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mv6j6si7_7fd65838-1490-4c72-b60c-f3c0dd543672",
+                "createdAt" : 1791886892311,
+                "createdAtSeq" : 65,
+                "entityId" : "msg_mv6j6si7_7fd65838-1490-4c72-b60c-f3c0dd543672",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "rowId" : 9,
+                "state" : "complete",
+                "text" : "The directory contains several project folders. The user just wants the listing and \"terminé\".",
+                "turnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canFork" : true,
+                  "canRetry" : true
+                },
+                "assistantResponseId" : "msg_mv6j6si7_7fd65838-1490-4c72-b60c-f3c0dd543672",
+                "createdAt" : 1791886892334,
+                "createdAtSeq" : 86,
+                "entityId" : "msg_mv6j6si7_7fd65838-1490-4c72-b60c-f3c0dd543672",
+                "kind" : "assistantText",
+                "productTurnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "rowId" : 10,
+                "state" : "complete",
+                "text" : "Le dossier `/Users/me/claude` contient :\n\n- `.DS_Store`\n- `documents/`\n- `project-a/`\n- `project-b/`\n- `project-c/`\n- `project-d/`\n- `project-e/`\n- `project-f/`\n- `project-g/`\n- `project-h/`\n- `zcode_ios/`\n\nterminé",
+                "turnId" : "msg_mv6j6poq_3f9bcc7a-7cc1-4b29-8f42-b461b8c195c4",
+                "visibility" : "visible"
+              }
+            ]
+          },
+          "seq" : 184,
+          "sessionId" : "sess_45199523-12a0-4928-92e6-ff082723da62",
+          "subagents" : {
+            "childSessionIds" : [
+
+            ],
+            "endedTotal" : 0,
+            "revision" : 0,
+            "running" : [
+
+            ]
+          },
+          "usage" : {
+            "contextWindow" : {
+              "autoCompactThresholdTokens" : null,
+              "breakdown" : [
+                {
+                  "chars" : 8627,
+                  "source" : "system_prompt"
+                },
+                {
+                  "chars" : 41,
+                  "source" : "meta_user_context"
+                },
+                {
+                  "chars" : 155239,
+                  "source" : "system_tool_schemas"
+                },
+                {
+                  "chars" : 1811,
+                  "source" : "messages"
+                }
+              ],
+              "cache" : {
+                "cacheReadTokens" : 19904,
+                "cacheWriteTokens" : 0,
+                "hitRate" : 0.9578549147142762,
+                "hitRateRequestCount" : 3,
+                "inputTokens" : 20411,
+                "latestHitRate" : 0.9751604526970751,
+                "totalCacheReadTokens" : 57728,
+                "totalCacheWriteTokens" : 0,
+                "totalInputTokens" : 60268
+              },
+              "maxTokens" : 1000000,
+              "usedTokens" : 20524
+            },
+            "cumulative" : {
+              "cacheReadTokens" : 39744,
+              "cacheWriteTokens" : 0,
+              "inputTokens" : 40368,
+              "outputTokens" : 171
+            }
+          },
+          "workspaceHookAdmission" : null
+        }
+      },
+      "sentAt" : 1791886959666,
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+      "toSeq" : 184,
+      "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mv6j6gf9-m0d4m1jc-3-lf-7",
+    "logicalFrameOrdinal" : 1,
+    "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+    "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62",
+    "wireVersion" : 3
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kind" : "state",
+  "name" : "start.notFound.ack",
+  "seq" : 6,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f2-0824-77bb-a1d6-2c0e35ff4c67",
+    "message" : "No saved workflow named 'inexistant' in this project or globally.",
+    "reasonCode" : "fault.command.savedWorkflowStartRejected.not_found",
+    "revisionAtDecision" : 0,
+    "status" : "failed"
+  }
+}

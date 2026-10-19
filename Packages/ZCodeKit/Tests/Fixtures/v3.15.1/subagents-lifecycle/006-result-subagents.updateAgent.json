@@ -1,0 +1,26 @@
+{
+  "kind" : "result",
+  "name" : "subagents.updateAgent",
+  "seq" : 6,
+  "step" : 5,
+  "value" : {
+    "agent" : {
+      "color" : "cyan",
+      "description" : "Description avec \\\"guillemets\\\" et \\\\ barre",
+      "enabled" : true,
+      "id" : "user:workspace:zcode-ios-probe-agent-v2",
+      "injectAgentsMd" : true,
+      "name" : "zcode-ios-probe-agent-v2",
+      "path" : "/Users/me/claude/.zcode-check/extensions/.zcode/agents/zcode-ios-probe-agent-v2.md",
+      "projectPath" : "/Users/me/claude/.zcode-check/extensions",
+      "readOnly" : false,
+      "scope" : "workspace",
+      "source" : "user",
+      "systemPrompt" : "Réponds uniquement PONG.",
+      "tools" : [
+        "Read",
+        "Grep"
+      ]
+    }
+  }
+}

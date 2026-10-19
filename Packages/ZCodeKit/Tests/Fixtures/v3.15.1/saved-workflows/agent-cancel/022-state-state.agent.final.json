@@ -1,0 +1,183 @@
+{
+  "kind" : "state",
+  "name" : "state.agent.final",
+  "seq" : 22,
+  "step" : 0,
+  "value" : {
+    "availability" : {
+      "compact" : {
+        "allowed" : true
+      },
+      "fork" : {
+        "allowed" : true
+      },
+      "pauseGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToPause"
+      },
+      "queueEdit" : {
+        "allowed" : true
+      },
+      "resumeGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToResume"
+      },
+      "sendQueuedNow" : {
+        "allowed" : true
+      },
+      "setFollowupMode" : {
+        "allowed" : true
+      },
+      "switchModelConfig" : {
+        "allowed" : true
+      }
+    },
+    "backgroundWorks" : [
+      {
+        "anchorRowId" : null,
+        "cancellable" : false,
+        "endedAt" : 1792376191343,
+        "kind" : "workflow",
+        "startedAt" : 1792376179771,
+        "status" : "cancelled",
+        "title" : "ios-probe-agent",
+        "workId" : "dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b"
+      }
+    ],
+    "config" : {
+      "followupMode" : "queue",
+      "mode" : "build",
+      "model" : "GLM-5.3",
+      "modelSelection" : {
+        "modelId" : "GLM-5.3",
+        "options" : {
+          "reasoningLevel" : "max"
+        },
+        "providerId" : "account:zai-individual-coding-plan"
+      },
+      "planEnabled" : false,
+      "provider" : "account:zai-individual-coding-plan",
+      "thought" : "max",
+      "thoughtLevels" : [
+        "low",
+        "high",
+        "max"
+      ]
+    },
+    "control" : {
+      "activeWorks" : [
+        {
+          "foregroundExecutionId" : "runtime_command_7",
+          "kind" : "primaryTurn",
+          "sourceCommandId" : "01a151f2-3976-7112-a85b-a1a5442b57ff",
+          "startedAt" : 1792376191370
+        }
+      ],
+      "apiRetry" : null,
+      "canStop" : true,
+      "lastError" : null,
+      "phase" : "running",
+      "sessionEnded" : false,
+      "stopState" : "stoppable",
+      "stopTargetKind" : "assistant"
+    },
+    "goal" : null,
+    "inputRouting" : {
+      "mode" : "enqueue"
+    },
+    "logEpoch" : "mvemhzgw-nvphd4k9",
+    "meta" : {
+      "title" : "ios-probe-agent",
+      "titleSource" : "generated"
+    },
+    "modelTransition" : null,
+    "pendingCommands" : [
+
+    ],
+    "pendingInteractions" : [
+
+    ],
+    "plan" : null,
+    "protocolVersion" : 1,
+    "queue" : {
+      "autoDrain" : true,
+      "items" : [
+
+      ]
+    },
+    "revision" : 8,
+    "seq" : 13,
+    "sessionId" : "sess_2a9fd37e-5fe5-4c59-8d5d-c0813009b721",
+    "subagents" : {
+      "childSessionIds" : [
+
+      ],
+      "endedTotal" : 0,
+      "revision" : 0,
+      "running" : [
+
+      ]
+    },
+    "usage" : {
+      "contextWindow" : null,
+      "cumulative" : {
+        "cacheReadTokens" : 0,
+        "cacheWriteTokens" : 0,
+        "inputTokens" : 0,
+        "outputTokens" : 0
+      }
+    },
+    "workflowRuns" : {
+      "revision" : 9,
+      "runs" : [
+        {
+          "actors" : [
+            {
+              "name" : "Rédacteur",
+              "ordinal" : 1,
+              "phaseName" : "Écriture",
+              "sessionId" : "sess_dwf-dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b-actor_1_1",
+              "siteId" : "actor#1",
+              "status" : "completed"
+            }
+          ],
+          "concurrencyCeiling" : 10,
+          "currentPhase" : "Écriture",
+          "lastEventSequence" : 8,
+          "nodes" : [
+            {
+              "actorOrdinal" : 1,
+              "actorSiteId" : "actor#1",
+              "instructionsHead" : "Crée le fichier ios-probe-agent.txt contenant OK avec l'outil Write, puis réponds FAIT.",
+              "kind" : "ask",
+              "ordinal" : 1,
+              "outcome" : "cancelled",
+              "phase" : "settled",
+              "phaseName" : "Écriture",
+              "siteId" : "ask#1"
+            }
+          ],
+          "phaseNames" : [
+            "Écriture"
+          ],
+          "phases" : [
+            {
+              "name" : "Écriture",
+              "rounds" : 1
+            }
+          ],
+          "resumable" : true,
+          "runId" : "dwfrun-f3554181-7a37-4403-89a8-a4c4296e4e1b",
+          "status" : "stopped",
+          "stopReason" : "user",
+          "toolCallId" : "launch-6bd2e46b-060e-4255-9c23-5b15c1b5ebfc",
+          "usage" : {
+            "nodesUsed" : 1,
+            "spentTokens" : 0
+          }
+        }
+      ]
+    },
+    "workspaceHookAdmission" : null
+  }
+}

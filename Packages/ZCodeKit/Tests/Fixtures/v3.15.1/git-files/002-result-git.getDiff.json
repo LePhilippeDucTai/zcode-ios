@@ -1,0 +1,14 @@
+{
+  "kind": "result",
+  "name": "git.getDiff",
+  "seq": 2,
+  "step": 1,
+  "value": {
+    "afterContent": "# Démo\n\nLigne 1\nLigne 2 modifiée\nLigne 3\nLigne 4\n",
+    "availability": "patch",
+    "beforeContent": "# Démo\n\nLigne 1\nLigne 2\nLigne 3\n",
+    "patch": "diff --git a/README.md b/README.md\nindex 0bf5617..be14e43 100644\n--- a/README.md\n+++ b/README.md\n@@ -1,5 +1,6 @@\n # Démo\n \n Ligne 1\n-Ligne 2\n+Ligne 2 modifiée\n Ligne 3\n+Ligne 4\n",
+    "path": "/private/tmp/zcode-fixture-repo/README.md",
+    "summary": null
+  }
+}

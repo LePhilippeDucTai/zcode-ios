@@ -1,0 +1,21 @@
+{
+  "steps": [
+    { "call": "zcode-agent", "method": "helloConversationV4" },
+    { "call": "zcode-agent", "method": "initializeConversationV4",
+      "args": [{ "kind": "clientHello", "protocolVersion": 3, "clientId": "client-zcode-probe",
+                 "clientKind": "mobileApp", "appVersion": "zcode-probe" }] },
+    { "listen": "zcode-agent", "event": "onDynamicConversationFrame",
+      "arg": { "workspacePath": "${ZCODE_PROBE_WORKSPACE}" } },
+    { "call": "zcode-agent", "method": "subscribeConversationV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}", "sessionId": "${SESSION_ID}" }] },
+    { "wait": 1 },
+    { "call": "zcode-agent", "method": "sendConversationCommandV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}",
+                 "envelope": { "commandId": "${COMMAND_ID}", "clientId": "client-zcode-probe",
+                               "sessionId": "${SESSION_ID}", "type": "sendText",
+                               "payload": { "text": "${PROMPT}",
+                                            "requestedDelivery": "startNow", "inputOrigin": "mobile" },
+                               "issuedAt": ${NOW} } }] },
+    { "wait": 45 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "kind" : "result",
+  "name" : "usage-stats.requestCodingPlanResetOpportunity",
+  "seq" : 2,
+  "step" : 1,
+  "value" : {
+    "granted" : false,
+    "nextTryAt" : 1792357191181
+  }
+}

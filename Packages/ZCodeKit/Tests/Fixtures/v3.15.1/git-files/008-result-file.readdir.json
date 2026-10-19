@@ -1,0 +1,44 @@
+{
+  "kind": "result",
+  "name": "file.readdir",
+  "seq": 8,
+  "step": 7,
+  "value": [
+    {
+      "isSymbolicLink": false,
+      "name": "src",
+      "path": "/private/tmp/zcode-fixture-repo/src",
+      "type": "directory"
+    },
+    {
+      "isSymbolicLink": false,
+      "name": "big.txt",
+      "path": "/private/tmp/zcode-fixture-repo/big.txt",
+      "type": "file"
+    },
+    {
+      "isSymbolicLink": false,
+      "name": "logo.bin",
+      "path": "/private/tmp/zcode-fixture-repo/logo.bin",
+      "type": "file"
+    },
+    {
+      "isSymbolicLink": false,
+      "name": "new.txt",
+      "path": "/private/tmp/zcode-fixture-repo/new.txt",
+      "type": "file"
+    },
+    {
+      "isSymbolicLink": false,
+      "name": "README.md",
+      "path": "/private/tmp/zcode-fixture-repo/README.md",
+      "type": "file"
+    },
+    {
+      "isSymbolicLink": false,
+      "name": "renamed.txt",
+      "path": "/private/tmp/zcode-fixture-repo/renamed.txt",
+      "type": "file"
+    }
+  ]
+}

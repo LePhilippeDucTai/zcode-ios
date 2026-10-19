@@ -1,0 +1,39 @@
+{
+  "kind" : "result",
+  "name" : "list.project",
+  "seq" : 2,
+  "step" : 0,
+  "value" : {
+    "dir" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows",
+    "invalid" : [
+      {
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe-invalide.dwf.ts",
+        "reason" : "invalid_metadata: description: Required"
+      }
+    ],
+    "workflows" : [
+      {
+        "description" : "Sonde iOS avec un agent qui écrit un fichier",
+        "name" : "ios-probe-agent",
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe-agent.dwf.ts",
+        "scope" : "project"
+      },
+      {
+        "args" : {
+          "count" : {
+            "required" : true,
+            "type" : "number"
+          },
+          "who" : {
+            "default" : "monde",
+            "type" : "string"
+          }
+        },
+        "description" : "Sonde iOS triviale",
+        "name" : "ios-probe",
+        "path" : "/Users/me/claude/.zcode-check/workflows/.zcode/workflows/ios-probe.dwf.ts",
+        "scope" : "project"
+      }
+    ]
+  }
+}

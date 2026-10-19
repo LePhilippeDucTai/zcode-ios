@@ -1,0 +1,23 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.addPluginMarketplace",
+  "seq" : 2,
+  "step" : 1,
+  "value" : {
+    "diagnostics" : [
+
+    ],
+    "marketplace" : {
+      "description" : "Marketplace jetable de zcode-probe",
+      "id" : "zcode-ios-probe-market",
+      "isOfficial" : false,
+      "lastUpdated" : "2026-10-17T23:59:01.713Z",
+      "name" : "zcode-ios-probe-market",
+      "pluginCount" : 1,
+      "source" : {
+        "path" : "/Users/me/claude/.zcode-check/marketplace",
+        "source" : "directory"
+      }
+    }
+  }
+}

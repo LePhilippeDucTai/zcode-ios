@@ -1,0 +1,14 @@
+{
+  "kind": "result",
+  "name": "git.getDiff",
+  "seq": 3,
+  "step": 2,
+  "value": {
+    "afterContent": "nouveau\nfichier\n",
+    "availability": "patch",
+    "beforeContent": "",
+    "patch": "--- /dev/null\n+++ b/new.txt\n@@ -0,0 +1,2 @@\n+nouveau\n+fichier\n",
+    "path": "/private/tmp/zcode-fixture-repo/new.txt",
+    "summary": null
+  }
+}

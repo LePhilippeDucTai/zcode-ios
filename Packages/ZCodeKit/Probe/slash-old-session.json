@@ -1,0 +1,15 @@
+{
+  "steps": [
+    { "call": "zcode-agent", "method": "helloConversationV4" },
+    { "call": "zcode-agent", "method": "initializeConversationV4",
+      "args": [{ "kind": "clientHello", "protocolVersion": 3, "clientId": "client-zcode-probe",
+                 "clientKind": "mobileApp", "appVersion": "zcode-probe" }] },
+    { "call": "zcode-agent", "method": "getSkillReferenceCatalog",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_OLD_WORKSPACE}", "sessionId": "${ZCODE_PROBE_OLD_SESSION}" }] },
+    { "call": "zcode-agent", "method": "subscribeConversationV4",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_OLD_WORKSPACE}", "sessionId": "${ZCODE_PROBE_OLD_SESSION}" }] },
+    { "wait": 3 },
+    { "call": "zcode-agent", "method": "getSkillReferenceCatalog",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_OLD_WORKSPACE}", "sessionId": "${ZCODE_PROBE_OLD_SESSION}" }] }
+  ]
+}

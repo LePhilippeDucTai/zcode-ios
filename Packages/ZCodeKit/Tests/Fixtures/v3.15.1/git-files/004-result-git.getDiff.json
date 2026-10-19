@@ -1,0 +1,14 @@
+{
+  "kind": "result",
+  "name": "git.getDiff",
+  "seq": 4,
+  "step": 3,
+  "value": {
+    "afterContent": null,
+    "availability": "binary",
+    "beforeContent": null,
+    "patch": null,
+    "path": "/private/tmp/zcode-fixture-repo/logo.bin",
+    "summary": "Binary diff is not previewable."
+  }
+}

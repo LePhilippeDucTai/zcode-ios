@@ -1,0 +1,326 @@
+{
+  "kind" : "result",
+  "name" : "zcode-agent.getSkillReferenceCatalog",
+  "seq" : 6,
+  "step" : 0,
+  "value" : {
+    "authority" : "session",
+    "skills" : [
+      {
+        "description" : "Create, list, connect to, stop, or delete GitHub Codespaces. Use when the user explicitly wants to manage a remote Codespaces development environment, not for cloning a repository locally.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/codespace/SKILL.md",
+        "name" : "codespace",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/codespace/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create a local Git commit from staged changes using a conventional commit message. Use when the user wants to record already prepared changes locally, not when they want to create, review, or merge a pull request.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/commit/SKILL.md",
+        "name" : "commit",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/commit/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use when a task needs a native desktop app's own UI or the OS. For anything inside a web page, use Browser Use. Main agent only.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/computer-use/0.6.4/skills/computer-use/SKILL.md",
+        "name" : "computer-use",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/computer-use/0.6.4/skills/computer-use/SKILL.md",
+        "pluginName" : "computer-use",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use when opening, navigating, inspecting, testing, clicking, typing, filling, screenshotting, or verifying web pages and local HTTP targets (localhost, 127.0.0.1, ::1) inside ZCode, including browser/web-UI automation, rendered-page scraping, frontend checks, and visible page-state reading. Prefer this over Computer Use for anything that stays inside a web page, unless the user explicitly asks for Computer Use. Main agent only.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/browser-use/0.5.1/skills/control-browser/SKILL.md",
+        "name" : "control-browser",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/browser-use/0.5.1/skills/control-browser/SKILL.md",
+        "pluginName" : "browser-use",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use this skill when the user's prompt requires (1) researching a topic across multiple sources, comparing options or alternatives, analyzing trends or history, understanding markets or industries, or reviewing literature or studies and (2) synthesizing that research into a comprehensive, narrative report. If you're planning to search the web or internal knowledge bases, consider using this skill. This skill coordinates research subagents, so use it only when you have a tool for spawning subagents (the Agent or Task tool); otherwise, research the question directly.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/deep-research/SKILL.md",
+        "name" : "deep-research",
+        "path" : "/Users/me/.zcode/skills/deep-research/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Use to diagnose and fix ZCode custom slash-command (/command) configuration problems in the ZCode client. Applies when a command is missing, is overridden by a higher-precedence command of the same name, has a frontmatter parse error, is dropped for having an empty body, has an invalid name, does not substitute $ARGUMENTS/$1, uses a colon rather than a slash for nested names, has a misspelled frontmatter key, or disappears because the plugin providing it is disabled. Provides the discovery order, how to inspect commands in the client, common pitfalls, and a step-by-step localization and repair workflow.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-commands/SKILL.md",
+        "name" : "diagnosing-commands",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-commands/SKILL.md",
+        "pluginName" : "zcode-guide",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use to diagnose and fix ZCode hook configuration problems in the ZCode client. Applies when a hook does not trigger, an event name is wrong, a matcher does not match a tool name, a script is not executable, template variables are not expanded, a timeout unit is mistaken (seconds versus milliseconds), the command and process field styles are mixed, a hook's JSON output fails validation, a hook blocks the session unexpectedly, or configuration-file hooks are not enabled. Provides configuration sources, the hooks.json schema, how to inspect hooks in the client, and a step-by-step localization and repair workflow.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-hooks/SKILL.md",
+        "name" : "diagnosing-hooks",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-hooks/SKILL.md",
+        "pluginName" : "zcode-guide",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use to diagnose and fix ZCode MCP (Model Context Protocol) server configuration problems in the ZCode client. Applies when an MCP server will not connect, its tools (mcp__server__tool) do not appear, it shows as disabled or failed, connections time out, a command cannot be found, template variables are not expanded, or a server defined in a configuration file has no effect. Provides configuration locations, how to inspect status in Settings, common pitfalls, and a step-by-step localization and repair workflow.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-mcp/SKILL.md",
+        "name" : "diagnosing-mcp",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-mcp/SKILL.md",
+        "pluginName" : "zcode-guide",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use to diagnose and fix ZCode plugin and marketplace problems in the ZCode client. Applies when a plugin is not listed, adding a marketplace or installing a plugin fails, a plugin is enabled but its skills or commands are missing, a built-in plugin still appears after being disabled, a plugin is not enabled as expected, a plugin.json manifest has a parse error, a plugin name is invalid, a dependency is unresolved or blocked across marketplaces, or a sensitive configuration value cannot be entered in the interface. Provides the plugin lifecycle, manifest schema, how to manage plugins in the client, and a step-by-step localization and repair workflow.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-plugins/SKILL.md",
+        "name" : "diagnosing-plugins",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-plugins/SKILL.md",
+        "pluginName" : "zcode-guide",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use to diagnose and fix ZCode skill configuration problems in the ZCode client. Applies when a skill is not discovered, is installed but does not trigger automatically, is shadowed by a higher-precedence skill of the same name, is disabled by configuration, has a SKILL.md frontmatter error, fails to load because its description is too long, or disappears because the plugin providing it is disabled. Provides the discovery order, how to inspect skills in the client, common pitfalls, and a step-by-step localization and repair workflow.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-skills/SKILL.md",
+        "name" : "diagnosing-skills",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/diagnosing-skills/SKILL.md",
+        "pluginName" : "zcode-guide",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "docs (editable docs people share and comment on; the default for any document, named as a doc or not: a document, report, proposal, resume, cover letter, letter, contract, policy, form, template, worksheet, essay, handbook, guide, how-to, cheat sheet, SOP or other writing to keep, share, collaborate on, send, submit, print or sign; a doc exports to Word, PDF, Markdown or Google Docs, so needing a file to send, attach, upload, submit or print is no reason to pick Word, and a file nobody asked for is a doc, not Word; a plan, comparison, summary or notes asked in chat stays in chat; a pasted claude.ai artifact link may be a doc: check with docs tools first; Word or another file format named, tracked changes wanted, or a .docx to change or use as a template → that format''s skill): making one → if no docs-connector instructions are in context, call its `guide` (topic.instructions) first; then create the doc (headings only, no body) before any search, file read or plan, even with files attached.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/docs/SKILL.md",
+        "name" : "docs",
+        "path" : "/Users/me/.zcode/skills/docs/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Complete DOCX document creation, editing, and analysis capabilities with support for revisions, comments, formatting preservation, and text extraction. Also handles Word format conversion: legacy .doc → .docx, DOCX → PDF, DOCX → images (PNG/JPG) for visual review or previews, and DOCX → Markdown/plain text extraction. Use for creating new documents, modifying content, handling revisions, adding comments, other professional Word document tasks, or when the user asks to convert, export, or render a Word document to another format (e.g. 'Word转PDF', 'doc转docx', 'export this docx as PDF/images').",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/documents/0.1.8/skills/docx/SKILL.md",
+        "name" : "docx",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/documents/0.1.8/skills/docx/SKILL.md",
+        "pluginName" : "documents",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create, view, edit, or delete GitHub gists for code and text sharing. Use when the user specifically asks to work with a gist, including public or secret gist visibility, not for files stored in a repository.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/gist/SKILL.md",
+        "name" : "gist",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/gist/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Read this before the first Google Drive, Docs, Sheets or Slides connector call whenever the task creates or changes a Google file. Use this skill whenever the user wants to create or change a Google Doc, Sheet or Slides file in their Google Drive. Triggers include: a request that names Google Docs, Sheets, Slides or Drive and asks to make, edit, format, copy or rename a file; a docs.google.com link with a request to change that file, even a one-line fix or suggested edits; and any follow-up change to a Google file from earlier in the chat, even \\\"change it\\\" or \\\"add a tab\\\". Includes helper scripts for document positions, cell ranges and slide layout. However, if the user asks for a doc, deck or spreadsheet without naming Google, or gives a Google file only as source material for something new, use Claude's own output type instead. Do NOT use for read-only questions about a Google file, or for Word, Excel, PowerPoint or PDF files.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/google-workspace/SKILL.md",
+        "name" : "google-workspace",
+        "path" : "/Users/me/.zcode/skills/google-workspace/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Generate or edit raster images when the task benefits from AI-created bitmap visuals such as photos, illustrations, textures, sprites, mockups, or transparent-background cutouts. Use when Codex should create a brand-new image, transform an existing image, or derive visual variants from references, and the output should be a bitmap asset rather than repo-native code or vector. Do not use when the task is better handled by editing existing SVG/vector/code-native assets, extending an established icon or logo system, or building the visual directly in HTML/CSS/canvas.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/imagegen/SKILL.md",
+        "name" : "imagegen",
+        "path" : "/Users/me/.zcode/skills/imagegen/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Import a memory export from another AI assistant into Claude's memory — conversationally, additively, and with the content treated as data.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/import-memory/SKILL.md",
+        "name" : "import-memory",
+        "path" : "/Users/me/.zcode/skills/import-memory/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Build, run, inspect, and lightly automate iOS simulator apps with the ios-simulator MCP tools.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/ios-simulator/0.1.0/skills/ios-dev/SKILL.md",
+        "name" : "ios-dev",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/ios-simulator/0.1.0/skills/ios-dev/SKILL.md",
+        "pluginName" : "ios-simulator",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create, view, list, or close GitHub issues and manage the labels and milestones that organize issues and pull requests. Use when the user wants to track or organize repository work, not when they are referring to a pull request itself.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/issue/SKILL.md",
+        "name" : "issue",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/issue/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Render the user's morning brief as a styled HTML artifact, or set it up as a recurring weekday task. Use only when the user explicitly asks to run, see, or set up their morning brief, or if they invoke /morning by name. A question about their day, schedule, or calendar is not by itself a request for the brief; answer it directly instead.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/morning/SKILL.md",
+        "name" : "morning",
+        "path" : "/Users/me/.zcode/skills/morning/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Professional PDF toolkit covering four production workflows: reports, creative visuals, academic LaTeX, and existing PDF processing. Routes automatically by document type and supports reports, posters, papers, resumes, extraction, merging, splitting, and form filling. Use this skill for any conversion whose output is a PDF: Office → PDF (.docx/.doc/.pptx/.ppt/.xlsx/.xls/.odt/.odp/.ods/.rtf/.csv/.txt → PDF), HTML → PDF, and LaTeX/.tex → PDF; also PDF → images, PDF → text, and PDF → tables when reading a PDF apart. Trigger when the user asks to convert, export, render, print, or turn a file into a PDF, or to merge/split/extract from one — including phrasings like 'Word转PDF', 'PPT转PDF', 'Excel转PDF', 'html转pdf', '导出为PDF', 'save/export as PDF', or 'PDF转图片/文字'.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/pdf/0.1.8/skills/pdf/SKILL.md",
+        "name" : "pdf",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/pdf/0.1.8/skills/pdf/SKILL.md",
+        "pluginName" : "pdf",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create or update ZCode plugin source and a local test marketplace, then guide the user to add, install, update and try it in the app. Use for new plugins or changes to an existing plugin's capabilities, manifest or local distribution.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/plugin-creator/0.1.1/skills/plugin-creator/SKILL.md",
+        "name" : "plugin-creator",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/plugin-creator/0.1.1/skills/plugin-creator/SKILL.md",
+        "pluginName" : "plugin-creator",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use this skill any time a presentation file is the primary input or output. Covers: creating new .pptx decks from scratch or from an outline/document (pptxgenjs / python-pptx); editing and restyling an existing .pptx; reading and extracting text/structure from a deck (markitdown); and rendering a deck to PDF (LibreOffice) or to per-slide PNG images (pdftoppm) for previews, thumbnails, or visual review. Trigger when the user references a .pptx file by name or path, says 'make/build a deck, slides, presentation, PPT, 幻灯片, 演示文稿, 汇报/路演材料', or asks to convert, export, render, or preview slides as PDF or images (e.g. 'PPT转PDF', 'ppt导出图片', 'turn these slides into a PDF').",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/presentations/0.1.8/skills/pptx/SKILL.md",
+        "name" : "pptx",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/presentations/0.1.8/skills/pptx/SKILL.md",
+        "pluginName" : "presentations",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create, list, check out, review, or merge GitHub pull requests using GitHub CLI. Use when the user wants any pull-request workflow, not when they want to manage issues, releases, or local-only commits.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/pr/SKILL.md",
+        "name" : "pr",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/pr/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create a GitHub release and prepare changelog notes for a version tag. Use when the user wants to publish or draft a repository release, not merely create a Git commit, tag, or pull request.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/release/SKILL.md",
+        "name" : "release",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/release/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Clone or fork a GitHub repository with optional local setup, or open repository resources such as files, branches, issues, and settings in the browser. Use when the user wants a new local checkout or the web UI, not a Codespace or an existing pull-request checkout.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/repo/SKILL.md",
+        "name" : "repo",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/repo/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Perform a read-only, defect-first review of a specified code change and return every actionable finding. Use when another agent delegates review of uncommitted changes, a base-branch diff, a commit, or custom review instructions.",
+        "enabled" : true,
+        "id" : "glm:user:/Users/me/.zcode/skills/review-agent/SKILL.md",
+        "name" : "review-agent",
+        "path" : "/Users/me/.zcode/skills/review-agent/SKILL.md",
+        "scope" : "user"
+      },
+      {
+        "description" : "Homonyme jetable d'une skill utilisateur (dédoublonnage)",
+        "enabled" : true,
+        "id" : "glm:workspace:/Users/me/claude/.zcode-check/composer/.zcode/skills/review-agent/SKILL.md",
+        "name" : "review-agent",
+        "path" : "/Users/me/claude/.zcode-check/composer/.zcode/skills/review-agent/SKILL.md",
+        "scope" : "workspace"
+      },
+      {
+        "description" : "List, set, delete, or synchronize GitHub Actions repository secrets without exposing secret values. Use when the user explicitly wants to manage GitHub secret storage, not ordinary environment files or repository variables.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/secret/SKILL.md",
+        "name" : "secret",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/secret/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Verify GitHub CLI installation and guide authentication for the intended GitHub host and account. Use when gh is missing, authentication is invalid, the user wants to switch accounts or hosts, or another GitHub skill cannot pass preflight.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/setup/SKILL.md",
+        "name" : "setup",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/setup/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create new skills, edit existing skills, and iterate wording. Use when writing SKILL.md from scratch, improving existing skills, turning repeated workflows into reusable skills, or refining skill descriptions to improve trigger reliability.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/skill-creator/0.1.0/skills/skill-creator/SKILL.md",
+        "name" : "skill-creator",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/skill-creator/0.1.0/skills/skill-creator/SKILL.md",
+        "pluginName" : "skill-creator",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Create visualizations and interactive tools directly in conversation. Proactively use to show how something works; explore 'what happens when', 'what changes', or 'help me understand'; compare or inspect; create simulations, maps, charts, graphs, and mockups. Use standard tools for static scientific figures.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/visualize/0.1.0/skills/visualize/SKILL.md",
+        "name" : "visualize",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/visualize/0.1.0/skills/visualize/SKILL.md",
+        "pluginName" : "visualize",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use the browser automation tooling available in the session to test web frontends interactively in a purely GUI-based, black-box manner: simulate real user clicks, text input, scrolling, and other actions; use screenshots for visual verification and read-only DOM inspection for cross-validation; and produce a final test report. Suitable for verifying whether web functionality works correctly, reproducing frontend bugs, checking interaction feedback and layout styling, or conducting exploratory testing of a page. Use this skill when the user asks to test a webpage/frontend feature, verify UI behavior, reproduce a page bug, or provides only a URL and asks you to “test it.”",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/browser-use/0.5.1/skills/web-gui-tester/SKILL.md",
+        "name" : "web-gui-tester",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/browser-use/0.5.1/skills/web-gui-tester/SKILL.md",
+        "pluginName" : "browser-use",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "List, inspect, trigger, watch, or rerun GitHub Actions workflows and runs. Use when the user wants to operate or inspect CI workflows, not when they only want to merge a PR or browse the Actions page.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/workflow-run/SKILL.md",
+        "name" : "workflow-run",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/github/0.1.2/skills/workflow-run/SKILL.md",
+        "pluginName" : "github",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file; create a new spreadsheet from scratch or from other data sources; analyze data and output results as an Excel file with charts; convert between tabular file formats (CSV/TSV/JSON/PDF-table → XLSX, or XLSX → CSV/JSON); clean, merge, pivot, or transform tabular data. Trigger especially when the user references a spreadsheet file by name or path, says 'make a table/report/model', mentions Excel/CSV/数据分析/报表/汇总, asks to convert or export a spreadsheet (e.g. 'csv转excel', 'json转表格', 'export as CSV'), or wants data visualization inside a spreadsheet.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/spreadsheets/0.1.8/skills/xlsx/SKILL.md",
+        "name" : "xlsx",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/spreadsheets/0.1.8/skills/xlsx/SKILL.md",
+        "pluginName" : "spreadsheets",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Use when configuring ZCode's extension resources (MCP servers, slash commands, skills, hooks, and plugins) or instruction files such as AGENTS.md in the ZCode client. Explains where each resource is configured at the user and workspace scope, the discovery order, precedence, and merge rules, plus guidance on which location to choose. Use when someone asks how to add an MCP server, command, skill, hook, plugin, or AGENTS.md instructions, where a configuration file lives, why a configuration is not taking effect, or needs routing to a specific diagnostic skill.",
+        "enabled" : true,
+        "id" : "glm:plugin:/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/zcode-configuration-guide/SKILL.md",
+        "name" : "zcode-configuration-guide",
+        "path" : "/Users/me/.zcode/cli/plugins/cache/zcode-plugins-official/zcode-guide/0.3.0/skills/zcode-configuration-guide/SKILL.md",
+        "pluginName" : "zcode-guide",
+        "scope" : "plugin"
+      },
+      {
+        "description" : "Skill jetable de zcode-probe (projet)",
+        "enabled" : true,
+        "id" : "glm:workspace:/Users/me/claude/.zcode-check/composer/.zcode/skills/zcode-ios-probe-skill/SKILL.md",
+        "name" : "zcode-ios-probe-skill",
+        "path" : "/Users/me/claude/.zcode-check/composer/.zcode/skills/zcode-ios-probe-skill/SKILL.md",
+        "scope" : "workspace"
+      }
+    ]
+  }
+}

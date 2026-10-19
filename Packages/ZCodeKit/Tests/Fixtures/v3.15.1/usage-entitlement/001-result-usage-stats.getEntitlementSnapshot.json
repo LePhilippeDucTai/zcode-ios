@@ -1,0 +1,90 @@
+{
+  "kind" : "result",
+  "name" : "usage-stats.getEntitlementSnapshot",
+  "seq" : 1,
+  "step" : 0,
+  "value" : {
+    "authenticated" : true,
+    "context" : {
+      "displayName" : "GLM Coding Max",
+      "productId" : "product-1f179d",
+      "scope" : "personal"
+    },
+    "generatedAt" : 1792233665316,
+    "mcpQuota" : {
+      "aggregate" : {
+        "currentValue" : 0,
+        "nextResetTime" : 1792252800000,
+        "percentage" : 0,
+        "remaining" : 1000,
+        "type" : "MCP_USAGE_LIMIT",
+        "usage" : 0,
+        "usageDetails" : [
+
+        ]
+      },
+      "level" : "max",
+      "scope" : {
+        "providerFamily" : "zai",
+        "targetType" : "PERSONAL"
+      },
+      "serverTime" : 1792233665000
+    },
+    "provider" : {
+      "id" : "account:zai-individual-coding-plan",
+      "name" : "Z.ai - Coding Plan"
+    },
+    "quota" : {
+      "level" : "max",
+      "limits" : [
+        {
+          "currentValue" : 1149,
+          "nextResetTime" : 1792244047376,
+          "number" : 5,
+          "percentage" : 4,
+          "remaining" : 26850,
+          "type" : "CREDIT_LIMIT",
+          "unit" : 3,
+          "usage" : 28000,
+          "usageDetails" : [
+
+          ]
+        },
+        {
+          "currentValue" : 37237,
+          "nextResetTime" : 1792586212983,
+          "number" : 1,
+          "percentage" : 26,
+          "remaining" : 102762,
+          "type" : "CREDIT_LIMIT",
+          "unit" : 6,
+          "usage" : 140000,
+          "usageDetails" : [
+
+          ]
+        }
+      ]
+    },
+    "remaining" : {
+      "count" : 26850,
+      "isShow" : true,
+      "nextResetTime" : 1792244047376,
+      "percentage" : 4
+    },
+    "subscription" : {
+      "details" : [
+        {
+          "beginTime" : null,
+          "billingCycle" : "annually",
+          "expireTime" : "2030-01-01T12:00:00.000Z",
+          "productId" : "product-1f179d",
+          "productName" : "GLM Coding Max",
+          "purchaseTime" : null,
+          "renewTime" : "2029-01-01T00:00:00.000Z"
+        }
+      ],
+      "identityMasked" : null,
+      "identityType" : "unknown"
+    }
+  }
+}

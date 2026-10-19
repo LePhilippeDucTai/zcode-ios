@@ -1,0 +1,20 @@
+{
+  "steps": [
+    { "call": "zcode-agent", "method": "helloConversationV4" },
+    { "call": "zcode-agent", "method": "initializeConversationV4",
+      "args": [{ "kind": "clientHello", "protocolVersion": 3, "clientId": "client-zcode-probe",
+                 "clientKind": "mobileApp", "appVersion": "zcode-probe" }] },
+    { "call": "coding-plan-subscription", "method": "getDynamicWorkflowClientConfig", "args": [] },
+    { "call": "zcode-session", "method": "readWorkspacePresentation",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "zcode-agent", "method": "readWorkspacePresentation",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "zcode-agent", "method": "getSkillReferenceCatalog",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "zcode-agent", "method": "getSkillReferenceCatalog",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}", "sessionId": "sess_zcode-probe-inexistante" }] },
+    { "call": "subagents", "method": "list",
+      "args": [{ "workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "allRuntimeScopes" }] },
+    { "call": "zcode-session", "method": "methodeInexistante", "args": [] }
+  ]
+}

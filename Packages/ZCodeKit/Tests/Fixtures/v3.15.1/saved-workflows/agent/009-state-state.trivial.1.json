@@ -1,0 +1,30 @@
+{
+  "kind" : "state",
+  "name" : "state.trivial.1",
+  "seq" : 9,
+  "step" : 0,
+  "value" : {
+    "backgroundWorks" : [
+
+    ],
+    "control" : {
+      "activeWorks" : [
+
+      ],
+      "apiRetry" : null,
+      "canStop" : false,
+      "lastError" : null,
+      "phase" : "draft",
+      "sessionEnded" : false,
+      "stopState" : "idle",
+      "stopTargetKind" : "unknown"
+    },
+    "launchRows" : [
+
+    ],
+    "pendingInteractions" : [
+
+    ],
+    "workflowRuns" : null
+  }
+}

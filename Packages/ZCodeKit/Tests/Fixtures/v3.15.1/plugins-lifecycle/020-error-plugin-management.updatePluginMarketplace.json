@@ -1,0 +1,14 @@
+{
+  "kind": "error",
+  "name": "plugin-management.updatePluginMarketplace",
+  "seq": 20,
+  "step": 19,
+  "value": {
+    "code": -32603,
+    "data": {
+      "name": "Error"
+    },
+    "message": "Marketplace not found: zcode-ios-probe-market",
+    "name": "ZCodeProtocolClientError"
+  }
+}

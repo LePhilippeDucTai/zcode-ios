@@ -1,0 +1,15 @@
+{
+  "kind" : "state",
+  "name" : "createSession.agent.ack",
+  "seq" : 17,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f0-38ac-7bda-aad0-ef8124de82dc",
+    "result" : {
+      "sessionId" : "sess_4baedac4-2c8a-4803-b5a3-a536dca5a190",
+      "type" : "createSession"
+    },
+    "revisionAtDecision" : 0,
+    "status" : "accepted"
+  }
+}

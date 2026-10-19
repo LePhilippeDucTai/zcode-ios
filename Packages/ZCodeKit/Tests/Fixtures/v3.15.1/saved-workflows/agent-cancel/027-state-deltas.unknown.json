@@ -1,0 +1,26 @@
+{
+  "kind" : "state",
+  "name" : "deltas.unknown",
+  "seq" : 27,
+  "step" : 0,
+  "value" : {
+    "opCounts" : {
+      "row.appended" : 9,
+      "row.upserted" : 5,
+      "state.updated" : 20
+    },
+    "stateUpdatedKeys" : [
+      "availability",
+      "backgroundWorks",
+      "control",
+      "inputRouting",
+      "meta",
+      "pendingInteractions",
+      "revision",
+      "workflowRuns"
+    ],
+    "unknownOps" : [
+
+    ]
+  }
+}

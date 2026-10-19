@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "git.discardPaths",
+  "seq": 4,
+  "step": 3,
+  "value": {
+    "message": "git restore failed: error: pathspec 'new.txt' did not match any file(s) known to git",
+    "name": "Error"
+  }
+}

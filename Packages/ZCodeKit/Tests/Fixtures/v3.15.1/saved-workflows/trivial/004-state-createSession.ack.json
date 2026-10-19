@@ -1,0 +1,15 @@
+{
+  "kind" : "state",
+  "name" : "createSession.ack",
+  "seq" : 4,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151ef-7b97-77ba-8f44-e8f6eebc8710",
+    "result" : {
+      "sessionId" : "sess_54ad0edd-d6db-420a-9aab-f708e44a7cdc",
+      "type" : "createSession"
+    },
+    "revisionAtDecision" : 0,
+    "status" : "accepted"
+  }
+}

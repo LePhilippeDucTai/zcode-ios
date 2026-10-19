@@ -1,0 +1,18 @@
+{
+  "steps": [
+    { "call": "subagents", "method": "createAgent", "args": [{"config": {"name": "zcode-ios-probe-agent", "description": "Sous-agent jetable de zcode-probe", "systemPrompt": "Réponds uniquement PONG.", "color": "cyan", "tools": ["Read", "Grep"], "injectAgentsMd": true}, "provider": "glm", "scope": "workspace", "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "subagents", "method": "createAgent", "args": [{"config": {"name": "zcode-ios-probe-agent", "description": "Sous-agent jetable de zcode-probe", "systemPrompt": "Réponds uniquement PONG.", "color": "cyan", "tools": ["Read", "Grep"], "injectAgentsMd": true}, "provider": "glm", "scope": "workspace", "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "subagents", "method": "createAgent", "args": [{"config": {"name": "ab", "description": "Sous-agent jetable de zcode-probe", "systemPrompt": "Réponds uniquement PONG.", "color": "cyan", "tools": ["Read", "Grep"], "injectAgentsMd": true}, "provider": "glm", "scope": "workspace", "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "subagents", "method": "createAgent", "args": [{"config": {"name": "Explore", "description": "Sous-agent jetable de zcode-probe", "systemPrompt": "Réponds uniquement PONG.", "color": "cyan", "tools": ["Read", "Grep"], "injectAgentsMd": true}, "provider": "glm", "scope": "workspace", "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "allRuntimeScopes" }] },
+    { "call": "subagents", "method": "updateAgent", "args": [{"agentId": "user:workspace:zcode-ios-probe-agent", "oldFilePath": "${ZCODE_PROBE_WORKSPACE}/.zcode/agents/zcode-ios-probe-agent.md", "config": {"name": "zcode-ios-probe-agent-v2", "description": "Description avec \"guillemets\" et \\ barre", "systemPrompt": "Réponds uniquement PONG.", "color": "cyan", "tools": ["Read", "Grep"], "injectAgentsMd": true}, "provider": "glm", "scope": "workspace", "workspacePath": "${ZCODE_PROBE_WORKSPACE}" }] },
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "allRuntimeScopes" }] },
+    { "call": "subagents", "method": "createAgent", "args": [{"config": {"name": "zcode-ios-probe-user", "description": "Sous-agent jetable de zcode-probe", "systemPrompt": "Réponds uniquement PONG.", "color": "cyan", "tools": ["Read", "Grep"], "injectAgentsMd": true}, "provider": "glm", "scope": "user" }] },
+    { "call": "subagents", "method": "setEnabled", "args": [{"agentId": "user:user:zcode-ios-probe-user", "enabled": false }] },
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "settingsUserOnly" }] },
+    { "call": "subagents", "method": "deleteAgent", "args": [{"agentId": "user:user:zcode-ios-probe-user", "filePath": "${ZCODE_PROBE_USER_AGENTS}/zcode-ios-probe-user.md" }] },
+    { "call": "subagents", "method": "deleteAgent", "args": [{"agentId": "user:workspace:zcode-ios-probe-agent-v2", "filePath": "${ZCODE_PROBE_WORKSPACE}/.zcode/agents/zcode-ios-probe-agent-v2.md" }] },
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "allRuntimeScopes" }] },
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "settingsUserOnly" }] }
+  ]
+}

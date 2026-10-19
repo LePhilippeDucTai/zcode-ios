@@ -1,0 +1,12 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.resetPluginConfig",
+  "seq" : 13,
+  "step" : 12,
+  "value" : {
+    "diagnostics" : [
+
+    ],
+    "pluginId" : "zcode-ios-probe@zcode-ios-probe-market"
+  }
+}

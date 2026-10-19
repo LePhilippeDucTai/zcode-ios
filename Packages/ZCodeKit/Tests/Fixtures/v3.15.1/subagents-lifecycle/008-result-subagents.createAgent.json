@@ -1,0 +1,25 @@
+{
+  "kind" : "result",
+  "name" : "subagents.createAgent",
+  "seq" : 8,
+  "step" : 7,
+  "value" : {
+    "agent" : {
+      "color" : "cyan",
+      "description" : "Sous-agent jetable de zcode-probe",
+      "enabled" : true,
+      "id" : "user:user:zcode-ios-probe-user",
+      "injectAgentsMd" : true,
+      "name" : "zcode-ios-probe-user",
+      "path" : "/Users/me/.zcode/agents/zcode-ios-probe-user.md",
+      "readOnly" : false,
+      "scope" : "user",
+      "source" : "user",
+      "systemPrompt" : "Réponds uniquement PONG.",
+      "tools" : [
+        "Read",
+        "Grep"
+      ]
+    }
+  }
+}

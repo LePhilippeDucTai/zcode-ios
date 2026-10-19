@@ -1,0 +1,60 @@
+{
+  "kind" : "result",
+  "name" : "plugin-management.setPluginEnabled",
+  "seq" : 9,
+  "step" : 8,
+  "value" : {
+    "enabled" : false,
+    "plugin" : {
+      "commandRootCount" : 0,
+      "components" : [
+        {
+          "items" : [
+            {
+              "description" : "Skill jetable de zcode-probe",
+              "name" : "zcode-ios-probe"
+            }
+          ],
+          "kind" : "skill"
+        }
+      ],
+      "configuredOptions" : {
+        "label" : "essai"
+      },
+      "declaredMcpServerNames" : [
+
+      ],
+      "description" : "Plugin jetable : une skill, aucune commande.",
+      "enabled" : false,
+      "enabledSource" : "workspace",
+      "hookDetails" : [
+
+      ],
+      "id" : "zcode-ios-probe@zcode-ios-probe-market",
+      "marketplace" : "zcode-ios-probe-market",
+      "mcpServerNames" : [
+
+      ],
+      "name" : "zcode-ios-probe",
+      "rootPath" : "/Users/me/.zcode/cli/plugins/cache/zcode-ios-probe-market/zcode-ios-probe/1.0.0",
+      "skillCount" : 1,
+      "skillRootCount" : 1,
+      "source" : "cache",
+      "userConfig" : {
+        "codeFactice" : {
+          "description" : "Option sensible (valeur factice)",
+          "sensitive" : true,
+          "title" : "Code factice",
+          "type" : "string"
+        },
+        "label" : {
+          "default" : "sonde",
+          "description" : "Option non sensible",
+          "title" : "Libellé",
+          "type" : "string"
+        }
+      },
+      "version" : "1.0.0"
+    }
+  }
+}

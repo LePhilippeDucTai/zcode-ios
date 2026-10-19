@@ -1,0 +1,33 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 9,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "online",
+    "frame" : {
+      "fromSeq" : 426,
+      "payload" : {
+        "deltas" : [
+          {
+            "append" : "ge. La solution classique consistait à multiplier les requêtes (polling) ou à utiliser des astuces comme le long polling ou le streaming, toutes coûteuses en latence et en ressources.\n\n### Fonctionnement\n\nLe WebSocket repose sur une phase de négociation astucieuse : le client lance une requête HTTP classique contenant des en-têtes particuliers (`Upgrade: websocket`, `Connection: Upgrade`, et une clé de sécurité). Si le serveur accepte, il répond par un code 101 « Switching Protocols ». À partir de cet instant, la connexion TCP exist",
+            "op" : "row.delta",
+            "path" : "text",
+            "rowId" : 14
+          }
+        ],
+        "kind" : "deltas"
+      },
+      "sentAt" : 1791886971901,
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+      "toSeq" : 548,
+      "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mv6j6gf9-m0d4m1jc-3-lf-11",
+    "logicalFrameOrdinal" : 5,
+    "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+    "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62",
+    "wireVersion" : 3
+  }
+}

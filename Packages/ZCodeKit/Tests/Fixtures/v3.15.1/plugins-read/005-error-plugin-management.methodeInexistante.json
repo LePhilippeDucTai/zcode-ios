@@ -1,0 +1,10 @@
+{
+  "kind": "error",
+  "name": "plugin-management.methodeInexistante",
+  "seq": 5,
+  "step": 4,
+  "value": {
+    "message": "Method not found: methodeInexistante",
+    "name": "Error"
+  }
+}

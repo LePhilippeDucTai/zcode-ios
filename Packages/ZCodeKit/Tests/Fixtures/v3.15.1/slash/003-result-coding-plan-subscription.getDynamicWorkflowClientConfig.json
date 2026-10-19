@@ -1,0 +1,12 @@
+{
+  "kind" : "result",
+  "name" : "coding-plan-subscription.getDynamicWorkflowClientConfig",
+  "seq" : 3,
+  "step" : 2,
+  "value" : {
+    "enabled" : true,
+    "mode" : "alwaysOn",
+    "offeredMode" : "alwaysOn",
+    "source" : "remote"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 12,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "online",
+    "frame" : {
+      "fromSeq" : 795,
+      "payload" : {
+        "deltas" : [
+          {
+            "append" : " ses mécanismes supplémentaires de reconnexion et de rooms), ws en Node.js, ou le support intégré dans des frameworks comme Django Channels ou Actix (Rust).\n\nSes cas d'usage typiques sont les chats, les tableaux multijoueurs, les éditeurs collaboratifs, les flux financiers, le suivi en direct d'événements sportifs ou la télémétrie. Notons qu'il existe aujourd'hui une alternative plus légère, Server-Sent Events (SSE), adaptée quand seul le serveur émet ; le WebSocket",
+            "op" : "row.delta",
+            "path" : "text",
+            "rowId" : 14
+          }
+        ],
+        "kind" : "deltas"
+      },
+      "sentAt" : 1791886978534,
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+      "toSeq" : 918,
+      "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mv6j6gf9-m0d4m1jc-3-lf-14",
+    "logicalFrameOrdinal" : 8,
+    "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-3",
+    "topic" : "conversation/sess_45199523-12a0-4928-92e6-ff082723da62",
+    "wireVersion" : 3
+  }
+}

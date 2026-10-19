@@ -1,0 +1,24 @@
+{
+  "kind" : "result",
+  "name" : "zcode-agent.subscribeConversationV4",
+  "seq" : 3,
+  "step" : 3,
+  "value" : {
+    "ack" : {
+      "logEpoch" : "mv6j6gf9-m0d4m1jc",
+      "mode" : "snapshot",
+      "openTiming" : {
+        "cliProcessState" : "reused",
+        "cliRequestMs" : 1,
+        "hostPrepareMs" : 0,
+        "initialFrameEncodeMs" : 0,
+        "providerRegistrySyncMs" : 0,
+        "sessionRuntimeState" : "warm",
+        "snapshotRowCount" : 4,
+        "taskMetaReadMs" : 0,
+        "version" : 1
+      },
+      "subscriptionId" : "sub-mv6j6gf9-m0d4m1jc-2"
+    }
+  }
+}

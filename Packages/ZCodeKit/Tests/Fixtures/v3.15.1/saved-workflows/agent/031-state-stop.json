@@ -1,0 +1,12 @@
+{
+  "kind" : "state",
+  "name" : "stop",
+  "seq" : 31,
+  "step" : 0,
+  "value" : {
+    "commandId" : "01a151f0-b9d9-7fe1-bb0d-456f5f95155f",
+    "reasonCode" : "guard.stopTargetChanged",
+    "revisionAtDecision" : 9,
+    "status" : "noop"
+  }
+}

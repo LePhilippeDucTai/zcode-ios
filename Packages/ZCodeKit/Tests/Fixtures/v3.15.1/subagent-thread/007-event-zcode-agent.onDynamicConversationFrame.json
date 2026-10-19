@@ -1,0 +1,303 @@
+{
+  "kind" : "event",
+  "name" : "zcode-agent.onDynamicConversationFrame",
+  "seq" : 7,
+  "step" : 2,
+  "value" : {
+    "deliveryKind" : "initial",
+    "frame" : {
+      "fromSeq" : 0,
+      "payload" : {
+        "kind" : "snapshot",
+        "snapshot" : {
+          "availability" : {
+            "compact" : {
+              "allowed" : true
+            },
+            "fork" : {
+              "allowed" : true
+            },
+            "pauseGoal" : {
+              "allowed" : false,
+              "reasonCode" : "noGoalToPause"
+            },
+            "queueEdit" : {
+              "allowed" : true
+            },
+            "resumeGoal" : {
+              "allowed" : false,
+              "reasonCode" : "noGoalToResume"
+            },
+            "sendQueuedNow" : {
+              "allowed" : false,
+              "reasonCode" : "sendQueuedNowRequiresRunning"
+            },
+            "setFollowupMode" : {
+              "allowed" : true
+            },
+            "switchModelConfig" : {
+              "allowed" : true
+            }
+          },
+          "backgroundWorks" : [
+
+          ],
+          "config" : {
+            "followupMode" : "queue",
+            "mode" : "build",
+            "model" : "GLM-5.3",
+            "modelSelection" : {
+              "modelId" : "GLM-5.3",
+              "options" : {
+                "reasoningLevel" : "max"
+              },
+              "providerId" : "account:zai-individual-coding-plan"
+            },
+            "provider" : "account:zai-individual-coding-plan",
+            "thought" : "max",
+            "thoughtLevels" : [
+
+            ]
+          },
+          "control" : {
+            "activeWorks" : [
+
+            ],
+            "apiRetry" : null,
+            "canStop" : false,
+            "lastError" : null,
+            "phase" : "completedSuccess",
+            "sessionEnded" : true,
+            "stopState" : "idle",
+            "stopTargetKind" : "unknown"
+          },
+          "goal" : null,
+          "inputRouting" : {
+            "mode" : "startNow"
+          },
+          "logEpoch" : "mveag2fh-ay1mahff",
+          "meta" : {
+            "title" : "Liste les fichiers du dossier /Users/me/claude/zc...",
+            "titleSource" : "generated"
+          },
+          "modelTransition" : null,
+          "pendingCommands" : [
+
+          ],
+          "pendingInteractions" : [
+
+          ],
+          "plan" : null,
+          "protocolVersion" : 1,
+          "queue" : {
+            "autoDrain" : true,
+            "items" : [
+
+            ]
+          },
+          "revision" : 19,
+          "rows" : {
+            "firstRowId" : 1,
+            "totalCount" : 9,
+            "window" : [
+              {
+                "createdAt" : 1792355934827,
+                "createdAtSeq" : 3,
+                "entityId" : "model-initial:msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99:account:zai-individual-coding-plan/GLM-5.3",
+                "kind" : "timelineMarker",
+                "lane" : "lightBoundary",
+                "marker" : {
+                  "toModel" : "GLM-5.3",
+                  "toProvider" : "account:zai-individual-coding-plan",
+                  "toThought" : "max",
+                  "type" : "modelChange"
+                },
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 1,
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "activeMs" : 15305,
+                "createdAt" : 1792355934827,
+                "createdAtSeq" : 3,
+                "endedAt" : 1792355950132,
+                "entityId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "executionKind" : "agent",
+                "historyRoundCount" : 3,
+                "kind" : "turnHeader",
+                "modelDurationMs" : 0,
+                "origin" : "userInput",
+                "otherDurationMs" : 15073,
+                "outputTokens" : 0,
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 2,
+                "startedAt" : 1792355934827,
+                "state" : "completedSuccess",
+                "toolDurationMs" : 232,
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canEdit" : true,
+                  "editDisposition" : "rewind"
+                },
+                "createdAt" : 1792355934827,
+                "createdAtSeq" : 3,
+                "entityId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "kind" : "userInput",
+                "origin" : "realUser",
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 3,
+                "text" : "Liste les fichiers du dossier /Users/me/claude/zcode_ios/host (y compris les sous-dossiers, avec leurs chemins relatifs). Si le dossier n'existe pas, signale-le. Réponds avec la liste des fichiers uniquement.",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveag2gd_b12a9f0b-bb28-4294-85e6-9e5f98bb17f1",
+                "createdAt" : 1792355934829,
+                "createdAtSeq" : 4,
+                "entityId" : "msg_mveag2gd_b12a9f0b-bb28-4294-85e6-9e5f98bb17f1",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 4,
+                "state" : "complete",
+                "text" : "The user wants me to list files in /Users/me/claude/zcode_ios/host, including subdirectories, with relative paths. If the folder doesn't exist, report it. Let me check.",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveag2gd_b12a9f0b-bb28-4294-85e6-9e5f98bb17f1",
+                "createdAt" : 1792355934832,
+                "createdAtSeq" : 7,
+                "endedAt" : 1792355934834,
+                "entityId" : "call_d08c095ffdab4351880e9c87",
+                "input" : {
+                  "command" : "find /Users/me/claude/zcode_ios/host -not -path '*/node_modules*' -not -path '*/.git/*' | head -500",
+                  "description" : "List files in zcode_ios/host recursively"
+                },
+                "inputText" : "{\"command\":\"find /Users/me/claude/zcode_ios/host -not -path '*/node_modules*' -not -path '*/.git/*' | head -500\",\"description\":\"List files in zcode_ios/host recursively\"}",
+                "kind" : "toolCall",
+                "output" : {
+                  "text" : "/Users/me/claude/zcode_ios/host\n/Users/me/claude/zcode_ios/host/update-zcode.sh\n/Users/me/claude/zcode_ios/host/macos\n/Users/me/claude/zcode_ios/host/macos/install-service.sh\n/Users/me/claude/zcode_ios/host/macos/local.zcode-web.plist\n/Users/me/claude/zcode_ios/host/install-zcode.sh\n/Users/me/claude/zcode_ios/host/stage-zcode.mjs\n/Users/me/claude/zcode_ios/host/installed-version.txt\n/Users/me/claude/zcode_ios/host/linux\n/Users/me/claude/zcode_ios/host/linux/zcode-web.service\n/Users/me/claude/zcode_ios/host/linux/install-service.sh\n/Users/me/claude/zcode_ios/host/linux/README.md\n/Users/me/claude/zcode_ios/host/linux/bootstrap-steamos.sh\n/Users/me/claude/zcode_ios/host/run-zcode-web.sh"
+                },
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 5,
+                "startedAt" : 1792355934833,
+                "status" : "success",
+                "toolCallId" : "call_d08c095ffdab4351880e9c87",
+                "toolName" : "Bash",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveag5ne_82f027b2-e463-4532-9d1b-2fc9de38e93a",
+                "createdAt" : 1792355934835,
+                "createdAtSeq" : 10,
+                "entityId" : "msg_mveag5ne_82f027b2-e463-4532-9d1b-2fc9de38e93a",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 6,
+                "state" : "complete",
+                "text" : "The folder exists. Let me provide the list with relative paths. The find already shows everything (12 entries). Let me verify there are no hidden files or node_modules I excluded unnecessarily — the exclusions might have hidden content. Let me do a quick check without exclusions to be accurate.",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveag5ne_82f027b2-e463-4532-9d1b-2fc9de38e93a",
+                "createdAt" : 1792355934838,
+                "createdAtSeq" : 13,
+                "endedAt" : 1792355934840,
+                "entityId" : "call_56c8dbd7c2c14827a3cede01",
+                "input" : {
+                  "command" : "find /Users/me/claude/zcode_ios/host | wc -l; find /Users/me/claude/zcode_ios/host -name '.*' -maxdepth 2",
+                  "description" : "Verify total file count and check for hidden files"
+                },
+                "inputText" : "{\"command\":\"find /Users/me/claude/zcode_ios/host | wc -l; find /Users/me/claude/zcode_ios/host -name '.*' -maxdepth 2\",\"description\":\"Verify total file count and check for hidden files\"}",
+                "kind" : "toolCall",
+                "output" : {
+                  "text" : "      14"
+                },
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 7,
+                "startedAt" : 1792355934839,
+                "status" : "success",
+                "toolCallId" : "call_56c8dbd7c2c14827a3cede01",
+                "toolName" : "Bash",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "assistantResponseId" : "msg_mveag8vb_e45bc1b5-9edf-4d72-a990-aeafdc116cf9",
+                "createdAt" : 1792355934841,
+                "createdAtSeq" : 16,
+                "entityId" : "msg_mveag8vb_e45bc1b5-9edf-4d72-a990-aeafdc116cf9",
+                "kind" : "reasoning",
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 8,
+                "state" : "complete",
+                "text" : "Hmm, the second find returned nothing but the total is 14, while my earlier find returned 13 lines (including the root). Wait, earlier output had 13 lines. Let me recount:\n\n1. /Users/me/claude/zcode_ios/host\n2. update-zcode.sh\n3. macos\n4. macos/install-service.sh\n5. macos/local.zcode-web.plist\n6. install-zcode.sh\n7. stage-zcode.mjs\n8. installed-version.txt\n9. linux\n10. linux/zcode-web.service\n11. linux/install-service.sh\n12. linux/README.md\n13. linux/bootstrap-steamos.sh\n14. run-zcode-web.sh\n\nThat's 14 total. Good, matches. The earlier head -500 showed all 14? Let me recount the output: the output shows 14 lines actually (I miscounted). Yes: root, update-zcode.sh, macos, 2 files in macos, install-zcode.sh, stage-zcode.mjs, installed-version.txt, linux, 4 files in linux, run-zcode-web.sh = 14. \n\nNo hidden files. Complete list. The user asked for files only with relative paths. Should I list only files (not directories)? \"Liste les fichiers du dossier... (y compris les sous-dossiers)\" — list files including those in subdirectories, with relative paths. I'll list just the files (excluding directories), relative to /Users/me/claude/zcode_ios/host.",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              },
+              {
+                "actions" : {
+                  "canFork" : true,
+                  "canRetry" : true
+                },
+                "assistantResponseId" : "msg_mveag8vb_e45bc1b5-9edf-4d72-a990-aeafdc116cf9",
+                "createdAt" : 1792355943143,
+                "createdAtSeq" : 19,
+                "entityId" : "msg_mveag8vb_e45bc1b5-9edf-4d72-a990-aeafdc116cf9",
+                "kind" : "assistantText",
+                "productTurnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "rowId" : 9,
+                "state" : "complete",
+                "text" : "Le dossier existe. Voici la liste des fichiers (chemins relatifs à `/Users/me/claude/zcode_ios/host`) :\n\n- `install-zcode.sh`\n- `installed-version.txt`\n- `run-zcode-web.sh`\n- `stage-zcode.mjs`\n- `update-zcode.sh`\n- `linux/README.md`\n- `linux/bootstrap-steamos.sh`\n- `linux/install-service.sh`\n- `linux/zcode-web.service`\n- `macos/local.zcode-web.plist`\n- `macos/install-service.sh`",
+                "turnId" : "msg_mveag2g8_4562c276-1ecf-41cf-9b21-991966f02f99",
+                "visibility" : "visible"
+              }
+            ]
+          },
+          "seq" : 45,
+          "sessionId" : "sess_subagent_agent_7dbb580c-8ca8-40e3-9710-b2029666cd24",
+          "subagents" : {
+            "childSessionIds" : [
+
+            ],
+            "endedTotal" : 0,
+            "revision" : 1792355950132,
+            "running" : [
+
+            ]
+          },
+          "usage" : {
+            "contextWindow" : {
+              "autoCompactThresholdTokens" : null,
+              "maxTokens" : 1000000,
+              "usedTokens" : 0
+            },
+            "cumulative" : {
+              "cacheReadTokens" : 0,
+              "cacheWriteTokens" : 0,
+              "inputTokens" : 0,
+              "outputTokens" : 0
+            }
+          },
+          "workspaceHookAdmission" : null
+        }
+      },
+      "sentAt" : 1792355995533,
+      "subscriptionId" : "sub-mveag2fh-ay1mahff-1",
+      "toSeq" : 45,
+      "topic" : "conversation/sess_subagent_agent_7dbb580c-8ca8-40e3-9710-b2029666cd24"
+    },
+    "kind" : "complete",
+    "logicalFrameId" : "sub-mveag2fh-ay1mahff-1-lf-1",
+    "logicalFrameOrdinal" : 1,
+    "subscriptionId" : "sub-mveag2fh-ay1mahff-1",
+    "topic" : "conversation/sess_subagent_agent_7dbb580c-8ca8-40e3-9710-b2029666cd24",
+    "wireVersion" : 3
+  }
+}

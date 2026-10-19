@@ -1,0 +1,26 @@
+{
+  "kind" : "result",
+  "name" : "subagents.createAgent",
+  "seq" : 1,
+  "step" : 0,
+  "value" : {
+    "agent" : {
+      "color" : "cyan",
+      "description" : "Sous-agent jetable de zcode-probe",
+      "enabled" : true,
+      "id" : "user:workspace:zcode-ios-probe-agent",
+      "injectAgentsMd" : true,
+      "name" : "zcode-ios-probe-agent",
+      "path" : "/Users/me/claude/.zcode-check/extensions/.zcode/agents/zcode-ios-probe-agent.md",
+      "projectPath" : "/Users/me/claude/.zcode-check/extensions",
+      "readOnly" : false,
+      "scope" : "workspace",
+      "source" : "user",
+      "systemPrompt" : "Réponds uniquement PONG.",
+      "tools" : [
+        "Read",
+        "Grep"
+      ]
+    }
+  }
+}

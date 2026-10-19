@@ -1,0 +1,121 @@
+{
+  "kind" : "state",
+  "name" : "state.initial",
+  "seq" : 5,
+  "step" : 0,
+  "value" : {
+    "availability" : {
+      "compact" : {
+        "allowed" : false,
+        "reasonCode" : "idleCannotCompact"
+      },
+      "fork" : {
+        "allowed" : false,
+        "reasonCode" : "forkTargetNotStable"
+      },
+      "pauseGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToPause"
+      },
+      "queueEdit" : {
+        "allowed" : true
+      },
+      "resumeGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToResume"
+      },
+      "sendQueuedNow" : {
+        "allowed" : false,
+        "reasonCode" : "sendQueuedNowRequiresRunning"
+      },
+      "setFollowupMode" : {
+        "allowed" : true
+      },
+      "switchModelConfig" : {
+        "allowed" : true
+      }
+    },
+    "backgroundWorks" : [
+
+    ],
+    "config" : {
+      "followupMode" : "queue",
+      "mode" : "build",
+      "model" : "GLM-5.3",
+      "modelSelection" : {
+        "modelId" : "GLM-5.3",
+        "options" : {
+          "reasoningLevel" : "max"
+        },
+        "providerId" : "account:zai-individual-coding-plan"
+      },
+      "planEnabled" : false,
+      "provider" : "account:zai-individual-coding-plan",
+      "thought" : "max",
+      "thoughtLevels" : [
+        "low",
+        "high",
+        "max"
+      ]
+    },
+    "control" : {
+      "activeWorks" : [
+
+      ],
+      "apiRetry" : null,
+      "canStop" : false,
+      "lastError" : null,
+      "phase" : "draft",
+      "sessionEnded" : false,
+      "stopState" : "idle",
+      "stopTargetKind" : "unknown"
+    },
+    "goal" : null,
+    "inputRouting" : {
+      "mode" : "startNow"
+    },
+    "logEpoch" : "mvemhyqp-87npfwz4",
+    "meta" : {
+      "title" : "",
+      "titleSource" : "default"
+    },
+    "modelTransition" : null,
+    "pendingCommands" : [
+
+    ],
+    "pendingInteractions" : [
+
+    ],
+    "plan" : null,
+    "protocolVersion" : 1,
+    "queue" : {
+      "autoDrain" : true,
+      "items" : [
+
+      ]
+    },
+    "revision" : 0,
+    "seq" : 0,
+    "sessionId" : "sess_a4f7819e-029c-4de0-a746-666307689be6",
+    "subagents" : {
+      "childSessionIds" : [
+
+      ],
+      "endedTotal" : 0,
+      "revision" : 0,
+      "running" : [
+
+      ]
+    },
+    "usage" : {
+      "contextWindow" : null,
+      "cumulative" : {
+        "cacheReadTokens" : 0,
+        "cacheWriteTokens" : 0,
+        "inputTokens" : 0,
+        "outputTokens" : 0
+      }
+    },
+    "workspaceHookAdmission" : null
+  }
+}

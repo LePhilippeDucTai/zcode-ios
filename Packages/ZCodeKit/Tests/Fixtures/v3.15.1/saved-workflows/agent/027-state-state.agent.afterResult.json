@@ -1,0 +1,186 @@
+{
+  "kind" : "state",
+  "name" : "state.agent.afterResult",
+  "seq" : 27,
+  "step" : 0,
+  "value" : {
+    "availability" : {
+      "compact" : {
+        "allowed" : true
+      },
+      "fork" : {
+        "allowed" : true
+      },
+      "pauseGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToPause"
+      },
+      "queueEdit" : {
+        "allowed" : true
+      },
+      "resumeGoal" : {
+        "allowed" : false,
+        "reasonCode" : "noGoalToResume"
+      },
+      "sendQueuedNow" : {
+        "allowed" : true
+      },
+      "setFollowupMode" : {
+        "allowed" : true
+      },
+      "switchModelConfig" : {
+        "allowed" : true
+      }
+    },
+    "backgroundWorks" : [
+      {
+        "anchorRowId" : null,
+        "cancellable" : false,
+        "endedAt" : 1792376092473,
+        "kind" : "workflow",
+        "startedAt" : 1792376060199,
+        "status" : "resultPending",
+        "title" : "ios-probe-agent",
+        "workId" : "dwfrun-18c2b96b-8fae-4139-be15-e991968a382b"
+      }
+    ],
+    "config" : {
+      "followupMode" : "queue",
+      "mode" : "build",
+      "model" : "GLM-5.3",
+      "modelSelection" : {
+        "modelId" : "GLM-5.3",
+        "options" : {
+          "reasoningLevel" : "max"
+        },
+        "providerId" : "account:zai-individual-coding-plan"
+      },
+      "planEnabled" : false,
+      "provider" : "account:zai-individual-coding-plan",
+      "thought" : "max",
+      "thoughtLevels" : [
+        "low",
+        "high",
+        "max"
+      ]
+    },
+    "control" : {
+      "activeWorks" : [
+        {
+          "foregroundExecutionId" : "runtime_command_4",
+          "kind" : "primaryTurn",
+          "sourceCommandId" : "01a151f0-b73a-797a-a80a-939561e22b45",
+          "startedAt" : 1792376092481
+        }
+      ],
+      "apiRetry" : null,
+      "canStop" : true,
+      "lastError" : null,
+      "phase" : "running",
+      "sessionEnded" : false,
+      "stopState" : "stoppable",
+      "stopTargetKind" : "assistant"
+    },
+    "goal" : null,
+    "inputRouting" : {
+      "mode" : "enqueue"
+    },
+    "logEpoch" : "mvemff7r-uyrkejqn",
+    "meta" : {
+      "title" : "ios-probe-agent",
+      "titleSource" : "generated"
+    },
+    "modelTransition" : null,
+    "newRows" : [
+
+    ],
+    "pendingCommands" : [
+
+    ],
+    "pendingInteractions" : [
+
+    ],
+    "plan" : null,
+    "protocolVersion" : 1,
+    "queue" : {
+      "autoDrain" : true,
+      "items" : [
+
+      ]
+    },
+    "revision" : 8,
+    "seq" : 13,
+    "sessionId" : "sess_4baedac4-2c8a-4803-b5a3-a536dca5a190",
+    "subagents" : {
+      "childSessionIds" : [
+
+      ],
+      "endedTotal" : 0,
+      "revision" : 0,
+      "running" : [
+
+      ]
+    },
+    "usage" : {
+      "contextWindow" : null,
+      "cumulative" : {
+        "cacheReadTokens" : 0,
+        "cacheWriteTokens" : 0,
+        "inputTokens" : 0,
+        "outputTokens" : 0
+      }
+    },
+    "workflowRuns" : {
+      "revision" : 11,
+      "runs" : [
+        {
+          "actors" : [
+            {
+              "name" : "Rédacteur",
+              "ordinal" : 1,
+              "phaseName" : "Écriture",
+              "sessionId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+              "siteId" : "actor#1",
+              "status" : "completed"
+            }
+          ],
+          "concurrencyCeiling" : 10,
+          "currentPhase" : "Écriture",
+          "lastEventSequence" : 10,
+          "nodes" : [
+            {
+              "actorOrdinal" : 1,
+              "actorSiteId" : "actor#1",
+              "instructionsHead" : "Crée le fichier ios-probe-agent.txt contenant OK avec l'outil Write, puis réponds FAIT.",
+              "kind" : "ask",
+              "ordinal" : 1,
+              "outcome" : "ok",
+              "phase" : "settled",
+              "phaseName" : "Écriture",
+              "siteId" : "ask#1",
+              "toolCalls" : 0,
+              "turn" : 1
+            }
+          ],
+          "phaseNames" : [
+            "Écriture"
+          ],
+          "phases" : [
+            {
+              "name" : "Écriture",
+              "rounds" : 1
+            }
+          ],
+          "runId" : "dwfrun-18c2b96b-8fae-4139-be15-e991968a382b",
+          "status" : "completed",
+          "toolCallId" : "launch-eb75f605-8487-472e-aa3e-8b8105e6c98b",
+          "usage" : {
+            "nodesUsed" : 1,
+            "spentTokens" : 36427
+          }
+        }
+      ]
+    },
+    "workspaceHookAdmission" : null
+  }
+}

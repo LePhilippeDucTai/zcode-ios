@@ -1,0 +1,12 @@
+{
+  "kind" : "state",
+  "name" : "ref",
+  "seq" : 2,
+  "step" : 1,
+  "value" : {
+    "bytes" : 137,
+    "fileName" : "carre-rouge.png",
+    "mime" : "image/png",
+    "ref" : "zcode-artifact://sess_b32d58b4-04a7-49d2-9dac-10e04738890a/tool-result-1f83eb91-3f92-4bd9-beef-ec20425b673c"
+  }
+}

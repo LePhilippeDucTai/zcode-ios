@@ -1,0 +1,9 @@
+{
+  "steps": [
+    { "call": "plugin-management", "method": "getPluginsOverview", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] },
+    { "call": "plugin-management", "method": "getPluginsOverview", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "workspace" }] },
+    { "call": "plugin-management", "method": "listPlugins", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "configScope": "user" }] },
+    { "call": "plugin-management", "method": "describePlugin", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "marketplace": "zcode-plugins-official", "pluginName": "github" }] },
+    { "call": "plugin-management", "method": "methodeInexistante", "args": [] }
+  ]
+}

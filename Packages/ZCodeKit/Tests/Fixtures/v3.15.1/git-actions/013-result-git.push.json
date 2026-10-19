@@ -1,0 +1,31 @@
+{
+  "kind": "result",
+  "name": "git.push",
+  "seq": 13,
+  "step": 12,
+  "value": {
+    "branchName": "main",
+    "remoteName": "origin",
+    "setUpstream": true,
+    "summary": {
+      "ahead": 0,
+      "autoRefreshWatchPaths": [
+        {
+          "path": "/private/tmp/zcode-actions-repo/.git",
+          "recursive": true
+        }
+      ],
+      "behind": 0,
+      "branchName": "main",
+      "headRefType": "branch",
+      "isDirty": true,
+      "isGitAvailable": true,
+      "isRepository": true,
+      "repoRoot": "/private/tmp/zcode-actions-repo",
+      "trackingBranchName": "origin/main",
+      "workspaceInRepoPath": ".",
+      "workspacePath": "/private/tmp/zcode-actions-repo"
+    },
+    "trackingBranchName": "origin/main"
+  }
+}

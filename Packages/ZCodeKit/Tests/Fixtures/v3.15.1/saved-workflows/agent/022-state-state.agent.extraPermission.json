@@ -1,0 +1,229 @@
+{
+  "kind" : "state",
+  "name" : "state.agent.extraPermission",
+  "seq" : 22,
+  "step" : 0,
+  "value" : {
+    "backgroundWorks" : [
+      {
+        "anchorRowId" : null,
+        "cancellable" : true,
+        "kind" : "workflow",
+        "startedAt" : 1792376060199,
+        "status" : "running",
+        "title" : "ios-probe-agent",
+        "workId" : "dwfrun-18c2b96b-8fae-4139-be15-e991968a382b"
+      }
+    ],
+    "control" : {
+      "activeWorks" : [
+
+      ],
+      "apiRetry" : null,
+      "canStop" : false,
+      "lastError" : null,
+      "phase" : "completedSuccess",
+      "sessionEnded" : true,
+      "stopState" : "idle",
+      "stopTargetKind" : "unknown"
+    },
+    "interaction" : {
+      "anchorRowId" : null,
+      "createdAt" : 1792376066983,
+      "interactionId" : "perm_6968559d-ee24-4b7b-9378-7e3e0088c681",
+      "kind" : "permission",
+      "payload" : {
+        "detail" : {
+          "content" : "OK",
+          "file_path" : "/Users/me/claude/.zcode-check/workflows/ios-probe-agent.txt"
+        },
+        "freeText" : true,
+        "kind" : "permission",
+        "options" : [
+          {
+            "kind" : "allowOnce",
+            "label" : "Allow once",
+            "optionId" : "allowOnce",
+            "response" : {
+              "decision" : "allow",
+              "reason" : "Approved once"
+            }
+          },
+          {
+            "kind" : "allowAlways",
+            "label" : "Always allow in this project",
+            "optionId" : "allowAlways",
+            "response" : {
+              "decision" : "allow",
+              "permissionUpdates" : [
+                {
+                  "behavior" : "allow",
+                  "rules" : [
+                    {
+                      "ruleContent" : "/Users/me/claude/.zcode-check/workflows/ios-probe-agent.txt",
+                      "toolName" : "Write"
+                    }
+                  ],
+                  "type" : "addRules"
+                }
+              ],
+              "reason" : "Approved for this project"
+            }
+          },
+          {
+            "kind" : "deny",
+            "label" : "Deny",
+            "optionId" : "deny",
+            "response" : {
+              "decision" : "deny",
+              "reason" : "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed."
+            }
+          }
+        ],
+        "origin" : {
+          "agentId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+          "agentType" : "zcode-workflow",
+          "childSessionId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+          "childTurnId" : "turn_b0d07cd8-fde4-4228-97b8-0724b6e379b1",
+          "description" : "Rédacteur (actor#1@1)",
+          "kind" : "subagent",
+          "parentSessionId" : "sess_4baedac4-2c8a-4803-b5a3-a536dca5a190"
+        },
+        "summary" : "Tool has side effects and requires approval",
+        "toolCallId" : "tool_subagent_sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1_call_97ac7cfc01544a56ab18ebd5",
+        "toolName" : "Write"
+      }
+    },
+    "optionKinds" : [
+      "allowOnce",
+      "allowAlways",
+      "deny"
+    ],
+    "origin" : {
+      "agentId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+      "agentType" : "zcode-workflow",
+      "childSessionId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+      "childTurnId" : "turn_b0d07cd8-fde4-4228-97b8-0724b6e379b1",
+      "description" : "Rédacteur (actor#1@1)",
+      "kind" : "subagent",
+      "parentSessionId" : "sess_4baedac4-2c8a-4803-b5a3-a536dca5a190"
+    },
+    "pendingInteractions" : [
+      {
+        "anchorRowId" : null,
+        "createdAt" : 1792376066983,
+        "interactionId" : "perm_6968559d-ee24-4b7b-9378-7e3e0088c681",
+        "kind" : "permission",
+        "payload" : {
+          "detail" : {
+            "content" : "OK",
+            "file_path" : "/Users/me/claude/.zcode-check/workflows/ios-probe-agent.txt"
+          },
+          "freeText" : true,
+          "kind" : "permission",
+          "options" : [
+            {
+              "kind" : "allowOnce",
+              "label" : "Allow once",
+              "optionId" : "allowOnce",
+              "response" : {
+                "decision" : "allow",
+                "reason" : "Approved once"
+              }
+            },
+            {
+              "kind" : "allowAlways",
+              "label" : "Always allow in this project",
+              "optionId" : "allowAlways",
+              "response" : {
+                "decision" : "allow",
+                "permissionUpdates" : [
+                  {
+                    "behavior" : "allow",
+                    "rules" : [
+                      {
+                        "ruleContent" : "/Users/me/claude/.zcode-check/workflows/ios-probe-agent.txt",
+                        "toolName" : "Write"
+                      }
+                    ],
+                    "type" : "addRules"
+                  }
+                ],
+                "reason" : "Approved for this project"
+              }
+            },
+            {
+              "kind" : "deny",
+              "label" : "Deny",
+              "optionId" : "deny",
+              "response" : {
+                "decision" : "deny",
+                "reason" : "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed."
+              }
+            }
+          ],
+          "origin" : {
+            "agentId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+            "agentType" : "zcode-workflow",
+            "childSessionId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+            "childTurnId" : "turn_b0d07cd8-fde4-4228-97b8-0724b6e379b1",
+            "description" : "Rédacteur (actor#1@1)",
+            "kind" : "subagent",
+            "parentSessionId" : "sess_4baedac4-2c8a-4803-b5a3-a536dca5a190"
+          },
+          "summary" : "Tool has side effects and requires approval",
+          "toolCallId" : "tool_subagent_sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1_call_97ac7cfc01544a56ab18ebd5",
+          "toolName" : "Write"
+        }
+      }
+    ],
+    "workflowRuns" : {
+      "revision" : 7,
+      "runs" : [
+        {
+          "actors" : [
+            {
+              "name" : "Rédacteur",
+              "ordinal" : 1,
+              "phaseName" : "Écriture",
+              "sessionId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+              "siteId" : "actor#1",
+              "status" : "running"
+            }
+          ],
+          "concurrencyCeiling" : 10,
+          "currentPhase" : "Écriture",
+          "lastEventSequence" : 6,
+          "nodes" : [
+            {
+              "actorOrdinal" : 1,
+              "actorSiteId" : "actor#1",
+              "instructionsHead" : "Crée le fichier ios-probe-agent.txt contenant OK avec l'outil Write, puis réponds FAIT.",
+              "kind" : "ask",
+              "ordinal" : 1,
+              "phase" : "executing",
+              "phaseName" : "Écriture",
+              "siteId" : "ask#1"
+            }
+          ],
+          "phaseNames" : [
+            "Écriture"
+          ],
+          "phases" : [
+            {
+              "name" : "Écriture",
+              "rounds" : 1
+            }
+          ],
+          "runId" : "dwfrun-18c2b96b-8fae-4139-be15-e991968a382b",
+          "status" : "running",
+          "toolCallId" : "launch-eb75f605-8487-472e-aa3e-8b8105e6c98b",
+          "usage" : {
+            "nodesUsed" : 1,
+            "spentTokens" : 0
+          }
+        }
+      ]
+    }
+  }
+}

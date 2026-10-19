@@ -1,0 +1,27 @@
+{
+  "kind" : "state",
+  "name" : "goal",
+  "seq" : 7,
+  "step" : 0,
+  "value" : {
+    "activeRunStartedAtMs" : null,
+    "iteration" : 1,
+    "iterations" : [
+
+    ],
+    "objective" : "Réponds uniquement par le mot OK. Le Goal est atteint dès que tu as répondu OK.",
+    "status" : "verified",
+    "summaryTitle" : "Demande de réponse OK",
+    "targetId" : "target_mvc543he_a64b482f-d6ac-49f8-9ba9-d93d9bbd04ac",
+    "timeUsedSeconds" : 6,
+    "verifications" : [
+      {
+        "anchorRowId" : 6,
+        "at" : 1792226056125,
+        "iteration" : 1,
+        "outcome" : "pass",
+        "reason" : "L'objectif était « Réponds uniquement par le mot OK. Le Goal est atteint dès que tu as répondu OK. » — une simple demande de réponse conversationnelle, sans livrables, fichiers ni commandes. L'assistant a répondu exactement « OK » comme message final, ce qui satisfait pleinement l'exigence."
+      }
+    ]
+  }
+}

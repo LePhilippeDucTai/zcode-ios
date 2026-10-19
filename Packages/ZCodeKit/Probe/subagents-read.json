@@ -1,0 +1,7 @@
+{
+  "steps": [
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "settingsUserOnly" }] },
+    { "call": "subagents", "method": "list", "args": [{"workspacePath": "${ZCODE_PROBE_WORKSPACE}", "provider": "glm", "mode": "allRuntimeScopes" }] },
+    { "call": "subagents", "method": "methodeInexistante", "args": [] }
+  ]
+}

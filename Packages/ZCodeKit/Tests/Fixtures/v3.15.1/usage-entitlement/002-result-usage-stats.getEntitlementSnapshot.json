@@ -1,0 +1,19 @@
+{
+  "kind" : "result",
+  "name" : "usage-stats.getEntitlementSnapshot",
+  "seq" : 2,
+  "step" : 1,
+  "value" : {
+    "authenticated" : true,
+    "context" : {
+      "scope" : "personal"
+    },
+    "generatedAt" : 1792233665773,
+    "mcpQuota" : null,
+    "provider" : null,
+    "quota" : null,
+    "remaining" : null,
+    "subscription" : null,
+    "unavailableReason" : "not_configured"
+  }
+}

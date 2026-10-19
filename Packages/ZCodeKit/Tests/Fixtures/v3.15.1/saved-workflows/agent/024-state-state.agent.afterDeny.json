@@ -1,0 +1,91 @@
+{
+  "kind" : "state",
+  "name" : "state.agent.afterDeny",
+  "seq" : 24,
+  "step" : 0,
+  "value" : {
+    "backgroundWorks" : [
+      {
+        "anchorRowId" : null,
+        "cancellable" : false,
+        "endedAt" : 1792376092473,
+        "kind" : "workflow",
+        "startedAt" : 1792376060199,
+        "status" : "resultPending",
+        "title" : "ios-probe-agent",
+        "workId" : "dwfrun-18c2b96b-8fae-4139-be15-e991968a382b"
+      }
+    ],
+    "control" : {
+      "activeWorks" : [
+        {
+          "foregroundExecutionId" : "runtime_command_4",
+          "kind" : "primaryTurn",
+          "sourceCommandId" : "01a151f0-b73a-797a-a80a-939561e22b45",
+          "startedAt" : 1792376092481
+        }
+      ],
+      "apiRetry" : null,
+      "canStop" : true,
+      "lastError" : null,
+      "phase" : "running",
+      "sessionEnded" : false,
+      "stopState" : "stoppable",
+      "stopTargetKind" : "assistant"
+    },
+    "pendingInteractions" : [
+
+    ],
+    "workflowRuns" : {
+      "revision" : 11,
+      "runs" : [
+        {
+          "actors" : [
+            {
+              "name" : "Rédacteur",
+              "ordinal" : 1,
+              "phaseName" : "Écriture",
+              "sessionId" : "sess_dwf-dwfrun-18c2b96b-8fae-4139-be15-e991968a382b-actor_1_1",
+              "siteId" : "actor#1",
+              "status" : "completed"
+            }
+          ],
+          "concurrencyCeiling" : 10,
+          "currentPhase" : "Écriture",
+          "lastEventSequence" : 10,
+          "nodes" : [
+            {
+              "actorOrdinal" : 1,
+              "actorSiteId" : "actor#1",
+              "instructionsHead" : "Crée le fichier ios-probe-agent.txt contenant OK avec l'outil Write, puis réponds FAIT.",
+              "kind" : "ask",
+              "ordinal" : 1,
+              "outcome" : "ok",
+              "phase" : "settled",
+              "phaseName" : "Écriture",
+              "siteId" : "ask#1",
+              "toolCalls" : 0,
+              "turn" : 1
+            }
+          ],
+          "phaseNames" : [
+            "Écriture"
+          ],
+          "phases" : [
+            {
+              "name" : "Écriture",
+              "rounds" : 1
+            }
+          ],
+          "runId" : "dwfrun-18c2b96b-8fae-4139-be15-e991968a382b",
+          "status" : "completed",
+          "toolCallId" : "launch-eb75f605-8487-472e-aa3e-8b8105e6c98b",
+          "usage" : {
+            "nodesUsed" : 1,
+            "spentTokens" : 36427
+          }
+        }
+      ]
+    }
+  }
+}
